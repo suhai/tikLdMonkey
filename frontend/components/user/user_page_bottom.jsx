@@ -1,0 +1,56 @@
+import React from 'react';
+import { values, merge } from 'lodash';
+import { NavLink, Route, Switch } from 'react-router-dom';
+
+class UserPageBottom extends React.Component {
+  constructor(props) {
+    super(props);
+    this.editUser = this.editUser.bind(this);
+    this.deleteUser = this.deleteUser.bind(this);
+  }
+
+  componentDidMount() {
+    let username = this.props.match.params.username;
+    this.props.fetchUser(username);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    let l = nextProps.location.pathname.length;
+    if (nextProps.location.pathname !== this.props.location.pathname) {
+      let username = nextProps.match.params.username;
+      this.props.fetchUser(username);
+    }
+  }
+
+  editUser() {
+    let user = this.props.currentUser;
+    this.props.history.push(`/${user.username}/edit`);
+  }
+
+  deleteUser() {
+    
+  }
+
+  render() {
+    let user = this.props.user;
+    let option = <button onClick={this.editUser} className='user-page-edit'>Edit</button>;
+    let option2 = <button className='user-page-delete'>Delete</button>;
+        
+    return (
+      <section className='user-page-bottom'>
+        <ul className='user-page-nav'>
+          <li><NavLink exact to={`/${this.props.user.username}`}>Manage Bio</NavLink></li>
+          <li><NavLink to={`/${this.props.user.username}/todos`}>Manage Todos</NavLink></li>
+          <li><NavLink to={`/${this.props.user.username}/trivia`}>Manage Trivia</NavLink></li>
+          <li><NavLink to={`/${this.props.user.username}/monkeys`}>Manage Projects</NavLink></li>
+          <li className='user-page-options'>
+            {option}
+            {option2}
+          </li>
+        </ul>
+      </section>
+    );
+  }
+}
+
+export default UserPageBottom;

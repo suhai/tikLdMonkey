@@ -1,0 +1,130 @@
+@import 'variables';
+
+.main-content {
+  padding: 2em 3em;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.trivium {
+  margin-bottom: 2em;
+}
+.triv-p {
+  color:$aet;
+}
+
+
+/* IMAGES -------- */
+.trivium-img {
+  width: 70px;
+}
+
+.game-img {
+  width: 30%;
+  height: 30%;
+  border-radius: .3em;
+}
+
+
+/* trivium NAV -------- */
+.trivium-nav li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.trivium-nav li + li {
+  margin-left: .8em;
+}
+
+.trivium-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+  transition: .2s;
+}
+
+.trivium-nav a:hover,
+.trivium-nav a.active {
+  color: #fff;
+  background: #800000;
+}
+
+
+  // MEDIA QUERIES
+@media (min-width: 0) and (max-width: 768px) { 
+  body {
+    padding-top: .8em;
+  }
+  .home a {
+    border-color: transparent;
+  }
+   .icn-logo {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding-bottom: 4px;
+   }
+   .main-nav a {
+     border-top: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+   }
+   .main-nav a:hover {
+     border-color: rgba(0,0,0, .1);
+   }
+   .triviums h2 {
+     margin-bottom: 0;
+   }
+   .trivium-nav {
+     display: block;
+     margin: 1.5em 0 3.2em;
+   }
+   .home a,
+   input,
+   button {
+     display: block;
+     width: 100%;
+     margin-bottom: 1em;
+   }
+}
+@media (min-width: 769px) {
+  body {
+    padding-top: 3em;
+  }
+  .home a {
+    border-color: #3b80d1;
+  }
+  .media img,
+  .media > div,
+  .game {
+    float: left;
+  }
+  .media > div {
+    width: 85.1%;
+    margin-left: 1.5em;
+  } 
+  .game {
+    width: 48.73%;
+    margin-bottom: 1.5em;
+  }
+  .game + .game {
+    margin-left: 2.54%;
+  }
+  .game:nth-child(2n+3) {
+    clear: left;
+    margin-left: 0;
+  }
+
+  /* trivium NAV -------- */
+  .trivium-nav {
+    float: right;
+  } 
+  .triviums h2 {
+    float: left;
+  }
+}

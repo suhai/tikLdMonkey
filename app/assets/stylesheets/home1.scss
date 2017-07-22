@@ -1,0 +1,200 @@
+@import 'variables';
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+div.homepage {
+  width: 99.5%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  section.homepage-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background: $aet;
+    // background: $aej;
+    height: 100%;
+    padding-bottom: 50px;
+
+
+    // input {
+    //   width: 80%;
+    //   margin: auto;
+    //   font-size: 16px;
+    //   padding: 15px 20px;
+    //   margin: 50px 0;
+    //   border: none;
+    //   border-radius: 5px;
+    //   // background: $military-green;
+    //   color: gray;
+    //   font-weight: 300;
+
+    //   &:focus {
+    //     outline: none;
+    //   }
+    // }
+  }
+}
+
+div.homepage-logo {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  background-size: contain;
+  height: 90px;
+  width: 180px;
+}
+
+
+.lorem {
+  text-align: center;
+  margin: 0.5em 0 2em 0;
+}
+
+.homepage-description {
+  display: flex;
+  height: 100%;
+  padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-weight: 300;
+    font-size: 34px;
+    margin: 10px;
+    color: white;
+  }
+
+  p {
+    font-size: 17px;
+    font-family: Courier New, Courier, monospace;
+    // text-align: center;
+    text-align: left;
+    color: $aei;
+    text-decoration-style: wavy;
+    margin-top: 1em;
+    margin-left: 11em;
+    margin-right: 10em;
+    margin-bottom: 1em;
+  }
+
+  // span {
+  //   color: white;
+  //   font-family: Source Sans Pro;
+  //   font-size: 20px;
+  //   width: 500px;
+  //   margin: 10px;
+  // }
+}
+
+
+main.homepage-info {
+  background-color: $abh;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  border-spacing: 0;
+  font-family: Open Sans;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.monkey-h1 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.tikld1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.tikld2 {
+  font-size: 1em;
+  text-align: left;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+button.login {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  margin-top: 30px;
+  transition: box-shadow 0.3s, text-shadow 0.3s;
+}
+
+
+button.login:hover {
+  box-shadow: 0 0 5px white, 0 0 5px white inset;
+  border-radius: 5px;
+  text-shadow: 0 0 2px white;
+}
+
+button.signup {
+  background: $act;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  transition: text-shadow 0.3s;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+button.signup:hover {
+  text-shadow: 0 0 2px white;
+}
+
+button:focus { outline:0 }
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    padding: 5px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+}
+
+p {
+  font-size: 14px;
+  color: $abl;
+}
