@@ -1,7 +1,7 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import CategoryForm from './category_form';
+import Categories from './categories';
 
 class CategoryHome extends React.Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class CategoryHome extends React.Component {
   }
 
   render() {
+
     return (
       <main className='loggedhome-body'>
         <div className='main-index'>
@@ -19,14 +20,12 @@ class CategoryHome extends React.Component {
               </div>
             </ul>
           </nav>
-          <div className='nav-border' />
-          <p>This Component is still Under Construction.</p>
-          <p>It will be populated with a list of Category from the database and with CRUD functionality.</p>
-          <p>You will also need special privileges to access this page when completed.</p>
-          <div className='category-form'>
-            <CategoryForm fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
-            category={this.props.category}/>  
-          </div>
+
+          <section className='user-page-bottom'>
+            <Categories fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
+            category={this.props.category}/> 
+          </section>
+
         </div>
         <SideBarContainer />
       </main>

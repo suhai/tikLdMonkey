@@ -12,6 +12,7 @@ import Projects from './projects/Projects';
 import TechNews from './tech_news/TechNews';
 import Monkeys from './monkeys/Monkeys';
 import SwyInfo from './about/swy_info';
+import Footer from './footer/Footer';
 
 
 const Root = () =>(
@@ -33,6 +34,7 @@ const Root = () =>(
       <ProtectedRoute exact path="/users" component={LoggedHomeContainer} />
       <ProtectedRoute path="/:username" component={LoggedHomeContainer} />
     </Switch>
+    <Footer />
   </div>
 );
 
