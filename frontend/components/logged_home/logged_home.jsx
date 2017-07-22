@@ -29,12 +29,12 @@ class LoggedHome extends React.Component {
         <div className='nav-space' />
 
         <Switch>
-          <Route exact path="/categoriez" render={(props) => <CategoryContainer {...props} /> } />
-          <Route exact path="/gamez" render={(props) => <GameHome {...props} /> } />
+          <Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
+          <Route exact path="/admin/games" render={(props) => <GameHome {...props} /> } />
           <Route exact path="/jobs" render={(props) => <JobHome {...props} /> } />
-          <Route exact path="/monkeyz" render={(props) => <MonkeyHome {...props} /> } />
-          <Route exact path="/projectz" render={(props) => <ProjectHome {...props} /> } />
-          <Route exact path="/trivz" render={(props) => <TriviumHome {...props} /> } />
+          <Route exact path="/monkeys" render={(props) => <MonkeyHome {...props} /> } />
+          <Route exact path="/admin/project" render={(props) => <ProjectHome {...props} /> } />
+          <Route exact path="/admin/trivia" render={(props) => <TriviumHome {...props} /> } />
           <Route exact path="/users" render={(props) => <UserHome {...props} /> } />
           <Route path="/search" render={(props) => <SearchContainer {...props} /> } />
           <Route path="/:username/edit" render={(props) => <UserEditFormContainer {...props} /> } />

@@ -56,10 +56,10 @@ class Navigation extends React.Component {
           <li><NavLink to='/'>Home</NavLink></li>
           <li><NavLink to='/users'>Users</NavLink></li>
           <li><NavLink to='/jobs'>JobApps</NavLink></li>
-          <li><NavLink to='/trivz'>Trivia</NavLink></li>
-          <li><NavLink to='/gamez'>Games</NavLink></li>
-          <li><NavLink to='/projectz'>Projects</NavLink></li>
-          <li><NavLink to='/categoriez'>Categories</NavLink></li>
+          <li><NavLink to='/admin/trivia'>Trivia</NavLink></li>
+          <li><NavLink to='/admin/projects'>Projects</NavLink></li>
+          <li><NavLink to='/admin/games'>Games</NavLink></li>
+          <li><NavLink to='/categories'>Categories</NavLink></li>
         </ul>
         <ul className='searchbar'>
           <input onKeyPress={this.toSearch} className='home-search'></input>
