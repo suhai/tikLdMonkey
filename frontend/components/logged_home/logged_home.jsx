@@ -33,7 +33,7 @@ class LoggedHome extends React.Component {
           <Route exact path="/admin/games" render={(props) => <GameHome {...props} /> } />
           <Route exact path="/jobs" render={(props) => <JobHome {...props} /> } />
           <Route exact path="/monkeys" render={(props) => <MonkeyHome {...props} /> } />
-          <Route exact path="/admin/project" render={(props) => <ProjectHome {...props} /> } />
+          <Route exact path="/admin/projects" render={(props) => <ProjectHome {...props} /> } />
           <Route exact path="/admin/trivia" render={(props) => <TriviumHome {...props} /> } />
           <Route exact path="/users" render={(props) => <UserHome {...props} /> } />
           <Route path="/search" render={(props) => <SearchContainer {...props} /> } />
