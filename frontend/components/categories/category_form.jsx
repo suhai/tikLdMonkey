@@ -34,10 +34,6 @@ class CategoryForm extends React.Component {
     return(
       <div className="app">
         <li>
-          <button>Show Categories</button>
-        </li>
-        <br />
-        <li>
           <input value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
         </li>
         <li>
