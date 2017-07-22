@@ -19,7 +19,7 @@ class JobHome extends React.Component {
           <div className='nav-border' />
           <p>This Component is still Under Construction.</p>
           <p>It will be populated with a list of Job Applications from the database and with CRUD functionality.</p>
-          <p>Yo will also need special privileges to access this page when completed.</p>
+          <p>You will also need special privileges to access this page when completed.</p>
         </div>
         <SideBarContainer />
       </main>

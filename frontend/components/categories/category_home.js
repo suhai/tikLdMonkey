@@ -12,14 +12,14 @@ class CategoryHome extends React.Component {
           <nav className='content-nav'>
             <ul>
               <div className='upload-buttons'>
-                <h2>Category Zone</h2>
-                <button  className='signup'>Add New Category</button>
+                <h2>Category Zone <button  className='addnew'>Add Category</button></h2>   
               </div>
             </ul>
           </nav>
           <div className='nav-border' />
           <p>This Component is still Under Construction.</p>
-          <p>It will be populated with a list of Categories from the database and with CRUD functionality.</p>
+          <p>It will be populated with a list of Category from the database and with CRUD functionality.</p>
+          <p>You will also need special privileges to access this page when completed.</p>
         </div>
         <SideBarContainer />
       </main>
