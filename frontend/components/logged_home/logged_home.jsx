@@ -5,7 +5,7 @@ import Navigation from './navigation';
 import UserPageContainer from '../user/user_page_container';
 import UserEditFormContainer from '../user/user_edit_form_container';
 import SearchContainer from '../search/search_container';
-import CategoryHome from '../categories/category_home';
+import CategoryContainer from '../categories/category_container';
 import GameHome from '../games/game_home';
 import JobHome from '../jobs/job_home';
 import MonkeyHome from '../monkeys/monkey_home';
@@ -29,7 +29,7 @@ class LoggedHome extends React.Component {
         <div className='nav-space' />
 
         <Switch>
-          <Route exact path="/categoriez" render={(props) => <CategoryHome {...props} /> } />
+          <Route exact path="/categoriez" render={(props) => <CategoryContainer {...props} /> } />
           <Route exact path="/gamez" render={(props) => <GameHome {...props} /> } />
           <Route exact path="/jobs" render={(props) => <JobHome {...props} /> } />
           <Route exact path="/monkeyz" render={(props) => <MonkeyHome {...props} /> } />

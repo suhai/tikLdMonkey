@@ -4,6 +4,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomePageContainer from './homepage/homepage_container';
 import LoggedHomeContainer from './logged_home/logged_home_container';
 import GamePageContainer from './games/game_page_container';
+import CategoryContainer from './categories/category_container';
 import About from './about/About';
 import Games from './games/Games';
 import Trivia from './trivia/Trivia';
@@ -25,7 +26,7 @@ const Root = () =>(
       <Route path="/monkeys" component={Monkeys} />
       <ProtectedRoute exact path="/categories" component={LoggedHomeContainer} />
       <ProtectedRoute exact path="/gamez" component={LoggedHomeContainer} /> 
-        {/* <ProtectedRoute exact path="/gamez" component={GamePageContainer} />   */}
+      <ProtectedRoute exact path="/categoriez" component={CategoryContainer} /> 
       <ProtectedRoute exact path="/job_apps" component={LoggedHomeContainer} />
       <ProtectedRoute exact path="/projectz" component={LoggedHomeContainer} />
       <ProtectedRoute exact path="/triviaz" component={LoggedHomeContainer} />

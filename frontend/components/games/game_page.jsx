@@ -11,7 +11,6 @@ class GamePage extends React.Component {
   };
 
   render() {
-    // debugger;
     const game = this.props.game || {};
     const name = game.name || 'NONE';
     const url = game.image_url || 'NO URL';

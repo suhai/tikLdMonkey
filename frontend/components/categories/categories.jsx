@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Category from './category';
 
 const Categories = () => (
   <div className="app">

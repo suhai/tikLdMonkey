@@ -13,7 +13,7 @@
 export const createCategory = data => (
   $.ajax({
     method: 'POST',
-    url: 'categories',
+    url: 'api/categories',
     data: data
   })
 );
@@ -22,7 +22,7 @@ export const createCategory = data => (
 export const fetchCategories = data => (
   $.ajax({
     method: 'GET',
-    url: 'categories'
+    url: 'api/categories'
   })
 );
 
