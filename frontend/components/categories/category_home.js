@@ -23,11 +23,10 @@ class CategoryHome extends React.Component {
           <p>This Component is still Under Construction.</p>
           <p>It will be populated with a list of Category from the database and with CRUD functionality.</p>
           <p>You will also need special privileges to access this page when completed.</p>
-        </div>
-
-        <div>
-          <CategoryForm fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
-          category={this.props.category}/>  
+          <div className='category-form'>
+            <CategoryForm fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
+            category={this.props.category}/>  
+          </div>
         </div>
         <SideBarContainer />
       </main>

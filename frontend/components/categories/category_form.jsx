@@ -28,16 +28,19 @@ class CategoryForm extends React.Component {
 
 
   render() {
+    // let categories = values(this.props.category).map( (category, idx) => (
+    //       <li key={idx}>{category.name}</li>
+    //     ));
     let categories = values(this.props.category).map( (category, idx) => (
-          <li key={idx}>{category.name}</li>
+          <li key={idx}>{category.name}  <button className='addcat'>Edit</button> <button className='deletecat'>Delete</button></li>
         ));
     return(
-      <div className="app">
+      <div>
         <li>
           <input value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
         </li>
         <li>
-          <button className='user-page-delete' onClick={this.addCategory}>Save Category</button>
+          <button onClick={this.addCategory}>Save Category</button>
         </li>
         <ul>
           {categories}
