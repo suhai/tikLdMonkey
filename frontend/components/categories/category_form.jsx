@@ -37,7 +37,7 @@ class CategoryForm extends React.Component {
           <input value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
         </li>
         <li>
-          <button onClick={this.addCategory}>Save Category</button>
+          <button className='user-page-delete' onClick={this.addCategory}>Save Category</button>
         </li>
         <ul>
           {categories}

@@ -30,7 +30,6 @@ class UserPage extends React.Component {
     let header = files[0];
     let image = new FormData();
     image.append('user[header_image_url]', header);
-    debugger;
     this.props.editUser(image, this.props.user.id);
   }
 
