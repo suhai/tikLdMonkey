@@ -5,22 +5,26 @@
 }
 
 .cat-input {
-  margin-left: 2em;
-  margin-top: 5em;
+  // margin-left: 2em;
+  // margin-top: 5em;
   // margin-right: 4em;
+  font-size: 14px;
+  padding: 2px 0 2px 0;
 }
 
 .cat-save {
-  display: inline-block;
+  display: block;
   background: $adk;
-  color: white;
-  border-radius: 5px;
+  color: lightblue;
+  border-radius: 2px;
   font-weight: 300;
   // padding: 5px;
   font-size: 14px;
   transition: text-shadow 0.3s;
-  // margin-top: 2em;
-  margin-left: 0.2em;
+  margin-top: 1em;
+  // margin-left: 0.2em;
+  position: relative;
+  right: 2px;
 }
 
 

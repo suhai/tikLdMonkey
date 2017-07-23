@@ -2,24 +2,7 @@ import React from 'react';
 import { values } from 'lodash'; 
 export default class Categories extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = { input: '' };
-    this.addCategory = this.addCategory.bind(this);
-    this.update = this.update.bind(this);
-  }
-
-  update(prop) {
-    return e => this.setState({ [prop]: e.currentTarget.value })
-  }
-
-  addCategory() {
-    let data ={
-      category: {
-        name: this.state.input
-      }
-    };
-    this.setState({ input: '' });
-    this.props.createCategory(data);
+    super(props);  
   }
 
   componentDidMount() {
@@ -30,9 +13,12 @@ export default class Categories extends React.Component {
   render() {
     let categories = values(this.props.category).map( (category, idx) => (
       <ul className='user-page-nav' key={idx}>
-        <li className='user-page-options list' key={idx}><a href="#">{category.name}</a>
-          <button className='user-page-edit'>Edit</button>
-          <button className='user-page-delete'>Delete</button>
+        <li className='user-page-options list' key={idx}>
+          <a href="#">{category.name}</a>
+          <aside>
+            <button className='user-page-edit'>Edit</button>
+            <button className='user-page-delete'>Delete</button>
+          </aside>
         </li>
       </ul>
     ));
@@ -42,11 +28,6 @@ export default class Categories extends React.Component {
         <ul>
           {categories}
         </ul>
-        
-        <form onSubmit={this.addCategory}>
-          <input className='cat-input' value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
-          <button className='cat-save'>Save Category</button>
-        </form>
       </div>
     );
   }
