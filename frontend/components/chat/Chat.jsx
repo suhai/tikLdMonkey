@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 
-const Chat = () => (
-  <div className="app">
-    <h1>This is the Chat Component</h1>
-  </div>
-);
+// const Chat = () => (
+//   <div className="app">
+//     <h1>This is the Chat Component</h1>
+//   </div>
+// );
 
-export default Chat;
+// export default Chat;
