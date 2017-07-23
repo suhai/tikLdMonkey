@@ -14,9 +14,13 @@ class Footer extends React.Component {
           <ul>
             <li><NavLink exact to='#'>About</NavLink></li>
             <li><NavLink to='#'>Terms</NavLink></li>
+          </ul>
+          <ul>
             <li><a href="mailto:soyehuza@gmail.com"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/mail.svg" /></a></li>
             <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/facebook.svg" /></a></li>
             <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/twitter.svg" /></a></li>
+          </ul>
+          <ul>
             <li className="resume"><a href="assets/resume.pdf">Resume</a></li>
             <p className='logo-name'>The tikLdMonkey ©</p>
           </ul>
