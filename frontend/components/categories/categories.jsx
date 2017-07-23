@@ -30,7 +30,7 @@ export default class Categories extends React.Component {
   render() {
     let categories = values(this.props.category).map( (category, idx) => (
       <ul className='user-page-nav' key={idx}>
-        <li className='user-page-options' key={idx}><a href="#">{category.name}</a>
+        <li className='user-page-options list' key={idx}><a href="#">{category.name}</a>
           <button className='user-page-edit'>Edit</button>
           <button className='user-page-delete'>Delete</button>
         </li>
@@ -44,8 +44,8 @@ export default class Categories extends React.Component {
         </ul>
         
         <form onSubmit={this.addCategory}>
-          <input value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
-          <button>Save</button>
+          <input className='cat-input' value={this.state.input} onChange={this.update('input')} type='name' placeholder='Enter category'></input>
+          <button className='cat-save'>Save Category</button>
         </form>
       </div>
     );
