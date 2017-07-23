@@ -84,7 +84,7 @@ class HomePage extends React.Component {
             <h2 className="tikld1">Welcome to The tikLdMonkey</h2>
             <h3 className="tikld2">The Story of the tikLdMonkey</h3>
             <p>
-              Once upon a time, beyond the pristine valleys of the kingdom of Taabanirba, lived an old monkey who had been barnished to the forbidden forest. For two hundred and thrity five years no sane monkey had dared to set foot on his abode for fear of the wrath of the gods. But on one thunderous full moon dawn of the Taabanirban lunar calendar, a vague terror was descending upon this monkey kindom. The king summoned for the first group of sacrificial monkeys. The fear and desolation in the eyes of their families illuminated by the lightening that preceded and trailed the loud clapping thunder ...
+              Once upon a time, beyond the pristine valleys of the kingdom of Taabanirba, lived an old monkey who had been barnished to the forbidden forest. For two hundred and thrity five years no sane monkey had dared to set foot on his abode for fear of the wrath of the gods. But on one thunderous full moon dawn of the Taabanirban lunar calendar, a vague terror was descending upon this monkey kindom. The king summoned for the first group of sacrificial monkeys. The fear and desolation in the eyes of their families illuminated by the lightening that preceded and trailed the loud clapping thunder ....
             </p>
             <p> ... check back later for the full story of the tikLdMonkey. </p>
           </div>
