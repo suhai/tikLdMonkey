@@ -10,7 +10,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <div clasName="container">
+        <div className="container">
           <ul>
             <li><NavLink exact to='#'>About</NavLink></li>
             <li><NavLink to='#'>Terms</NavLink></li>
