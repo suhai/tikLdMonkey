@@ -1,9 +1,9 @@
-export const fetchUser = user => {
+export const fetchUser = user => (
   $.ajax({
     method: 'GET',
-    url: `api/users/${user}`,
-  });
-};
+    url: `api/users/${user}`
+  })
+);
 
 export const fetchUsers = query => {
   if (query === undefined) query = {};
