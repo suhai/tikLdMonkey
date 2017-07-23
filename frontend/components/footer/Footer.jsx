@@ -9,18 +9,19 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <nav className='navigation'>
-        <ul>
-          <li><NavLink exact to='#'>About</NavLink></li>
-          <li><NavLink to='#'>Terms</NavLink></li>
-          <li><NavLink to='#'>Email</NavLink></li>
-          <li><NavLink to='#'>Facebook</NavLink></li>
-          <li><NavLink to='#'>Twitter</NavLink></li>
-          <li><NavLink to='#'>Resume</NavLink></li>
-          <li><NavLink to='#'>Logo</NavLink></li>
-          <p className='logo-name'>The tikLdMonkey ©</p>
-        </ul>
-      </nav>
+      <div className="footer">
+        <div clasName="container">
+          <ul>
+            <li><NavLink exact to='#'>About</NavLink></li>
+            <li><NavLink to='#'>Terms</NavLink></li>
+            <li><a href="mailto:soyehuza@gmail.com"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/mail.svg" /></a></li>
+            <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/facebook.svg" /></a></li>
+            <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/twitter.svg" /></a></li>
+            <li className="resume"><a href="assets/resume.pdf">Resume</a></li>
+            <p className='logo-name'>The tikLdMonkey ©</p>
+          </ul>
+        </div>
+      </div>
     );
   }
 }

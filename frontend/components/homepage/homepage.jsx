@@ -72,9 +72,9 @@ class HomePage extends React.Component {
               <li>
                 <button onClick={this.swy_info} className='swyinfo'>About Me</button>
               </li>
-              {/* <li>
+               <li>
                 <button onClick={this.openSignUp} className='login'>Sign Up</button>
-              </li> */}
+              </li> 
               <li>
                 <button onClick={this.openSignIn} className='signup'>Admin LogIn</button>
               </li> 
