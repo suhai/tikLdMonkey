@@ -20,11 +20,14 @@ class Monkeys extends React.Component {
         <h2 className='tempora'>This is the Monkeys Component</h2>
         <h3 className='tempora'>Sign Up or LogIn for Exclusive access to Content</h3>
         <h1 className='tempora'>Content Coming Soon</h1> 
-        <video id="background-video" loop autoPlay>
+        <iframe className='iframe' src="https://player.vimeo.com/video/226678747" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+
+        {/* <video id="background-video" loop autoPlay>
             <source src={this.state.videoURL} type="video/mp4" />
             <source src={this.state.videoURL} type="video/ogg" />
             Your browser does not support the video tag.
-        </video>
+        </video> */}
       </div>
     )  
   }
