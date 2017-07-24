@@ -123,13 +123,15 @@ section.user-page-bottom {
 
   ul.user-page-nav {
     display: flex;
+    flex-direction: column;
     margin: 15px 25px 0px 25px;
     border-bottom: 1px solid lavender;
 
     li {
-      padding: 5px 10px 5px 0;
+      padding: 10px 10px 10px 0;
       margin-right: 10px;
       font-size: 18px;
+      border-bottom: 1px solid gray;
 
       a {
         padding-bottom: 5px;

@@ -12,20 +12,18 @@ export default class Categories extends React.Component {
 
   render() {
     let categories = values(this.props.category).map( (category, idx) => (
-      <ul className='user-page-nav' key={idx}>
-        <li className='user-page-options list' key={idx}>
-          <a href="#">{category.name}</a>
-          <aside>
-            <button className='user-page-edit'>Edit</button>
-            <button className='user-page-delete'>Delete</button>
-          </aside>
-        </li>
-      </ul>
+      <li className='user-page-options list' key={idx}>
+        <a href="#">{category.name}</a>
+        <aside>
+          <button onClick={this.props.editCategory(category.id)}className='user-page-edit'>Edit</button>
+          <button className='user-page-delete'>Delete</button>
+        </aside>
+      </li>
     ));
 
     return(
       <div>
-        <ul>
+        <ul className='user-page-nav'>
           {categories}
         </ul>
       </div>

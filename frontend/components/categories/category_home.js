@@ -16,6 +16,7 @@ class CategoryHome extends React.Component {
     this.addCategory = this.addCategory.bind(this);
     this.update = this.update.bind(this);
     this.handleKey = this.handleKey.bind(this);
+    this.editCategory = this.editCategory.bind(this);
   }
 
   update(prop) {
@@ -44,6 +45,10 @@ class CategoryHome extends React.Component {
     this.setState({
       isOpen: false
     })
+  }
+
+  editCategory(id) {
+    //function
   }
 
   handleKey(e) {
@@ -79,7 +84,8 @@ class CategoryHome extends React.Component {
 
           <section className='user-page-bottom'>
             <Categories fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
-            category={this.props.category}/> 
+            category={this.props.category}
+            editCategory={this.editCategory} /> 
           </section>
 
         </div>
