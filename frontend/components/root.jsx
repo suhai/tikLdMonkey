@@ -5,7 +5,6 @@ import HomePageContainer from './homepage/homepage_container';
 import LoggedHomeContainer from './logged_home/logged_home_container';
 import GamePageContainer from './games/game_page_container';
 import CategoryContainer from './categories/category_container';
-import About from './about/About';
 import Games from './games/Games';
 import Trivia from './trivia/Trivia';
 import Projects from './projects/Projects';
