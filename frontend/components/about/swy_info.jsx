@@ -7,7 +7,7 @@ const SwyInfo = () => (
     <header className='loggedhome-header'>
       <Navigationa />
     </header>
-      <img className="trivium-img" src='https://drive.google.com/open?id=0B3YmJk3--C3rLW8xcVI0YTQweTQ" alt="swy_image' alt="trivium" />
+      <img className="swy-img" src='http://res.cloudinary.com/swy/image/upload/a_hflip/v1500934478/swy_rsd2cc.jpg'/>
     <h3 className='temporal'>About Me</h3>
     <div>
       <p className='about-me'>     
