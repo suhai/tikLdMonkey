@@ -7,7 +7,7 @@ const SwyInfo = () => (
     <header className='loggedhome-header'>
       <Navigationa />
     </header>
-   
+      {/* <img src="https://drive.google.com/open?id=0B3YmJk3--C3rLW8xcVI0YTQweTQ" alt="swy_image"/> */}
     <h3 className='temporal'>About Me</h3>
     <div>
       <p className='about-me'>     
