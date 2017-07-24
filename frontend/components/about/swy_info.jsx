@@ -7,7 +7,7 @@ const SwyInfo = () => (
     <header className='loggedhome-header'>
       <Navigationa />
     </header>
-    {/* <h2 className='tempora'>This is the SwyInfo Component</h2> */}
+   
     <h3 className='temporal'>About Me</h3>
     <div>
       <p className='about-me'>     
