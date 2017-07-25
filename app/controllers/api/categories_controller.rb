@@ -4,12 +4,6 @@ class Api::CategoriesController < ApplicationController
     @categories = Category.all
     render :index
   end
-
-  def new
-    # @page_title = 'Add Category'
-    @category = Category.new
-    render json: @category
-  end
   
   def create 
     @category = Category.new(category_params)
@@ -20,31 +14,20 @@ class Api::CategoriesController < ApplicationController
     end
   end
 
-  def show 
-    @category = Category.find(params[:id])
-    render json: @category
-  end
-
-  def edit
-    @category = Category.find(params[:id])
-    render json: @category
-  end
-
   def update
     @category = Category.find(params[:id])
     if @category.update(category_params)
       flash[:notice] = 'Categories Updated'
-      redirect_to api_categories_path
     else    
-      render 'new'
+      render "can't update field"
     end
   end
 
   def destroy
     @category = Category.find(params[:id])
-    @category.destroy
+    @category.destroy! if @category
     flash[:notice] = "#{@category.name} Categories Removed"
-    redirect_to api_categories_path
+    render json: @category  
   end
 
   private
