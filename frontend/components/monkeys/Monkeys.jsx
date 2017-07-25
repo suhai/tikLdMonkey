@@ -7,21 +7,44 @@ class Monkeys extends React.Component {
     super(props);
 
     this.state = {
-      videoURL: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4'
+      videos: [
+          "https://player.vimeo.com/video/226678225",
+          "https://player.vimeo.com/video/226678747",
+          "https://player.vimeo.com/video/226679054",
+          "https://player.vimeo.com/video/226679359",
+          "https://player.vimeo.com/video/226679697",
+          "https://player.vimeo.com/video/226679970",
+          "https://player.vimeo.com/video/226680279",
+          "https://player.vimeo.com/video/226680632",
+          "https://player.vimeo.com/video/226680897"
+        ]
     }
   }
 
   render () {
+    let videos = this.state.videos.map( (url, idx) => (
+      <div className='iframe2' key={idx}>
+        <iframe src={url} width="640" height="360" frameBorder="0" allowFullScreen>
+        </iframe>
+        <p className='caption'>Credit: Ice and Sky Educational Videos</p>
+      </div>
+    ));
+
     return (
       <div className="app">
         <header className='loggedhome-header'>
           <Navigationa />
         </header>
-        <h2 className='tempora'>This is the Monkeys Component</h2>
-        <h3 className='tempora'>Sign Up or LogIn for Exclusive access to Content</h3>
-        <h1 className='tempora'>Content Coming Soon</h1> 
-        <iframe className='iframe' src="https://player.vimeo.com/video/226678747" width="640" height="360" frameBorder="0" webkitallowFullScreen mozallowFullScreen allowFullScreen>
-        </iframe>
+        <div className='main-monkey'>
+          <h2 className='tempora'>This is the Monkeys Component</h2>
+          <h3 className='tempora'>Sign Up or LogIn for Exclusive access to Content</h3>
+          <h1 className='tempora'>Content Coming Soon</h1> 
+          <p className='pre-video'>Below are some videos serving as placeholders until the content opf this page is available.</p> 
+          <hr width="70%"/>
+        </div>
+
+          {videos}
+
       </div>
     )  
   }

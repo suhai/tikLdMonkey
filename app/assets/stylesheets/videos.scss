@@ -7,3 +7,26 @@
   bottom: 0; left: 0;
   margin: auto; /* make em equal */
 }
+
+.iframe1 {
+  margin: 0 auto;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.iframe2 {
+  margin: 0 auto;
+  display: block;
+  margin: 5em 13.5em;
+}
+
+.caption {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: left;
+}
+
+.here {
+  color: tomato;
+}
