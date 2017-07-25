@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Trivium = (props) => (
+const Project = (props) => (
   <li className="trivium media group">
-    <img className="trivium-img" src={props.img} alt="trivium" />
+    <img className="trivium-img" src={props.img} alt="project" />
     <div>
       <h3>{props.title}</h3>
       <p className="triv-p">{props.excerpt}</p>
@@ -10,4 +10,4 @@ const Trivium = (props) => (
   </li>
 );
 
-export default Trivium;
+export default Project;

@@ -37,7 +37,6 @@ class Monkeys extends React.Component {
         </header>
         <div className='main-monkey'>
           <h2 className='tempora'>This is the Monkeys Component</h2>
-          <h3 className='tempora'>Sign Up or LogIn for Exclusive access to Content</h3>
           <h1 className='tempora'>Content Coming Soon</h1> 
           <p className='pre-video'>Below are some videos serving as placeholders until the content opf this page is available.</p> 
           <hr width="70%"/>

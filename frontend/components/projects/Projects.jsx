@@ -1,15 +1,32 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { Route, NavLink, Redirect } from 'react-router-dom';
 import Navigationa from '../navigationa';
+import ProjectsContainer from './ProjectsContainer';
+import { CheekChubby, Kokoveli, MurmurAlley, TikldMonkey } from '../stat_data/projects';
 
-const Projects = () => (
-  <div className="app">
+const Projects = ({match}) => (
+  <div className="main-content trivia">
     <header className='loggedhome-header'>
       <Navigationa />
     </header>
-    <h2 className='tempora'>This is the Projects Component</h2>
-    <h3 className='tempora'>Sign Up or LogIn for Exclusive access to Content</h3>
-    <h1 className='tempora'>Content Coming Soon</h1>
+    <div className="trivium-header group">
+      <div className="stuff-out">
+        <h2 className="outside-stuff">Projects</h2> 
+      </div>
+      <ul className="trivium-nav">
+        <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li>
+        <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
+        <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
+        <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>   
+      </ul>
+    </div>
+    
+  
+    <Route exact path={match.path} render={ () => <Redirect to={`${match.path}/tikldmonkey`} /> } />      
+    <Route path={`${match.path}/cheekchubby`} render={ () => <ProjectsContainer data={CheekChubby} /> } />  
+    <Route path={`${match.path}/murmuralley`} render={ () => <ProjectsContainer data={MurmurAlley } /> } />     
+    <Route path={`${match.path}/kokoveli`} render={ () => <ProjectsContainer data={Kokoveli} /> } />
+    <Route path={`${match.path}/tikldmonkey`}  render={ () => <ProjectsContainer data={TikldMonkey} /> } />
   </div>
 );
 

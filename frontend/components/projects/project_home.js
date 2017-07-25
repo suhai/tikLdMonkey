@@ -1,7 +1,7 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import ProjectForm from './project_add_form';
+// import ProjectForm from './project_add_form';
 
 class ProjectHome extends React.Component {
 

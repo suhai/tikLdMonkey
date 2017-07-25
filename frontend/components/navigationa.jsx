@@ -30,9 +30,9 @@ class Navigationa extends React.Component {
           <li><NavLink exact to='/'>Home</NavLink></li>
           <li><NavLink to='/trivia'>Trivia</NavLink></li>
           <li><NavLink to='/projects'>Projects</NavLink></li>
+          <li><NavLink to='/monkeys'>Monkeys</NavLink></li>
           <li><NavLink to='/games'>Games</NavLink></li>
           <li><NavLink to='/tech_news'>Tech News</NavLink></li>
-          <li><NavLink to='/monkeys'>Monkeys</NavLink></li>
         </ul>
         <ul className='searchbar'>
           <input onKeyPress={this.toSearch} className='home-search'></input>
