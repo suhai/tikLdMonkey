@@ -6,6 +6,9 @@ export default class Category extends React.Component {
     super(props);
     this.deleteCategory = this.deleteCategory.bind(this);
     
+    this.state = {
+
+    }
   }
 
   deleteCategory(id) {
@@ -17,8 +20,8 @@ export default class Category extends React.Component {
       <li className='user-page-options list'>
         <a href="#">{this.props.category.name}</a>
         <aside>
-          <button onClick={this.props.editCategory}className='user-page-edit'>Edit</button>
-          <button onClick={this.props.deleteCategory} className='user-page-delete'>Delete</button>
+          <button onClick={this.props.editCategory.bind(this)}className='user-page-edit'>Edit</button>
+          <button onClick={this.props.deleteCategory.bind(this)} className='user-page-delete'>Delete</button>
         </aside>
       </li>
     );

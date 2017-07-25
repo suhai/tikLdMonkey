@@ -67,7 +67,7 @@ class CategoryHome extends React.Component {
   }
 
   render() {
-    let categories = values(this.props.category).map( (category, idx) => (
+    let categories = values(this.props.categories).map( (category, idx) => (
       <Category key={idx} createCategory={this.props.createCategory}
             category={category}
             editCategory={this.editCategory} 

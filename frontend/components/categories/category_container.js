@@ -3,7 +3,7 @@ import { createCategory, fetchCategories, deleteCategory, editCategory } from '.
 import CategoryHome from './category_home';
 
 const mapStateToProps = (state) => ({
-  category: state.category
+  categories: state.categories
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
   session: SessionReducer,
   users: UserReducer,
   search: SearchReducer,
-  category: CategoryReducer
+  categories: CategoryReducer
   // games: GameReducer,
   // job_apps: JobAppReducer,
   // projects: ProjectReducer,
