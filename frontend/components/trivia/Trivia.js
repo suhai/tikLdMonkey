@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, NavLink, Redirect } from 'react-router-dom';
 import Navigationa from '../navigationa';
 import TriviaContainer from './TriviaContainer';
-import { History, Culture, Geography, Art } from '../stat_data/trivia';
+import { Art, Culture, Geography, History } from '../stat_data/trivia';
 import PlaceHolder from '../placeholder/place_holder';
 
 const Trivia = ({match}) => (

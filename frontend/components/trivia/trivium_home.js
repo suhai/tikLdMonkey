@@ -1,7 +1,6 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import TriviaForm from './trivium_add_form';
 
 class TriviaHome extends React.Component {
 
