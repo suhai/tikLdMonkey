@@ -6,6 +6,7 @@ import * as API from '../util/category_api_util';
 
 
 
+
 export const receiveCategory = category => ({
   type: RECEIVE_CATEGORY,
   category
@@ -15,6 +16,7 @@ export const createCategory = data => dispatch => (
   API.createCategory(data) 
   .then(category => dispatch(receiveCategory(category)))
 )
+//-----------------------------------------------------------------
 
 
 
@@ -30,3 +32,29 @@ export const fetchCategories = () => dispatch => (
     return dispatch(receiveCategories(categories))
    })
 )
+//-----------------------------------------------------------------
+
+
+
+
+
+
+export const removeCategory = category => ({
+  type: REMOVE_CATEGORY,
+  category
+});
+
+export const deleteCategory = id => dispatch => (
+  API.deleteCategory(id)
+    .then(category => dispatch(removeCategory(category)))
+);
+//-----------------------------------------------------------------
+
+
+
+
+export const editCategory = category => dispatch => (
+  API.updateCategory(category)
+    .then(editedCategory => dispatch(receiveCategory(editedCategory)))
+);
+//-----------------------------------------------------------------

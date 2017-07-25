@@ -27,6 +27,21 @@ export const fetchCategories = data => (
 );
 
 
+export const deleteCategory = id => (
+  $.ajax({
+    method: 'DELETE',
+    url: `api/categories/${id}`
+  })
+);
+
+
+export const updateCategory = category => (
+  $.ajax({
+    method: 'PATCH',
+    url: `api/categories/${category.id}`,
+    data: {category}
+  })
+);
 
 
 

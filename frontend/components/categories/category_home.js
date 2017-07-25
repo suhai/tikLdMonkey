@@ -1,8 +1,8 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import Categories from './categories';
 import Modal from 'react-modal';
+import Category from './category';
 
 class CategoryHome extends React.Component {
   constructor(props) {
@@ -17,6 +17,11 @@ class CategoryHome extends React.Component {
     this.update = this.update.bind(this);
     this.handleKey = this.handleKey.bind(this);
     this.editCategory = this.editCategory.bind(this);
+    this.deleteCategory = this.deleteCategory.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchCategories() 
   }
 
   update(prop) {
@@ -51,6 +56,10 @@ class CategoryHome extends React.Component {
     //function
   }
 
+  deleteCategory(id) {
+    this.props.deleteCategory(id);
+  }
+
   handleKey(e) {
     if (e.keyCode === 13) {
       this.addCategory();
@@ -58,6 +67,12 @@ class CategoryHome extends React.Component {
   }
 
   render() {
+    let categories = values(this.props.category).map( (category, idx) => (
+      <Category key={idx} createCategory={this.props.createCategory}
+            category={category}
+            editCategory={this.editCategory} 
+            deleteCategory={this.deleteCategory} /> 
+    ));
 
     return (
       <main className='loggedhome-body'>
@@ -83,9 +98,11 @@ class CategoryHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
-            <Categories fetchCategories={this.props.fetchCategories} createCategory={this.props.createCategory}
-            category={this.props.category}
-            editCategory={this.editCategory} /> 
+            <div>
+              <ul className='user-page-nav'>
+                {categories}
+              </ul>
+            </div>
           </section>
 
         </div>

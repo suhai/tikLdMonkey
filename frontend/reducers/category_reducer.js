@@ -13,6 +13,10 @@ const CategoryReducer = (state = {}, action) => {
       return newState
     case RECEIVE_CATEGORIES:
       return action.categories
+    case REMOVE_CATEGORY:
+      delete newState[action.category.id];
+      return newState;
+      
     default:
       return state
   }
