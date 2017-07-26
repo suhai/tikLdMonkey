@@ -1,30 +1,17 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import GameForm from './game_add_form';
 import { fetchGame, fetchGames } from "../../actions/game_actions";
 
 class GameHome extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // games: this.props.dispatch(fetchGames())
+   
     };
   }
-  // componentWillMount() {
-  //   this.props.dispatch(fetchGames())
-  // }
-
-  // mapDispatchToProps = dispatch => ({
-  //   fetchGame: game => dispatch(fetchGame(game))
-  // });
 
   render() {
-    // const { games } = this.props.fetchGames();
-
-    // const mappedGames = games.map(game => 
-    //   <li key={game.id}>{game.description}</li>
-    // )
 
     return (
       <main className='loggedhome-body'>

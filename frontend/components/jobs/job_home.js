@@ -1,7 +1,7 @@
 import React from 'react';
 import { values, merge } from 'lodash';
 import SideBarContainer from '../sidebar/sidebar_container';
-import JobForm from './job_add_form';
+// import JobForm from './job_add_form';
 
 class JobHome extends React.Component {
 
