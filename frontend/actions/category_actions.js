@@ -46,7 +46,7 @@ export const removeCategory = category => ({
 
 export const deleteCategory = id => dispatch => (
   API.deleteCategory(id)
-    .then(category => dispatch(removeCategory(category)))
+    // .then(category => dispatch(removeCategory(category)))
 );
 //-----------------------------------------------------------------
 

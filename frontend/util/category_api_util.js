@@ -27,12 +27,12 @@ export const fetchCategories = data => (
 );
 
 
-export const deleteCategory = id => (
+export const deleteCategory = id => {
   $.ajax({
     method: 'DELETE',
     url: `api/categories/${id}`
   })
-);
+}
 
 
 export const updateCategory = category => (
