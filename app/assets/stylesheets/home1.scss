@@ -21,24 +21,6 @@ div.homepage {
     // background: $aej;
     height: 100%;
     padding-bottom: 50px;
-
-
-    // input {
-    //   width: 80%;
-    //   margin: auto;
-    //   font-size: 16px;
-    //   padding: 15px 20px;
-    //   margin: 50px 0;
-    //   border: none;
-    //   border-radius: 5px;
-    //   // background: $military-green;
-    //   color: gray;
-    //   font-weight: 300;
-
-    //   &:focus {
-    //     outline: none;
-    //   }
-    // }
   }
 }
 
@@ -85,32 +67,32 @@ div.homepage-logo {
     font-family: Courier New, Courier, monospace;
     // text-align: center;
     text-align: left;
-    color: black;
-    text-decoration-style: wavy;
+    color: solid black;
+    // text-decoration-style: wavy;
     margin-top: 1em;
     margin-left: 11em;
     margin-right: 10em;
     margin-bottom: 1em;
   }
-
-  // span {
-  //   color: white;
-  //   font-family: Source Sans Pro;
-  //   font-size: 20px;
-  //   width: 500px;
-  //   margin: 10px;
-  // }
 }
 
 
+.p1 {
+  color: #2C1B13;
+}
+
 main.homepage-info {
-  background-color: #e5e5e1;
+  // background-color: #e5e5e1;
   background-size: cover;
   background-position: center;
   height: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750549/images/pexels-photo-414801.jpg');
+  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750402/images/pexels-photo-187334.jpg');
+  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750304/images/pexels-photo-25182.jpg');
+  background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750486/images/pexels-photo-287324.jpg');
 }
 
 button {
@@ -148,10 +130,10 @@ button:hover {
 }
 
 
-// actually sign up buton
-button.login {
+//signup buton
+button.signup {
   color: black;
-  border: 1px solid black;
+  border: .2em solid black;
   border-radius: 5px;
   font-weight: 300;
   padding: 5px 15px 5px 15px;
@@ -161,27 +143,27 @@ button.login {
 }
 
 
-button.login:hover {
+button.signup:hover {
   box-shadow: 0 0 5px white, 0 0 5px white inset;
   border-radius: 5px;
   text-shadow: 0 0 2px white;
 }
 
 
-// actually admin login butoton
-button.signup {
-  background: $act;
+//admin login butoton
+button.login {
+  background: #FF785F;
   color: white;
   border-radius: 5px;
   font-weight: 300;
-  padding: 5px 15px 5px 15px;
+  padding: .6em;
   font-size: 14px;
   transition: text-shadow 0.3s;
   margin-top: 30px;
   margin-right: 10px;
 }
 
-button.signup:hover {
+button.login:hover {
   text-shadow: 0 0 2px white;
 }
 
