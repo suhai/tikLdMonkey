@@ -145,10 +145,10 @@ export default Trivium;
 
  ![homepage](./docs/tikld1.png) 
  ![homepage signup](./docs/tikld2.png) 
- ![homepage trivia](./docs/tikld3.png) 
+ <!-- ![homepage trivia](./docs/tikld3.png) 
  ![logged_home category](./docs/tikld4.png) 
  ![logged_home game](./docs/tikld5.png) 
- ![homepage project](./docs/tikld5.png)
+ ![homepage project](./docs/tikld5.png) -->
 
 
 
