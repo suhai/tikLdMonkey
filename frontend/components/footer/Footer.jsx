@@ -2,10 +2,6 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 class Footer extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { isActive: '' };
-  // }
 
   render() {
     return (

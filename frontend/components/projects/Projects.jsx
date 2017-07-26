@@ -13,12 +13,14 @@ const Projects = ({match}) => (
       <div className="stuff-out">
         <h2 className="outside-stuff">Projects</h2> 
       </div>
-      <ul className="trivium-nav">
-        <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
-        <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>  
-        <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
-        <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li> 
-      </ul>
+      <div className='project'>
+        <ul>
+          <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
+          <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>  
+          <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
+          <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li> 
+        </ul>
+      </div>
     </div>
     
   
