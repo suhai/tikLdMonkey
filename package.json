@@ -27,7 +27,6 @@
     "react-scroll-box": "^0.3.3-beta",
     "react-transition-group": "^2.2.0",
     "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
     "superagent": "^3.5.2",
     "webpack-sources": "^1.0.1"
@@ -61,6 +60,7 @@
   "homepage": "https://github.com/suhai/tikLdMonkey#readme",
   "devDependencies": {
     "webpack": "^2.7.0",
+    "redux-logger": "^3.0.6",
     "webpack-dev-server": "^2.6.1"
   }
 }
