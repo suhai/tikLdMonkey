@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomePageContainer from './homepage/homepage_container';
 import LoggedHomeContainer from './logged_home/logged_home_container';
-import GamePageContainer from './games/game_page_container';
 import CategoryContainer from './categories/category_container';
 import Games from './games/Games';
 import Trivia from './trivia/Trivia';

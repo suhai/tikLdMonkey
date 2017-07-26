@@ -74,28 +74,14 @@ a:hover {
 //   left: 45px;
 //   align-items: center;
 //   padding: 10px 20px;
-//   margin-top: 20px;
-//   background: $abb;
-//   // background: lightsteelblue;
-//   height: 7%;
+//   margin-top: 30px;
+//   color: black;
+//   border: .2em solid #FF785F;
 //   border-radius: 5px;
+//   font-weight: 300;
+//   font-size: 14px;
+//   transition: box-shadow 0.3s, text-shadow 0.3s;
 // }
-
-.swyinfo {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 45px;
-  align-items: center;
-  padding: 10px 20px;
-  margin-top: 30px;
-  color: black;
-  border: .2em solid #FF785F;
-  border-radius: 5px;
-  font-weight: 300;
-  font-size: 14px;
-  transition: box-shadow 0.3s, text-shadow 0.3s;
-}
 
 button.addnew {
   background: #4BAD08;

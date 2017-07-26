@@ -19,7 +19,7 @@ export const Culture = [
   },
   {
     title: "A Snowy Day",
-    excerpt: "Flexbox is a set of CSS properties that give you a flexible way to lay out content. With flexbox you can change the direction, alignment, size and order of elements, regardless of their original size and order in the HTML. You can even stretch and shrink elements and distribute space, all with just a few lines of CSS!",
+    excerpt: "Si vols fer servir un passatge de Lorem Ipsum, has d'estar segur que no hi haurà res comprometedor amagat en el text. Tots els generadors de Lorem ipsum a Internet tendeixen a repetir un tros determinat tantes vegades com calgui, i això fa que aquest sigui el primer generador real a Internet. Fa servir un diccionari d'unes 200 paraules llatines, combinades amb un grapat de models de frases per generar un Lorem Ipsum que sembli raonable. Així doncs, el Lorem Ipsum generat està lliure de repeticions, humor injectat, o paraules no característiques.",
     img_src: "http://res.cloudinary.com/swy/image/upload/v1499749834/images/croupier.svg",
     id: "4"
   },

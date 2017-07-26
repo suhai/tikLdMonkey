@@ -78,7 +78,13 @@ div.homepage-logo {
 
 
 .p1 {
-  color: #2C1B13;
+  font-family: monospace;
+  color: $abi;
+}
+
+.iceandsky {
+  color: $abi;
+  text-decoration: none;
 }
 
 main.homepage-info {
@@ -89,10 +95,10 @@ main.homepage-info {
   width: 100%;
   display: flex;
   flex-direction: column;
-  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750549/images/pexels-photo-414801.jpg');
+  background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750549/images/pexels-photo-414801.jpg');
   // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750402/images/pexels-photo-187334.jpg');
   // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750304/images/pexels-photo-25182.jpg');
-  background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750486/images/pexels-photo-287324.jpg');
+  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750486/images/pexels-photo-287324.jpg');
 }
 
 button {
@@ -115,24 +121,41 @@ button:hover {
   margin-bottom: 15px;
 }
 
-.tikld1 {
-  font-size: 2.5em;
-  text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
+// .tikld1 {
+//   font-size: 3.5em;
+//   text-align: center;
+//   margin-top: 1.5em;
+//   margin-bottom: 1em;
+// }
 
-.tikld2 {
-  font-size: 1em;
-  text-align: left;
+.tikld {
+  font-size: 1.5em;
+  text-align: center;
   margin-top: 1em;
   margin-bottom: 0.3em;
+  // color: $salmon;
+}
+
+.swyinfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 45px;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+  color: white;
+  border: .2em solid #FF785F;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 14px;
+  transition: box-shadow 0.3s, text-shadow 0.3s;
 }
 
 
 //signup buton
 button.signup {
-  color: black;
+  color: $salmon;
   border: .2em solid black;
   border-radius: 5px;
   font-weight: 300;
@@ -143,16 +166,9 @@ button.signup {
 }
 
 
-button.signup:hover {
-  box-shadow: 0 0 5px white, 0 0 5px white inset;
-  border-radius: 5px;
-  text-shadow: 0 0 2px white;
-}
-
-
 //admin login butoton
 button.login {
-  background: #FF785F;
+  background: $salmon;
   color: white;
   border-radius: 5px;
   font-weight: 300;
@@ -161,6 +177,12 @@ button.login {
   transition: text-shadow 0.3s;
   margin-top: 30px;
   margin-right: 10px;
+}
+
+button.signup:hover {
+  box-shadow: 0 0 5px white, 0 0 5px white inset;
+  border-radius: 5px;
+  text-shadow: 0 0 2px white;
 }
 
 button.login:hover {

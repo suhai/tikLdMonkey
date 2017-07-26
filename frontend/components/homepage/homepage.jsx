@@ -87,13 +87,12 @@ class HomePage extends React.Component {
             </ul>
           </header>
           <div className='homepage-description'>
-            <h2 className="tikld1">Welcome to The tikLdMonkey</h2>
-            <h3 className="tikld2">The Story of the tikLdMonkey</h3>
+            <h2 className="billabong">Welcome to The tikLdMonkey</h2>
+            <h3 className="tikld">The Story of the tikLdMonkey</h3>
             <p className='p1'>
               Once upon a time, beyond the pristine valleys of the kingdom of Taabanirba, lived an old monkey who had been barnished to the forbidden forest. For two hundred and thrity five years no sane monkey had dared to set foot on his abode for fear of the wrath of the gods. But on one thunderous full moon dawn of the Taabanirban lunar calendar, a vague terror was descending upon this monkey kindom. The king summoned for the first group of sacrificial monkeys. The fear and desolation in the eyes of their families illuminated by the lightening that preceded and trailed the loud clapping thunder ....
             </p>
-            <p> ... please check back later for the full story of the tikLdMonkey. </p>
-            <p>In the mean time I found a series of videos at <a href="http://iceandsky.com/"><strong>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p>
+            <p> ... please check back later for the full story of the tikLdMonkey. In the mean time I found a series of videos at <a href="http://iceandsky.com/"><strong className='iceandsky'>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p>
           </div>
         </main>
        
