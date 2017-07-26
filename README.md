@@ -143,7 +143,7 @@ const Trivium = (props) => (
 export default Trivium;
 ```
 
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501097628/tkld1_ntpq9m.png "homepage")
+![Alt text](http://res.cloudinary.com/swy/image/upload/v1501110986/tkld1_hexh4v.png "homepage")
 ![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042663/tkld2_gjdjan.png "homepage signup")
 ![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042663/tkld3_ncwm7k.png "homepage trivia")
 ![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042661/tkld4_banyni.png "homepage category")
