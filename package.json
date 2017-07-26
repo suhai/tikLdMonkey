@@ -27,6 +27,7 @@
     "react-scroll-box": "^0.3.3-beta",
     "react-transition-group": "^2.2.0",
     "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
     "redux-thunk": "^2.2.0",
     "superagent": "^3.5.2",
     "webpack-sources": "^1.0.1"
