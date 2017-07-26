@@ -26,7 +26,6 @@ class Api::CategoriesController < ApplicationController
   def destroy
     @category = Category.find(params[:id])
     @category.destroy! if @category
-    # flash[:notice] = "#{@category.name} Categories Removed"
     render json: @category  
   end
 

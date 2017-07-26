@@ -28,7 +28,7 @@ export const fetchCategories = data => (
 
 
 export const deleteCategory = id => {
-  $.ajax({
+  return $.ajax({
     method: 'DELETE',
     url: `api/categories/${id}`
   })

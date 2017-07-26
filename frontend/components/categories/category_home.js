@@ -99,9 +99,7 @@ class CategoryHome extends React.Component {
 
           <section className='user-page-bottom'>
             <p>
-              This is just a demo page so feel free to add and delete categories as you please. The delete button is currently buggy and you may have to refresh the page after deleting a category in order for the change to reflect on the page. I am working on resolving that issue at the moment and will push that feature up as soon as it is resolved.
-            </p>
-            <p>
+              This is just a demo page so feel free to add and delete categories as you please with the ADD NEW and DELETE buttons. 
               The Edit feature is being worked on and should be available within the next 24 hours.
             </p>
             <div>
