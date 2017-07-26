@@ -95,12 +95,14 @@ class HomePage extends React.Component {
             <p> ... please check back later for the full story of the tikLdMonkey. In the mean time I found a series of videos at <a href="http://iceandsky.com/"><strong className='iceandsky'>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p>
           </div>
         </main>
-       
-        <div className='iframe1'>
-          <iframe  src="https://player.vimeo.com/video/226678225" width="640" height="360" frameBorder="0" allowFullScreen>
-          </iframe>
-          <p className='caption'>Credit: Ice and Sky Educational Videos</p>
-        </div>
+
+        <midhome className='homepage-mid'>
+          <div className='iframe1'>
+            <iframe  src="https://player.vimeo.com/video/226678225" width="640" height="360" frameBorder="0" allowFullScreen>
+            </iframe>
+            <p className='caption'>Credit: Ice and Sky Educational Videos</p>
+          </div>
+        </midhome>
         
         <section className="homepage-bottom">
           <div>

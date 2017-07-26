@@ -87,6 +87,11 @@ div.homepage-logo {
   text-decoration: none;
 }
 
+.resume-link {
+  color: black;
+  text-decoration: none;
+}
+
 main.homepage-info {
   // background-color: #e5e5e1;
   background-size: cover;
@@ -96,10 +101,19 @@ main.homepage-info {
   display: flex;
   flex-direction: column;
   background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750549/images/pexels-photo-414801.jpg');
-  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750402/images/pexels-photo-187334.jpg');
-  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750304/images/pexels-photo-25182.jpg');
-  // background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750486/images/pexels-photo-287324.jpg');
 }
+
+.homepage-mid {
+  // background-color: #e5e5e1;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('http://res.cloudinary.com/swy/image/upload/v1499750580/images/pexels-photo-425443.jpg');
+}
+
 
 button {
   -webkit-appearance: none;
