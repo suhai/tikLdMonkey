@@ -76,8 +76,8 @@ class CategoryHome extends React.Component {
 
     return (
       <main className='loggedhome-body'>
-        <Modal overlayClassName="homepage-modal-overlay"
-          className='homepage-modal'
+        <Modal overlayClassName="category-modal-overlay"
+          className='category-modal'
           onRequestClose={this.closeModal}
           isOpen={this.state.isOpen}
           contentLabel="Modal">
@@ -98,6 +98,12 @@ class CategoryHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
+            <p>
+              This is just a demo page so feel free to add and delete categories as you please. The delete button is currently buggy and you may have to refresh the page after deleting a category in order for the change to reflect on the page. I am working on resolving that issue at the moment and will push that feature up as soon as it is resolved.
+            </p>
+            <p>
+              The Edit feature is being worked on and should be available within the next 24 hours.
+            </p>
             <div>
               <ul className='user-page-nav'>
                 {categories}

@@ -39,10 +39,6 @@ class UserPageBottom extends React.Component {
     return (
       <section className='user-page-bottom'>
         <ul className='user-page-nav'>
-          <li><NavLink exact to={`/${this.props.user.username}`}>Manage Bio</NavLink></li>
-          <li><NavLink to={`/${this.props.user.username}/todos`}>Manage Todos</NavLink></li>
-          <li><NavLink to={`/${this.props.user.username}/trivia`}>Manage Trivia</NavLink></li>
-          <li><NavLink to={`/${this.props.user.username}/monkeys`}>Manage Projects</NavLink></li>
           <li className='user-page-options'>
             {option}
             {option2}
