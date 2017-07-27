@@ -17,9 +17,11 @@ class Api::CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
     if @category.update(category_params)
-      flash[:notice] = 'Categories Updated'
+      render json: @category
+      # flash[:notice] = 'Categories Updated'
     else    
-      render "can't update field"
+      render json: @category.errors.full_messages, status: 422
+      # render "can't update field"
     end
   end
 
