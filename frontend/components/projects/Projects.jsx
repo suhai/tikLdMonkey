@@ -15,10 +15,10 @@ const Projects = ({match}) => (
       </div>
       <div className='project'>
         <ul>
-          <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
-          <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>  
+          <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li>
           <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
-          <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li> 
+          <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
+          <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>     
         </ul>
       </div>
     </div>
