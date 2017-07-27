@@ -99,8 +99,7 @@ class CategoryHome extends React.Component {
 
           <section className='user-page-bottom'>
             <p>
-              This is just a demo page so feel free to add and delete categories as you please with the ADD NEW and DELETE buttons. 
-              The Edit feature is being worked on and should be available within the next 24 hours.
+              This is a demo page. Feel free to Add, Edit, and Delete categories as you please with the 'Add New', 'Edit' and Delete' buttons. 
             </p>
             <div>
               <ul className='user-page-nav'>
