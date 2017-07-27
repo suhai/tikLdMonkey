@@ -1,6 +1,6 @@
 # The tikLdMonkey
 
-The Application is deployed here: [The tikLdMonkey](http://tikldmonkey.com/#/)
+The Application is deployed here: [tikLdMonkey](http://tikldmonkey.com/#/)
 
 The tikLdmonkey is a single page Content Management System web application designed to manage my personal portfolio and interests, with the hope of extending the features to allow multiple users to manage and track their own individual tasks or interests. It is built on a Rails backend with PostgreSQL database and React/Redux frontend. It is made up of two main layers; an inner area requirng authentication / sign up and/or sign, and an outer area that is publicly available to all visitors of the site. Currently any logged in user can access any content within the allowed routes to the database except desctructive actions. Users not signed in can only access limited content accessible through the homepage navigation.
 

@@ -18,7 +18,7 @@ class Footer extends React.Component {
             <li className="resume"><a href='https://drive.google.com/open?id=0B3YmJk3--C3rYXRkM295eHFRRVU'>Resume</a></li>
           </ul>
           <ul>
-            <p className='logo-name'>The tikLdMonkey ©</p>
+            <p className='logo-name'>tikLdMonkey ©</p>
           </ul>
         </div>
       </div>
