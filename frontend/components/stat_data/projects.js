@@ -23,7 +23,7 @@ export const Kokoveli =[
 export const MurmurAlley = [
   {
     id: "1",
-    body:"EXPECT CONTENT HERE SOOOOOOON ..... IN THE MEAN TIME YOU CAN TAKE A LOOK AT MY RESUME FOR MORE DETAILS ABOUT THE PROJECT. THE RESUME HAS A LINK TO THE LIVE PROJECT.",
+    body:"EXPECT CONTENT HERE SOOOOOOON ..... ",
     url: 'https://murmuralley.herokuapp.com/',
     image: '',
     video: '' 
@@ -35,7 +35,7 @@ export const MurmurAlley = [
 export const TikldMonkey = [
   {
     id: "1",
-    body: "THIS IS THE PROJECT YOU ARE CURRENTLY VISITING. I AM WORKING ON ITS DESCRIPTION AND WILL MAKE IT AVAILABLE HERE SOON. IN THE MEAN TIME YOU CAN TAKE A LOOK AT MY RESUME FOR MORE DETAILS ABOUT THIS AND MY OTHER PROJECTS.",
+    body: "THIS IS THE PROJECT YOU ARE CURRENTLY VISITING. I AM WORKING ON ITS DESCRIPTION AND WILL MAKE IT AVAILABLE HERE SOON.",
     url: 'http://tikldmonkey.com/#/',
     image: '',
     video: ''
