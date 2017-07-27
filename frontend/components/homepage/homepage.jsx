@@ -88,7 +88,7 @@ class HomePage extends React.Component {
           </header>
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
-            
+            <h3 className='here'>CONTENT COMING SOON</h3>
             <p>In the mean time I found a series of videos at <a href="http://iceandsky.com/"><strong className='iceandsky'>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p>
           </div>
         </main>
