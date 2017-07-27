@@ -31,7 +31,7 @@ class Signup extends React.Component {
     return (
       <ul className='homepage-auth'>
         <li>
-          <h3>Join the tikLdMonkey</h3>
+          <h3>Enter a username and password</h3>
         </li>
         <ul>
           <div></div>
@@ -46,7 +46,7 @@ class Signup extends React.Component {
           <input onKeyPress={this.handleKey} onChange={this.update('password')} type='password' placeholder='Password'></input>
         </li>
         <li>
-          <button onClick={this.handleSubmit}>Register</button>
+          <button onClick={this.handleSubmit}>Enter</button>
         </li>
       </ul>
     );
