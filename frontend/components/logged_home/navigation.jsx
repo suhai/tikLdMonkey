@@ -52,7 +52,7 @@ class Navigation extends React.Component {
     return (
       <nav className='navigation'>
         <ul>
-          <li className='loggedhome-logo'><img src='http://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
+          <li className='loggedhome-logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
           <li><NavLink to='/'>Home</NavLink></li>
           <li><NavLink to='/categories'>Categories</NavLink></li>
           <li><NavLink to='/users'>Users</NavLink></li>
