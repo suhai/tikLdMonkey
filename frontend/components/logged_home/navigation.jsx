@@ -7,14 +7,14 @@ class Navigation extends React.Component {
     this.state = { isActive: ''};
     this.logout = this.logout.bind(this);
     this.toggleSettings = this.toggleSettings.bind(this);
-    this.toHome = this.toHome.bind(this);
+    // this.toHome = this.toHome.bind(this);
     this.showProfile = this.showProfile.bind(this);
     this.closeSettings = this.closeSettings.bind(this);
   }
 
-  toHome() {
-    window.location.hash = '/home';
-  }
+  // toHome() {
+  //   window.location.hash = '/home';
+  // }
 
   logout(e) {
     e.preventDefault();

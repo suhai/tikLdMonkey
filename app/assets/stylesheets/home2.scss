@@ -47,7 +47,7 @@ header.loggedhome-header {
     }
 
     ul {
-      height: 100%;
+      // height: 100%;
 
       &:first-child li {
         text-align: center;
@@ -59,10 +59,14 @@ header.loggedhome-header {
       padding: 0;
       text-align: center;
       width: 94px;
-      border-right: 1px solid black;
+      // border-right: 1px solid black;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
+      // a {
+      //   margin: 0;
+      //   padding: 13px 20px;
+      // }
     }
 
     ul:last-child {

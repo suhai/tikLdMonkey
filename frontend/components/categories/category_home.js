@@ -53,7 +53,7 @@ class CategoryHome extends React.Component {
   }
 
   editCategory(id) {
-    //function
+    this.props.editCategory(id);
   }
 
   deleteCategory(id) {

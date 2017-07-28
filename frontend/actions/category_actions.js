@@ -52,6 +52,11 @@ export const deleteCategory = id => dispatch => (
 
 
 
+export const fetchCategory = id => dispatch => (
+  API.fetchCategory(id)
+    .then(category => dispatch(receiveCategory(category)))
+);
+
 
 export const editCategory = category => dispatch => (
   API.updateCategory(category)

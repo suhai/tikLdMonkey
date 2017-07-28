@@ -27,7 +27,6 @@ class LoggedHome extends React.Component {
         </header>
 
         <div className='nav-space' />
-
         <Switch>
           <Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
           <Route exact path="/admin/games" render={(props) => <GameHome {...props} /> } />

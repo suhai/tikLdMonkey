@@ -53,3 +53,23 @@
   // transition: text-shadow 0.3s;
   // margin-top: 30px;
 }
+
+
+.category_edit_form {
+  margin: auto;
+  width: 20em;
+  border: .5em solid green;
+  padding: 1em;
+  text-align: center;
+}
+
+.cat-details {
+  margin-bottom: 1em;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid pink; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}

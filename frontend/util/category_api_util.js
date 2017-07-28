@@ -19,6 +19,15 @@ export const createCategory = data => (
 );
 
 
+export const fetchCategory = category => {
+  $.ajax({
+    method: 'GET',
+    url: `api/categories/${category}`
+  })
+}
+
+
+
 export const fetchCategories = data => (
   $.ajax({
     method: 'GET',
