@@ -14,9 +14,21 @@ class Api::CategoriesController < ApplicationController
     end
   end
 
+  # def update
+  #   @category = Category.find(params[:id])
+  #   if @category.update(category_params)
+  #     render json: @category
+  #     # flash[:notice] = 'Categories Updated'
+  #   else    
+  #     render json: @category.errors.full_messages, status: 422
+  #     # render "can't update field"
+  #   end
+  # end
+
+
   def update
-    @category = Category.find(params[:id])
-    if @category.update(category_params)
+    @category = Category.find_by(id: params[:id])
+    if @category.update_attributes(category_params)
       render json: @category
       # flash[:notice] = 'Categories Updated'
     else    
@@ -24,6 +36,9 @@ class Api::CategoriesController < ApplicationController
       # render "can't update field"
     end
   end
+
+
+
 
   def destroy
     @category = Category.find(params[:id])

@@ -6,9 +6,9 @@ class Category extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: this.props.category.name,
+      // input: this.props.category.name,
       isOpen: false,
-      id: this.props.categoryid,
+      id: this.props.category.id,
       name: this.props.category.name
     }
     this.openModal = this.openModal.bind(this);
@@ -39,11 +39,9 @@ class Category extends React.Component {
   }
 
   editCat(e) {
-    let data ={
-      category: {
-        id: this.state.id,
-        name: this.state.name
-      }
+    let data = {
+      id: this.state.id,
+      name: this.state.name
     };
     this.props.editCategory(data);
     this.setState({ name: '', isOpen: false }); 
@@ -69,7 +67,7 @@ class Category extends React.Component {
           contentLabel="Modal">
             {
               <div className='modal-test'>
-                <input className='cat-input' value={this.state.input} onChange={this.update('input')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='cat-input' value={this.state.name} onChange={this.update('name')} onKeyUp={this.handleKey} type='name' ></input>
                 <button onClick={this.editCat} className='catedit-save'> Save </button>
                 <button onClick={this.closeModal}className='catedit-cancel'>Cancel</button>
               </div>
