@@ -1,6 +1,6 @@
 # The tikLdMonkey
 
-The Application is deployed here: [tikLdMonkey](http://tikldmonkey.com/#/)
+The Application is deployed here: [tikLdMonkey](https://www.tikldmonkey.com/#/)
 
 The tikLdmonkey is a single page Content Management System web application designed to manage my personal portfolio and interests, with the hope of extending the features to allow multiple users to manage and track their own individual tasks or interests. It is built on a Rails backend with PostgreSQL database and React/Redux frontend. It is made up of two main layers; an inner area requirng authentication / sign up and/or sign, and an outer area that is publicly available to all visitors of the site. Currently any logged in user can access any content within the allowed routes to the database except desctructive actions. Users not signed in can only access limited content accessible through the homepage navigation.
 
@@ -143,11 +143,11 @@ const Trivium = (props) => (
 export default Trivium;
 ```
 
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501230580/tkld1_lemlr7.png "homepage")
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042663/tkld2_gjdjan.png "homepage signup")
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042663/tkld3_ncwm7k.png "homepage trivia")
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042661/tkld4_banyni.png "homepage category")
-![Alt text](http://res.cloudinary.com/swy/image/upload/v1501042662/tkld6_xnawgn.png "homepage project")
+![Alt text](https://res.cloudinary.com/swy/image/upload/v1501230580/tkld1_lemlr7.png "homepage")
+![Alt text](https://res.cloudinary.com/swy/image/upload/v1501042663/tkld2_gjdjan.png "homepage signup")
+![Alt text](https://res.cloudinary.com/swy/image/upload/v1501042663/tkld3_ncwm7k.png "homepage trivia")
+![Alt text](https://res.cloudinary.com/swy/image/upload/v1501042661/tkld4_banyni.png "homepage category")
+![Alt text](https://res.cloudinary.com/swy/image/upload/v1501042662/tkld6_xnawgn.png "homepage project")
 
 
 
