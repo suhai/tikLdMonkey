@@ -6,7 +6,6 @@ class Category extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // input: this.props.category.name,
       isOpen: false,
       id: this.props.category.id,
       name: this.props.category.name
