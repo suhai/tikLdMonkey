@@ -26,7 +26,7 @@ class Navigationa extends React.Component {
     return (
       <nav className='navigation'>
         <ul>
-          <li className='loggedhome-logo'><img src='http://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
+          <li className='loggedhome-logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
           <li><NavLink exact to='/'>Home</NavLink></li>
           <li><NavLink to='/projects'>Projects</NavLink></li>
           <li><NavLink to='/trivia'>Trivia</NavLink></li>
