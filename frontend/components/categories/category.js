@@ -21,7 +21,9 @@ class Category extends React.Component {
   openModal(e) {
     e.preventDefault();
     this.setState({
-      isOpen: true
+      isOpen: true,
+      id: this.props.category.id,
+      name: this.props.category.name
     })
   }
 
@@ -42,8 +44,8 @@ class Category extends React.Component {
       id: this.state.id,
       name: this.state.name
     };
-    this.props.editCategory(data);
     this.setState({ name: '', isOpen: false }); 
+    this.props.editCategory(data); 
   }
 
   deleteCat() {
@@ -74,7 +76,7 @@ class Category extends React.Component {
         </Modal>
 
         <li className='user-page-options list'>
-          <a href="#">{this.props.category.name}</a>
+          <a href="http://localhost:3000/#/categories">{this.props.category.name}</a>
           <aside>
             <button onClick={this.openModal} className='user-page-edit'>Edit</button>
             <button onClick={this.deleteCat}className='user-page-delete'>Delete</button>

@@ -98,8 +98,9 @@ class CategoryHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
+            <h3 className='cat-demo'>This is a demo Page</h3>
             <p>
-              This is a demo page. Feel free to Add, Edit, and Delete categories as you please with the 'Add New', 'Edit' and Delete' buttons. 
+              Feel free to interact with the database using the 'Add New', 'Edit' and/or 'Delete' buttons as you please.
             </p>
             <div>
               <ul className='user-page-nav'>
