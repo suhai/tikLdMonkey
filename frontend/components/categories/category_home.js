@@ -35,7 +35,7 @@ class CategoryHome extends React.Component {
       }
     };
 
-    if (data.category.name.replace(/\s/g, "").length > 0) {
+    if (data.category.name.trim().length > 0) {
       this.props.createCategory(data);
     }
 
