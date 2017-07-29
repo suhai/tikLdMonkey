@@ -19,7 +19,7 @@ const SwyInfo = () => (
       </p>
       <hr className='about-hr'/>
       <p className='about-me'>
-        Personally I’m still very much a kid at heart, but very organized and diligent at work. I am also a selfless team player who is social media shy but very warm and lively in person. I played 4 years of college soccer and currently play at least two pickup games pickup per week. I must confess here and now that I am addicted to playing soccer and eating watermelons; not simultaneously though.
+        Personally I’m still very much a kid at heart, but very organized and diligent at work. I am also a selfless team player who is social media shy but very warm and lively in person. I played 4 years of college soccer and currently play at least two pickup games pickup per week. I must confess here and now that I am love playing soccer and eating watermelons; not simultaneously though.
       </p>
       <hr className='about-hr'/>
     </div>
