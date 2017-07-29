@@ -15,6 +15,7 @@ class Category extends React.Component {
     this.deleteCat = this.deleteCat.bind(this);
     this.editCat = this.editCat.bind(this);
     this.handleKey = this.handleKey.bind(this);
+    this.rightHere = this.rightHere.bind(this);
   }
   
 
@@ -57,6 +58,11 @@ class Category extends React.Component {
     return e => this.setState({ [prop]: e.currentTarget.value });
   }
 
+  rightHere(e) {
+    e.preventDefault();
+    window.location.hash = '/categories'
+  }
+
 
   render() {
     return (
@@ -76,7 +82,7 @@ class Category extends React.Component {
         </Modal>
 
         <li className='user-page-options list'>
-          <a href="http://localhost:3000/#/categories">{this.props.category.name}</a>
+          <a onClick={this.rightHere}>{this.props.category.name}</a>
           <aside>
             <button onClick={this.openModal} className='user-page-edit'>Edit</button>
             <button onClick={this.deleteCat}className='user-page-delete'>Delete</button>
