@@ -29,13 +29,17 @@ class CategoryHome extends React.Component {
   }
 
   addCategory() {
-    let data ={
+    let data = { 
       category: {
         name: this.state.input
       }
     };
+
+    if (data.category.name.replace(/\s/g, "").length > 0) {
+      this.props.createCategory(data);
+    }
+
     this.setState({ input: '', isOpen: false });
-    this.props.createCategory(data);
   }
 
   
