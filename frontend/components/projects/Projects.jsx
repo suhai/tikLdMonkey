@@ -15,16 +15,16 @@ const Projects = ({match}) => (
       </div>
       <div className='project'>
         <ul>
-          <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
           <li><NavLink to={`${match.url}/cheekchubby`}>cheekChubby</NavLink></li>
-          <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li> 
-          <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li>    
+          <li><NavLink to={`${match.url}/murmuralley`}>MurmurAlley</NavLink></li>
+          <li><NavLink to={`${match.url}/tikldmonkey`}>tikLdMonkey</NavLink></li> 
+          <li><NavLink to={`${match.url}/kokoveli`}>kokoveli</NavLink></li>    
         </ul>
       </div>
     </div>
     
   
-    <Route exact path={match.path} render={ () => <Redirect to={`${match.path}/murmuralley`} /> } />      
+    <Route exact path={match.path} render={ () => <Redirect to={`${match.path}/cheekchubby`} /> } />      
     <Route path={`${match.path}/cheekchubby`} render={ () => <ProjectsContainer data={CheekChubby} /> } />  
     <Route path={`${match.path}/murmuralley`} render={ () => <ProjectsContainer data={MurmurAlley } /> } />     
     <Route path={`${match.path}/kokoveli`} render={ () => <ProjectsContainer data={Kokoveli} /> } />
