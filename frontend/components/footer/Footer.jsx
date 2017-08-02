@@ -15,7 +15,7 @@ class Footer extends React.Component {
             <li><a href="mailto:swy@tikldmonkey.com"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/mail.svg" /></a></li>
             <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/facebook.svg" /></a></li>
             <li><a href="https://www.facebook.com/suhaiy"><img src="https://res.cloudinary.com/swy/image/upload/v1500279538/images/twitter.svg" /></a></li>
-            <li className="resume"><a href='https://drive.google.com/file/d/0B3YmJk3--C3rYVUxOC1KV2VXVzA/view?usp=sharing'>Resume</a></li>
+            <li className="resume"><a href='https://drive.google.com/file/d/0B3YmJk3--C3ramFUMjhGeUdQek0/view?usp=sharing'>Resume</a></li>
           </ul>
           <ul>
             <p className='logo-name'>tikLdMonkey ©</p>
