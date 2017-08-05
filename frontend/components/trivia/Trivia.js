@@ -21,9 +21,7 @@ const Trivia = ({match}) => (
           <li><NavLink to={`${match.url}/geography`}>Geography</NavLink></li>
           <li><NavLink to={`${match.url}/art`}>Art</NavLink></li>
           <li><NavLink to={`${match.url}/biology`}>Sports</NavLink></li>
-          <li><NavLink to={`${match.url}/chemistry`}>Chemistry</NavLink></li>
           <li><NavLink to={`${match.url}/physics`}>Physics</NavLink></li>
-          <li><NavLink to={`${match.url}/oceans`}>Oceanography</NavLink></li>
           <li><NavLink to={`${match.url}/travel`}>Travel</NavLink></li>
           <li><NavLink to={`${match.url}/politics`}>Politics</NavLink></li>
         </ul>

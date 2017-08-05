@@ -26,7 +26,7 @@ div.modal-test {
   .homepage-modal {
     width: 350px;
     height: 430px;
-    background: lightsteelblue;
+    background: $military-green;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 60px;
@@ -76,7 +76,7 @@ div.modal-test {
       button {
         margin-top: 20px;
         width: 100%;
-        background: #666666;
+        background: $abh;
         color: white;
         border-radius: 5px;
         font-weight: 300;

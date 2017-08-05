@@ -8,7 +8,7 @@ const PlaceHolder = () => (
       <Navigationa />
     </header>
     <h2 className='tempora'>This is the PlaceHolder Component</h2>
-    <h1 className='tempora'>Actual Content Coming Soon</h1>
+    <h1 className='tempora'>No Content Yet</h1>
   </div>
 );
 
