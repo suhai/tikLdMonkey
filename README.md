@@ -2,14 +2,14 @@
 
 The Application is deployed here: [tikLdMonkey](https://www.tikldmonkey.com/#/)
 
-The tikLdmonkey is a single page Content Management System web application designed to manage my personal portfolio and interests, with the hope of extending the features to allow multiple users to manage and track their own individual tasks or interests. It is built on a Rails backend with PostgreSQL database and React/Redux frontend. It is made up of two main layers; an inner area requirng authentication / sign up and/or sign, and an outer area that is publicly available to all visitors of the site. Currently any logged in user can access any content within the allowed routes to the database except desctructive actions. Users not signed in can only access limited content accessible through the homepage navigation.
+The tikLdmonkey is a single page Content Management System web application designed to manage my personal portfolio and interests, with the hope of extending the features to allow multiple users to manage and track their own individual tasks or interests. It is built on a Rails backend with PostgreSQL database and React/Redux frontend. It is made up of two main layers; an inner area requiring user authentication / sign up and/or sign, and an outer area that is publicly available to all visitors of the site. Currently any logged in user can access any content within the allowed routes to the database except desctructive actions. Users not signed in can only access limited content accessible through the homepage navigation.
 
 
 ## Features
 
 ### User Authentication
-  Sample information from the database is made publicly available to any visitor to read or watch, with more exclusive access reserved for users who sign in to the excluisve zone. 
-  Detailed information from the database on my Projects, Trivia, Games (not made by me but in the future I plan to include those that I perosnally build to the database), trending Tech News, and my imaginary Monkeys are available to a user after authentication. The user has access to their individualized page where they can customize the page with profile images, perosnal info, etc. However, a user will not be able to access other users' pages or information. A user has not editing privileges of the content of the database (via the disabled CRUD functionality buttons available on their pages).
+  Sample information from the database is made publicly available to any visitor to read or watch, with more exclusive access reserved for users who sign in to the 'inner' zone. 
+  Detailed information from the database on my Projects, Trivia, Games (not made by me but in the future I plan to include those that I perosnally build to the database), trending Tech News, and my imaginary Monkeys are available to a user after authentication. The user has access to their individualized profile page where they can customize the page with profile images, perosnal info, etc. However, a user will not be able to access other users' pages or information. For demonstrational purposes only, a user is granted Create, Read, Update, and Delete privileges for the Categories section of the database. Other privileged access to the database is restrictd to superUsers / site admins only.
 
 
 ### Content Management
@@ -143,9 +143,20 @@ const Trivium = (props) => (
 export default Trivium;
 ```
 
+
+## Homepage
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895913/tikld1_v47geg.png "homepage")
+
+
+## Homepage Signup
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895911/tkld2_onunua.png "homepage signup")
+
+
+## Profile Edit
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895907/tkld3_rpgpas.png "profile edit")
+
+
+## Categories Page
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895907/tkld4_lp22hq.png "category page")
 
 
@@ -156,6 +167,5 @@ export default Trivium;
 
 * I plan to add a chat service to the homepage where a visitor can see if I am currently available online to chat or answer questions they may have regarding the website or any genral topic of mutual interest. And possibly extend this feature to all users to chat with each other.
 
-* I also plan to include more appealing content on trivia to generate more visitors to test the basic traffic handling of the site.
 
 
