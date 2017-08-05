@@ -12,7 +12,7 @@ const Project = (props) => (
     </p>
     <br/>
 
-    <p className='screencast-header'>A 2min screencast of the app is shown below.</p>
+    <p className='screencast-header'>A brief screencast of the app is shown below.</p>
     <div className='iframe3'>
       <iframe src={props.video} width="840" height="460" frameBorder="35" allowFullScreen>
       </iframe>
