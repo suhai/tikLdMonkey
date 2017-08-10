@@ -7,7 +7,7 @@ import UserEditFormContainer from '../user/user_edit_form_container';
 import SearchContainer from '../search/search_container';
 import CategoryContainer from '../categories/category_container';
 import GameHome from '../games/game_home';
-import JobHome from '../jobs/job_home';
+import JobAppHome from '../jobs/job_app_container';
 import MonkeyHome from '../monkeys/monkey_home';
 import ProjectHome from '../projects/project_home';
 import TriviumHome from '../trivia/trivium_home';
@@ -30,7 +30,7 @@ class LoggedHome extends React.Component {
         <Switch>
           <Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
           <Route exact path="/admin/games" render={(props) => <GameHome {...props} /> } />
-          <Route exact path="/jobs" render={(props) => <JobHome {...props} /> } />
+          <Route exact path="/jobs" render={(props) => <JobAppHome {...props} /> } />
           <Route exact path="/monkeys" render={(props) => <MonkeyHome {...props} /> } />
           <Route exact path="/admin/projects" render={(props) => <ProjectHome {...props} /> } />
           <Route exact path="/admin/trivia" render={(props) => <TriviumHome {...props} /> } />

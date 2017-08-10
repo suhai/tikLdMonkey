@@ -105,14 +105,14 @@ class JobApp extends React.Component {
           contentLabel="Modal">
             {
               <div className='modal-test'>
-                <input className='cat-input' value={this.state.role} onChange={this.update('role')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.job_url} onChange={this.update('job_url')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.company_name} onChange={this.update('company_name')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.company_url} onChange={this.update('company_url')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.location} onChange={this.update('location')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.salary_range} onChange={this.update('salary')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.data_applied} onChange={this.update('date_applied')} onKeyUp={this.handleKey} type='name' ></input>
-                <input className='cat-input' value={this.state.activity} onChange={this.update('activity')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.role} onChange={this.update('role')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.job_url} onChange={this.update('job_url')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.company_name} onChange={this.update('company_name')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.company_url} onChange={this.update('company_url')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.location} onChange={this.update('location')} onKeyUp={this.handleKey} type='name' ></input>
+                <input className='job-input' value={this.state.salary_range} onChange={this.update('salary')} onKeyUp={this.handleKey} type='name' ></input>
+                {/* <input className='job-input' value={this.state.date_applied} onChange={this.update('date_applied')} onKeyUp={this.handleKey} type='name' ></input> */}
+                <input className='job-input' value={this.state.activity} onChange={this.update('activity')} onKeyUp={this.handleKey} type='name' ></input>
                 <button onClick={this.editJob} className='catedit-save'> Save </button>
                 <button onClick={this.closeModal}className='catedit-cancel'>Cancel</button>
               </div>

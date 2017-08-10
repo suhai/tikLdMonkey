@@ -12,7 +12,7 @@ class JobHome extends React.Component {
           <nav className='content-nav'>
             <ul>
               <div className='upload-buttons'>
-                <h2>Job Zone <button  className='addnew'>Add Job</button></h2>   
+                <h2>Job Zone <button onClick={this.openModal} className='addnew'>Add Job</button></h2>   
               </div>
             </ul>
           </nav>
