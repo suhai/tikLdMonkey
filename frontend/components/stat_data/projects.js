@@ -7,22 +7,11 @@ export const CheekChubby = [
     video: 'https://player.vimeo.com/video/228469649'
   }
 ];
-  
-
-export const Kokoveli =[
-  {
-    id: "2",
-    body: "This is not yet in development, but you can ...",
-    url: 'https://kokoveli.herokuapp.com/',
-    image: '',
-    video: ''
-  }
-];
  
 
 export const MurmurAlley = [
   {
-    id: "3",
+    id: "2",
     body:"This is a simple clone of the NYT except that murmurAlley is a fake city with fake news. The application was made as a practice for page organization and formatting. It is basically a Ruby / Rails project with a bunch of partial pages that are reused and within bigger pages. By splitting the pages into partials I was able to write fewer code, making use of rendering the partials inside bigger pages. There is currently no feature beyond just reading static content. I did however throw in a call to weather API and a simple live clock on the header section. Those two are the only dynamic content but I plan to build the site up further with features for a user to have a paid subscription. I also plan to migrate the entire app to a React/Redux framework in the future.",
     url: 'httpss://murmuralley.herokuapp.com/',
     image: '',
@@ -34,10 +23,21 @@ export const MurmurAlley = [
 
 export const TikldMonkey = [
   {
-    id: "4",
+    id: "3",
     body: "This is the app you are currrenly accessing. It is a single page Content Management System web application designed to host and manage my personal portfolio and interests, with the hope of extending the features to allow multiple users to manage and track their own individual tasks or interests. It is built on a Rails backend with PostgreSQL database and React/Redux frontend. It is made up of two main layers; an inner area requiring user authentication / sign up and/or sign, and an outer area that is publicly available to all visitors of the site. Currently any logged in user can access any content within the allowed routes to the database except desctructive actions. Users not signed in can only access limited content accessible through the homepage navigation. Sample information from the database is made publicly available to any visitor to read or watch, with more exclusive access reserved for users who sign in to the 'inner' zone. However, a user will not be able to access other users' pages or information. For demonstrational purposes only, a user is granted Create, Read, Update, and Delete privileges for the Categories section of the database. There are six models altogther; User, Trivia, Game, Project, JobApplication, and Category (with a has_many relationship with the Trivia model). I plan to make the user page more fluid to individual user preferences with a user being offered multiple options in choosing the theme of their page, and the ability to enable or disable optional features (yet to be decided on). I plan to add a chat service to the homepage where a visitor can see if I am currently available online to chat or answer questions they may have regarding the website or any genral topic of mutual interest. And possibly extend this feature to all users to chat with each other.",
     url: 'https://tikldmonkey.com/#/',
     image: '',
     video: 'https://player.vimeo.com/video/228470177'
   }
 ];
+
+
+// export const Kokoveli =[
+//   {
+//     id: "4",
+//     body: "This is not yet in development, but you can ...",
+//     url: 'https://kokoveli.herokuapp.com/',
+//     image: '',
+//     video: ''
+//   }
+// ];
