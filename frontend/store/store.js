@@ -5,12 +5,9 @@ import { createLogger } from 'redux-logger';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 const middlewares = [thunk];
-// const createLogger = createLogger();
 
 if (process.env.NODE_ENV !== 'production') {
-  // must use 'require' (import only allowed at top of file)
-  // const createLogger = require('redux-logger');
-  middlewares.push(createLogger());
+  middlewares.unshift(createLogger());
 }
 
 const configureStore = (preloadedState = {}) => (
@@ -18,7 +15,7 @@ const configureStore = (preloadedState = {}) => (
     rootReducer,
     preloadedState,
     composeWithDevTools(
-    applyMiddleware(createLogger(), thunk))
+    applyMiddleware(...middlewares))
   )
 );
 
