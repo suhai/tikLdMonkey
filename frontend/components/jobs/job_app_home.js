@@ -135,7 +135,7 @@ class JobAppHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
-            {/* <h3 className='cat-demo'>This is a demo Page</h3> */}
+            <h3 className='cat-demo'>This Is For Demo Purposes Only</h3>
             <div>
               <ul className='user-page-nav'>
                 <div className="jobapp-header">
