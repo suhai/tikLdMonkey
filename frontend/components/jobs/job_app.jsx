@@ -123,7 +123,7 @@ class JobApp extends React.Component {
         </Modal>
 
         <li className='user-page-options list'>
-          <a onClick={this.rightHere} className="job-link">{this.props.job_app.role.toString().slice(0, 18)}</a>
+          <a onClick={this.rightHere} className="job-link">{this.props.job_app.role.toString().slice(0, 16)}</a>
           <aside>
             {/* <cdate className="cdate"> {cdate} </cdate> */}
             <button className='cdate'>{cdate}</button>
