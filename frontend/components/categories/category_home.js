@@ -86,9 +86,11 @@ class CategoryHome extends React.Component {
           isOpen={this.state.isOpen}
           contentLabel="Modal">
             {
-              <div className='modal-test'>
-                <input className='cat-input' value={this.state.input} onChange={this.update('input')} onKeyUp={this.handleKey} type='name' placeholder='Enter category'></input>
-                <button onClick={this.addCategory} className='cat-save'>Save Category</button>
+              <div className='modal-cat'>
+                <h2>Add Category</h2>
+                <input className='job-input' value={this.state.input} onChange={this.update('input')} onKeyUp={this.handleKey} type='name' placeholder='Enter category'></input>
+                <button onClick={this.closeModal} className='jobedit-cancel'>Cancel</button>
+                <button onClick={this.addCategory} className='jobedit-save'>Save</button>
               </div>
             }
         </Modal>
@@ -102,12 +104,15 @@ class CategoryHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
-            <h3 className='cat-demo'>This is a demo Page</h3>
+            {/* <h3 className='cat-demo'>This is a demo Page</h3>
             <p>
-              Feel free to interact with the database using the 'Add New', 'Edit' and/or 'Delete' buttons as you please.
-            </p>
+              Feel free to play around with the 'Add New', 'Edit' and/or 'Delete' buttons as you please.
+            </p> */}
             <div>
               <ul className='user-page-nav'>
+                <div className="jobapp-header">
+                  <span className="lefty">Category</span> <span className="righty">Actions</span>  
+                </div>
                 {categories}
               </ul>
             </div>

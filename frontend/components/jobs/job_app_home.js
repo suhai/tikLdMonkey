@@ -9,14 +9,14 @@ class JobAppHome extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
-      input1: '',
-      input2: '',
-      input3: '',
-      input4: '',
-      input5: '',
-      input6: '',
-      input7: '',
-      input8: ''
+      role: '',
+      job_url: '',
+      company_name: '',
+      company_url: '',
+      location: '',
+      salary_range: '',
+      date_applied: '',
+      activity: ''
     };
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
@@ -38,14 +38,14 @@ class JobAppHome extends React.Component {
   addJobApp() {
     let data = { 
       job_app: {
-        role: this.state.input1,
-        job_url: this.state.input2,
-        company_name: this.state.input3,
-        company_url: this.state.input4,
-        location: this.state.input5,
-        salary_range: this.state.input6,
-        date_applied: this.state.input7,
-        activity: this.state.input8
+        role: this.state.role,
+        job_url: this.state.job_url,
+        company_name: this.state.company_name,
+        company_url: this.state.company_url,
+        location: this.state.location,
+        salary_range: this.state.salary_range,
+        date_applied: this.state.date_applied,
+        activity: this.state.activity
       }
     };
 
@@ -54,14 +54,14 @@ class JobAppHome extends React.Component {
     }
 
     this.setState({ 
-      input1: '',
-      input2: '',
-      input3: '',
-      input4: '',
-      input5: '',
-      input6: '',
-      input7: '',
-      input8: '', 
+      role: '',
+      job_url: '',
+      company_name: '',
+      company_url: '',
+      location: '',
+      salary_range: '',
+      date_applied: '',
+      activity: '', 
       isOpen: false  
     });
   }
@@ -105,21 +105,23 @@ class JobAppHome extends React.Component {
     return (
       <main className='loggedhome-body'>
         <Modal overlayClassName="category-modal-overlay"
-          className='category-modal'
+          className='job-modal'
           onRequestClose={this.closeModal}
           isOpen={this.state.isOpen}
           contentLabel="Modal">
             {
-              <div className='modal-test'>
-                <input className='job-input' value={this.state.input1} onChange={this.update('input1')} type='name' placeholder='Enter JobApp'></input>
-                <input className='job-input' value={this.state.input2} onChange={this.update('input2')} type='name' placeholder='Enter Company Name'></input>
-                <input className='job-input' value={this.state.input3} onChange={this.update('input3')} type='name' placeholder='Enter URL'></input>
-                <input className='job-input' value={this.state.input4} onChange={this.update('input4')} type='name' placeholder='Enter Company URL'></input>
-                <input className='job-input' value={this.state.input5} onChange={this.update('input5')} type='name' placeholder='Enter Location'></input>
-                <input className='job-input' value={this.state.input6} onChange={this.update('input6')} type='name' placeholder='Enter Salary Range'></input>
-                <input className='job-input' value={this.state.input7} onChange={this.update('input7')} type='name' placeholder='Enter Date Applied'></input>
-                <input className='job-input' value={this.state.input8} onChange={this.update('input8')} onKeyUp={this.handleKey} type='name' placeholder='Enter Activity'></input>
-                <button onClick={this.addJobApp} className='cat-save'>Save JobApp</button>
+              <div className='modal-job'>
+                <h2>Add Job Application</h2>
+                <input className='job-input' value={this.state.role} onChange={this.update('role')} type='name' placeholder='Enter JobApp'></input>
+                <input className='job-input' value={this.state.job_url} onChange={this.update('job_url')} type='name' placeholder='Enter Company Name'></input>
+                <input className='job-input' value={this.state.company_name} onChange={this.update('company_name')} type='name' placeholder='Enter URL'></input>
+                <input className='job-input' value={this.state.company_url} onChange={this.update('company_url')} type='name' placeholder='Enter Company URL'></input>
+                <input className='job-input' value={this.state.location} onChange={this.update('location')} type='name' placeholder='Enter Location'></input>
+                <input className='job-input' value={this.state.salary_range} onChange={this.update('salary_range')} type='decimal' placeholder='Enter Salary Range'></input>
+                <input className='job-input' value={this.state.date_applied} onChange={this.update('date_applied')} type='date' placeholder='Enter Date Applied'></input>
+                <textarea className='job-input' value={this.state.activity} onChange={this.update('activity')} onKeyUp={this.handleKey} type='text' placeholder='Enter Activity'></textarea>
+                <button onClick={this.closeModal} className='jobedit-cancel'>Cancel</button>
+                <button onClick={this.addJobApp} className='jobedit-save'>Add</button>
               </div>
             }
         </Modal>
@@ -133,12 +135,13 @@ class JobAppHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
-            <h3 className='cat-demo'>This is a demo Page</h3>
-            <p>
-              It is still under construction and should be available soon. Please check back later.
-            </p>
+            {/* <h3 className='cat-demo'>This is a demo Page</h3> */}
             <div>
               <ul className='user-page-nav'>
+                <div className="jobapp-header">
+                  <span className="lefty">Role</span> <span className="centy"> Date Applied</span> <span className="righty">Actions</span>  
+                </div>
+                
                 {job_apps}
               </ul>
             </div>

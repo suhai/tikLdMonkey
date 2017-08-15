@@ -24,7 +24,7 @@ class Monkeys extends React.Component {
   render () {
     let videos = this.state.videos.map( (url, idx) => (
       <div className='iframe2' key={idx}>
-        <iframe src={url} width="640" height="360" frameBorder="0" allowFullScreen>
+        <iframe src={url} width="640" height="360" frameBorder="5" allowFullScreen>
         </iframe>
         <p className='caption'>Credit: Ice and Sky Educational Videos</p>
       </div>

@@ -73,10 +73,11 @@ class Category extends React.Component {
           isOpen={this.state.isOpen}
           contentLabel="Modal">
             {
-              <div className='modal-test'>
-                <input className='cat-input' value={this.state.name} onChange={this.update('name')} onKeyUp={this.handleKey} type='name' ></input>
-                <button onClick={this.editCat} className='catedit-save'> Save </button>
-                <button onClick={this.closeModal}className='catedit-cancel'>Cancel</button>
+              <div className='modal-cat'>
+                <h2>Edit Category</h2>
+                <input className='job-input' value={this.state.name} onChange={this.update('name')} onKeyUp={this.handleKey} type='name' ></input>
+                <button onClick={this.closeModal}className='jobedit-cancel'>Cancel</button>
+                <button onClick={this.editCat} className='jobedit-save'>Update </button>
               </div>
             }
         </Modal>

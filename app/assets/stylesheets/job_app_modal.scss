@@ -1,0 +1,114 @@
+@import 'variables';
+
+.job-input {
+  width: 70%;
+  margin: 10px auto;
+  padding: 5px;
+  border: 5px solid tomato;
+  border-radius: 5px;
+}
+
+.cdate {
+  border: 1px solid $military-green;
+  border-radius: 3px;
+  font-size: 12px;
+  color: $ada;
+  margin: auto 12em;
+  width: 150px;
+
+  &:hover {
+    border: 3px dashed maroon;
+    background-color: $acf;
+  }
+}
+
+// .cat-input {
+//   margin: 5em 5em 1em 5em;
+//   padding: 5px;
+//   border: 5px solid tomato;
+//   border-radius: 5px;
+// }
+
+
+.jobedit-save {
+  margin: auto 10px;
+  width: 30%;
+  padding: 5px;
+  border: 2px solid #006666;
+  border-radius: 5px;
+  background: $aej;
+  color: white;
+}
+
+.jobedit-cancel {
+  margin: auto 10px;
+  width: 40%;
+  padding: 5px;
+  border: 2px solid #006666;
+  border-radius: 5px;
+  background: $adg;
+  color: white;
+}
+
+div.modal-job {
+  margin: 100px auto 5px;
+  max-height: 700px;
+  max-width: 450px;
+  background: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border: 7px solid gray;
+
+  .h2 {
+    margin: 2em auto; 
+  }
+}
+
+
+  .job-modal {
+    max-width: 350px;
+    max-height: 230px;
+    background: lightsteelblue;
+    margin: 10em auto;
+    // margin-top: 10em;
+    // margin-bottom: 10em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    transition: transform 1s;
+  }
+
+
+.jobapp-header {
+  clear: both;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  margin-bottom: 1.5em;
+}
+
+.lefty {
+  float: left;
+}
+
+.centy {
+  margin: 20px 14em 20px 18em;
+}
+
+.righty {
+  float: right;
+  margin: auto 5px;
+}
+
+.job-link {
+  text-decoration: none;
+  max-width: 100%;
+
+  &:hover {
+    border: 1px solid black;
+    background-color: $abz;
+  }
+}

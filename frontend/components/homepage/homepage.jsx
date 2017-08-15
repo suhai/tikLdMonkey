@@ -97,7 +97,7 @@ class HomePage extends React.Component {
 
         <midhome className='homepage-mid'>
           <div className='iframe1'>
-            <iframe  src="https://player.vimeo.com/video/226678225" width="640" height="360" frameBorder="0" allowFullScreen>
+            <iframe  src="https://player.vimeo.com/video/226678225" width="640" height="360" frameBorder="5" allowFullScreen>
             </iframe>
             <p className='caption'>Credit: Ice and Sky Educational Videos</p>
           </div>
