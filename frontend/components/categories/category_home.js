@@ -104,10 +104,6 @@ class CategoryHome extends React.Component {
           </nav>
 
           <section className='user-page-bottom'>
-            {/* <h3 className='cat-demo'>This is a demo Page</h3>
-            <p>
-              Feel free to play around with the 'Add New', 'Edit' and/or 'Delete' buttons as you please.
-            </p> */}
             <div>
               <ul className='user-page-nav'>
                 <div className="jobapp-header">

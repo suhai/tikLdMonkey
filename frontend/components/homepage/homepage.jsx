@@ -91,17 +91,17 @@ class HomePage extends React.Component {
             <h3 className='here'>MORE CONTENT COMING SOON</h3>
             <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' section by Adding New, Editing, or Deleting Categories. You may also check out my other projects by visiting the Projects section above, or taking a look at my resume below.</p>
 
-            <p>In the mean time I found a series of videos at <a href="#"><strong className='iceandsky'>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p>
+            {/* <p>In the mean time I found a series of videos at <a href="#"><strong className='iceandsky'>Ice And Sky</strong></a> that I really liked. A sample is shown below. You can watch more within this site <a href="#" onClick={this.monkey_page}><strong className='here'>HERE</strong></a></p> */}
           </div>
         </main>
 
-        <midhome className='homepage-mid'>
+        {/* <midhome className='homepage-mid'>
           <div className='iframe1'>
             <iframe  src="https://player.vimeo.com/video/226678225" width="640" height="360" frameBorder="5" allowFullScreen>
             </iframe>
             <p className='caption'>Credit: Ice and Sky Educational Videos</p>
           </div>
-        </midhome>
+        </midhome> */}
         
         <section className="homepage-bottom">
           <div>

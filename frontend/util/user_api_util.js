@@ -13,6 +13,13 @@ export const fetchUsers = query => {
   });
 };
 
+// export const fetchUsers = data => (
+//   $.ajax({
+//     method: 'GET',
+//     url: 'api/users'
+//   })
+// );
+
 export const updateUser = (user, id) => (
   $.ajax({
     method: 'PATCH',

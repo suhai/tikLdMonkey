@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  # before_action :is_verified_admin, only: [:index]
+
   def index
     if params[:search] != nil
       @users = User
@@ -6,14 +8,9 @@ class Api::UsersController < ApplicationController
         .where("UPPER(users.username) LIKE UPPER(?)", "%#{params[:search]}%")
 
       render :index
-    elsif params[:query] != nil
-      @users = User.includes(:songs)
-        .select('*')
-        .where("users.id != ?", params[:query].to_i)
-        .order('RANDOM()')
-        .limit(3)
-
-      render :index
+    else
+      @users = User.all
+      render json: @users
     end
   end
 
