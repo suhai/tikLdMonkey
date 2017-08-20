@@ -13,7 +13,7 @@ class UserHome extends React.Component {
   }
 
   displayUsers() {
-    console.log('Displaying Users');
+    // console.log('Displaying Users');
   }
 
   componentDidMount() {

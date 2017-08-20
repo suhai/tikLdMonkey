@@ -7,6 +7,7 @@ class JobApp extends React.Component {
     super(props);
     this.state = {
       isOpen: false,
+      isOpen2: false,
       id: this.props.job_app.id,
       role: this.props.job_app.role,
       job_url: this.props.job_app.job_url,
@@ -18,7 +19,9 @@ class JobApp extends React.Component {
       activity: this.props.job_app.activity
     }
     this.openModal = this.openModal.bind(this);
+    this.openModal2 = this.openModal2.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.closeModal2 = this.closeModal2.bind(this);
     this.deleteJob = this.deleteJob.bind(this);
     this.editJob = this.editJob.bind(this);
     this.handleKey = this.handleKey.bind(this);
@@ -42,9 +45,31 @@ class JobApp extends React.Component {
     })
   }
 
+  openModal2(e) {
+    e.preventDefault();
+    this.setState({
+      isOpen2: true,
+      id: this.props.job_app.id,
+      role: this.props.job_app.role,
+      job_url: this.props.job_app.job_url,
+      company_name: this.props.job_app.company_name,
+      company_url: this.props.job_app.company_url,
+      location: this.props.job_app.location,
+      salary_range: this.props.job_app.salary_range,
+      date_applied: this.props.job_app.date_applied,
+      activity: this.props.job_app.activity
+    })
+  }
+
   closeModal() {
     this.setState({
       isOpen: false
+    })
+  }
+
+  closeModal2() {
+    this.setState({
+      isOpen2: false
     })
   }
 
@@ -100,6 +125,7 @@ class JobApp extends React.Component {
       cdate = (new Date(cts)).toString().slice(0,16);
     return (
       <main>
+          {/* edit modal */}
         <Modal overlayClassName="category-modal-overlay"
           className='job-modal'
           onRequestClose={this.closeModal}
@@ -121,11 +147,32 @@ class JobApp extends React.Component {
               </div>
             }
         </Modal>
+        
+            {/* show modal */}
+        <Modal overlayClassName="category-modal-overlay"
+          className='job-modal'
+          onRequestClose={this.closeModal2}
+          isOpen={this.state.isOpen2}
+          contentLabel="Modal">
+            {
+              <div className='modal-job'>
+                <h2>Show Job Application</h2>
+                <input className='job-input' value={this.state.role}></input>
+                <input className='job-input' value={this.state.job_url}></input>
+                <input className='job-input' value={this.state.company_name}></input>
+                <input className='job-input' value={this.state.company_url}></input>
+                <input className='job-input' value={this.state.location}></input>
+                <input className='job-input' value={this.state.salary_range}></input>
+                <input className='job-input' value={this.state.date_applied} ></input> 
+                <textarea className='job-input' value={this.state.activity}></textarea>
+                <button onClick={this.closeModal2}className='jobedit-cancel'>Close</button>
+              </div>
+            }
+        </Modal>
 
         <li className='user-page-options list'>
-          <a onClick={this.rightHere} className="job-link">{this.props.job_app.role.toString().slice(0,17)}</a>
+          <a onClick={this.openModal2} className="job-link">{this.props.job_app.role.toString().slice(0,17)}</a>
           <aside>
-            {/* <cdate className="cdate"> {cdate} </cdate> */}
             <button className='cdate'>{cdate}</button>
             <button onClick={this.openModal} className='user-page-edit'>Edit</button>
             <button onClick={this.deleteJob}className='user-page-delete'>Delete</button>
