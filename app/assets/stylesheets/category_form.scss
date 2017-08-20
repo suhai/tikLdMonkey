@@ -77,3 +77,16 @@ input[type=text] {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
+
+.catshow {
+  border: 3px solid $military-green;
+  border-radius: 3px;
+  padding: 3px;
+  color: $ada;
+  text-decoration: none;
+
+  &:hover {
+    border: 5px solid maroon;
+    // background-color: seashell;
+  }
+}

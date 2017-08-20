@@ -83,7 +83,7 @@ class Category extends React.Component {
         </Modal>
 
         <li className='user-page-options list'>
-          <a onClick={this.rightHere}>{this.props.category.name}</a>
+          <a className='catshow' onClick={this.rightHere}>{this.props.category.name}</a>
           <aside>
             <button onClick={this.openModal} className='user-page-edit'>Edit</button>
             <button onClick={this.deleteCat}className='user-page-delete'>Delete</button>
