@@ -33,8 +33,6 @@ class UserPageBottom extends React.Component {
 
   render() {
     let user = this.props.user;
-    // let option = <button onClick={this.editUser} className='user-page-edit'>Edit</button>;
-    // let option2 = <button className='user-page-delete'>Delete</button>;
         
     return (
       <section className='user-page-bottom'>
