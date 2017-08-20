@@ -79,14 +79,16 @@ input[type=text] {
 }
 
 .catshow {
-  border: 3px solid $military-green;
-  border-radius: 3px;
-  padding: 3px;
+  // border: 3px solid $military-green;
+  // border-radius: 3px;
+  // padding: 3px;
   color: $ada;
   text-decoration: none;
 
   &:hover {
-    border: 5px solid maroon;
-    // background-color: seashell;
+    // border: 5px solid maroon;
+    border: 3px solid $military-green;
+    border-radius: 3px;
+    padding: 3px;
   }
 }
