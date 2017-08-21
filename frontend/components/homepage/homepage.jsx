@@ -89,8 +89,8 @@ class HomePage extends React.Component {
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
             <div className='here'>
-              <h3>MORE CONTENT COMING SOON</h3>
-              <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' section by Adding New, Editing, or Deleting Categories. You may also check out my other projects by visiting the Portfolio section above.</p>
+              <h3>FULL CONTENT COMING SOON</h3>
+              <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' and 'JobApp' or 'User' sections. Additional features are being added weekly. You may also check out my other projects by visiting the Portfolio section above.</p>
             </div>
             
           </div>
