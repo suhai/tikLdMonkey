@@ -88,8 +88,11 @@ class HomePage extends React.Component {
           </header>
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
-            <h3 className='here'>MORE CONTENT COMING SOON</h3>
-            <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' section by Adding New, Editing, or Deleting Categories. You may also check out my other projects by visiting the Projects section above, or taking a look at my resume below.</p>
+            <div className='here'>
+              <h3>MORE CONTENT COMING SOON</h3>
+              <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' section by Adding New, Editing, or Deleting Categories. You may also check out my other projects by visiting the Portfolio section above.</p>
+            </div>
+            
           </div>
         </main>
         
