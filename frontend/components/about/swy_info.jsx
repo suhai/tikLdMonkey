@@ -16,7 +16,7 @@ const SwyInfo = () => (
       <hr className='about-hr'/>
       <p className='about-me'>
         I worked as a data security intern at Free Geek, Portland for the summer of 2016. I consider myself to be a self-disciplined, highly motivated, eager and quick learner. I have spent over 2000 hours coding, including a regular average of 70hrs of coding/week from Jan 2017 - July 2017. I have gained a strong knowledge in Data Structures, Algorithms, Space and Time complexities, and OOP design patterns. When writing code I personally gravitate toward finding a balance between clean, concise code and being detail oriented enough for others to understand my code in my absence. I focus mainly on Rails for my backend and React-Redux for my frontend with PostgreSQL as my preferred database. However, I am open to learning and picking up other languages and frameworks as I expand my technical expertise. 
-        <later>You may check out what I do when not working on a project <a href='https://github.com/suhai/myGenNotes' target='_blank'><strong className='resume-link'> HERE </strong></a> 
+        <later>You may check out what I do when not working on a project <a href='https://github.com/suhai/playGround' target='_blank'><strong className='resume-link'> HERE </strong></a> 
         </later>
       </p>
       <hr className='about-hr'/>
