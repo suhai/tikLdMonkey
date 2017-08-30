@@ -8,7 +8,7 @@ const Project = (props) => (
     <br/>
     
     <p className="triv-p">
-      Check out the live app <a href={props.url}><strong className='resume-link'> HERE</strong></a> 
+      Check out the live app <a href={props.url} target='_blank'><strong className='resume-link'> HERE</strong></a> 
     </p>
     <br/>
 

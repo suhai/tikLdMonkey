@@ -13,7 +13,7 @@ export const MurmurAlley = [
   {
     id: "2",
     body:"This is a simple clone of the NYT except that murmurAlley is a fake city with fake news. The application was made as a practice for page organization and formatting. It is basically a Ruby / Rails project with a bunch of partial pages that are reused and within bigger pages. By splitting the pages into partials I was able to write fewer code, making use of rendering the partials inside bigger pages. There is currently no feature beyond just reading static content. I did however throw in a call to weather API and a simple live clock on the header section. Those two are the only dynamic content but I plan to build the site up further with features for a user to have a paid subscription. I also plan to migrate the entire app to a React/Redux framework in the future.",
-    url: 'httpss://murmuralley.herokuapp.com/',
+    url: 'https://murmuralley.herokuapp.com/',
     image: '',
     video: 'https://player.vimeo.com/video/228469665' 
   }
