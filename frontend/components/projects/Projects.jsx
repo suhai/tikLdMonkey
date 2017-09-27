@@ -5,7 +5,7 @@ import ProjectsContainer from './ProjectsContainer';
 import { CheekChubby, MurmurAlley, TikldMonkey } from '../stat_data/projects';
 
 const Projects = ({match}) => (
-  <div className="main-content trivia">
+  <div className="main-content trivia default-margin">
     <header className='loggedhome-header'>
       <Navigationa />
     </header>

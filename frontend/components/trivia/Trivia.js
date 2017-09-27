@@ -6,7 +6,7 @@ import { Art, Culture, Geography, History } from '../stat_data/trivia';
 import PlaceHolder from '../placeholder/place_holder';
 
 const Trivia = ({match}) => (
-  <div className="main-content trivia">
+  <div className="main-content trivia default-margin">
     <header className='loggedhome-header'>
       <Navigationa />
     </header>

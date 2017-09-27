@@ -9,7 +9,8 @@ div.homepage {
   width: 99.5%;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+	flex-direction: column;
+	margin-bottom: 5em;
 
   section.homepage-bottom{
     display: flex;

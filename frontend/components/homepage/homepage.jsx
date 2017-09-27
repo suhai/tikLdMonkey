@@ -64,7 +64,7 @@ class HomePage extends React.Component {
     }
 
     return (
-      <div className='homepage'>
+      <div className='homepage default-margin'>
         <header className='loggedhome-header'>
           <Navigationa />
         </header>
@@ -95,8 +95,8 @@ class HomePage extends React.Component {
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
             <div className='here'>
-              <h3>FULL CONTENT COMING SOON</h3>
-              <p>This is a Content Management Application. Please feel free to sign in as a guest and mess around with the 'Categories' and 'JobApp' or 'User' sections. Additional features are being added weekly. You may also check out my other projects by visiting the Portfolio section above.</p>
+              <h3>A CONTENT MANAGEMENT SYSTEM APPLICATION</h3>
+              <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects the projects that I work on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='resume-link'> HERE </strong></a>. I try to respond within 24 hours.</p>
             </div>
             
           </div>
@@ -109,7 +109,7 @@ class HomePage extends React.Component {
 										<div className="col-md-8 col-full-width" id='portfolio'>
 												<div className="section-header text-center">
 													<h2 className="section-title wow fadeInDown">
-															<span>Stuff</span> I've Built in The Past                           
+															<span>Stuff</span> I've Built                           
 													</h2>
 													<div className="divider wow fadeInDown"><span></span></div>
 													<p className="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque iste velit sequi odio, fugit fuga, veritatis quas, temporibus quam, non dolorem neque nisi magnam vitae.</p>
@@ -358,7 +358,7 @@ class HomePage extends React.Component {
 										<a className="btn btn-loadmore wow fadeInDown message-link" href="#"><i className="fa fa-refresh"></i>leave me a message</a>
 									</div>
 									<div className="col-md-12 text-right">
-										<a className="btn btn-loadmore wow fadeInUp download-link" href="https://drive.google.com/open?id=0B3YmJk3--C3rTVE2UGlTNmR5UjQ"><i className="fa fa-refresh"></i>download resume</a>
+										<a className="btn btn-loadmore wow fadeInUp download-link" href="https://drive.google.com/open?id=0B3YmJk3--C3rTVE2UGlTNmR5UjQ"><i className="fa fa-refresh" target='_blank'></i>download resume</a>
 									</div>
 								</div>
 						</div>

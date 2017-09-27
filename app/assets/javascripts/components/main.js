@@ -214,27 +214,27 @@
         /* ---------------------------------------------
          Scroll top
          --------------------------------------------- */
-        scroll_top: function () {
-            $("body").append("<a href='#top' id='scroll-top' class='topbutton btn-hide'><span class='glyphicon glyphicon-menu-up'></span></a>");
-            var $scrolltop = $('#scroll-top');
-            $(window).on('scroll', function () {
-                if ($(this).scrollTop() > $(this).height()) {
-                    $scrolltop
-                        .addClass('btn-show')
-                        .removeClass('btn-hide');
-                } else {
-                    $scrolltop
-                        .addClass('btn-hide')
-                        .removeClass('btn-show');
-                }
-            });
-            $("a[href='#top']").on('click', function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, "normal");
-                return false;
-            });
-        },
+        // scroll_top: function () {
+        //     $("body").append("<a href='#top' id='scroll-top' class='topbutton btn-hide'><span class='glyphicon glyphicon-menu-up'></span></a>");
+        //     var $scrolltop = $('#scroll-top');
+        //     $(window).on('scroll', function () {
+        //         if ($(this).scrollTop() > $(this).height()) {
+        //             $scrolltop
+        //                 .addClass('btn-show')
+        //                 .removeClass('btn-hide');
+        //         } else {
+        //             $scrolltop
+        //                 .addClass('btn-hide')
+        //                 .removeClass('btn-show');
+        //         }
+        //     });
+        //     $("a[href='#top']").on('click', function () {
+        //         $("html, body").animate({
+        //             scrollTop: 0
+        //         }, "normal");
+        //         return false;
+        //     });
+        // },
         /* ---------------------------------------------
          function initializ
          --------------------------------------------- */

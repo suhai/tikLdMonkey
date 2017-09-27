@@ -2,16 +2,8 @@ class Api::UsersController < ApplicationController
   # before_action :is_verified_admin, only: [:index]
 
   def index
-    if params[:search] != nil
-      @users = User
-        .select('*')
-        .where("UPPER(users.username) LIKE UPPER(?)", "%#{params[:search]}%")
-
-      render :index
-    else
-      @users = User.all
-      render json: @users
-    end
+    @users = User.all
+    render :index
   end
 
   def create
@@ -26,7 +18,7 @@ class Api::UsersController < ApplicationController
   end
 
   def update
-    @user = User.find_by(id: params[:id])
+    @user = User.find_by(username: params[:username])
 
     if @user.update_attributes(user_params)
       render :show

@@ -1,0 +1,16 @@
+
+.wide-separation {
+	width: 60%;
+	display: inline;
+	overflow: auto;
+	white-space: nowrap;
+	margin:0px auto;
+
+	.lefty {
+		float: left;
+	}
+
+	.righty {
+		float: right;
+	}
+}
