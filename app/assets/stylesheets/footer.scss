@@ -3,7 +3,8 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+	width: 100%;
+	z-index: 999;
 }
 
 .footer div {
@@ -47,4 +48,12 @@
 .resume {
   border: 0.15em solid white;
   border-radius: 0.1em;
+}
+
+.message-link {
+	background: #28A028 !important;
+}
+
+.download-link {
+	background: #5960C0 !important;
 }

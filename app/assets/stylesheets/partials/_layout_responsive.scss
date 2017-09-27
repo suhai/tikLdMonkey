@@ -1,0 +1,194 @@
+@import "typography";
+@import "colors";
+
+/*-------------Cmmon Style Responsive-------------*/
+@media only screen and (max-width: 991px) {    
+    .angel-style{
+        padding-bottom: 50px;
+        &:after {
+            background-color: transparent;
+        }
+    }
+    .map-area {
+        margin-bottom: 40px;
+    }
+} 
+
+
+
+/*-------------Services Section Responsive-------------*/
+@media only screen and (max-width: 991px) { 
+    .services-content {
+        .col-md-4:nth-child(4n-1) {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 650px) { 
+    .services-section .services-content {
+        .col-md-4 {
+            border: 0px solid !important;
+            .service-item {
+                padding-top: 20px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) { 
+    .services-section .services-content .col-md-4 {
+        padding-left: 0px;
+    }
+}
+
+
+/*-------------Skill Section Responsive-------------*/
+@media only screen and (max-width: 1200px) {
+    .skill-img {
+        width: 80%;
+    }
+} 
+@media only screen and (max-width: 991px) {
+    .skill-img {
+        margin: 0 auto 25px;
+    }
+    .single-skill {
+        margin-bottom: 45px;
+    }
+} 
+@media only screen and (max-width: 500px) {
+    .skill-img {
+        width: 96%;
+    }
+    .single-skill {
+        margin-bottom: 35px;
+        h4 {
+            font-size: 14px;
+        }
+    }
+} 
+
+/*-------------Counter Section Responsive-------------*/
+@media only screen and (max-width: 991px) {
+    .content-wrap {
+        height: 200px;
+        padding-top: 10px;
+        .description {
+            font-size: 16px;
+            line-height: 1.6em;
+            width: 80%;
+        }
+    }
+} 
+@media only screen and (max-width: 767px) {
+    .counter-section .content-wrap {
+        display: inline-block;
+        height: auto;
+        padding-top: 60px;
+        .single-count {
+            display: inline-block !important;
+            width: 49%;
+            margin-bottom: 60px;
+        }
+    }
+    .description {
+        width: 98%;
+    }
+} 
+@media only screen and (max-width: 480px) {
+    .counter-section {
+        .content-wrap .single-count {
+            width: 100%;
+        }
+        .description {
+            display: none;
+        }
+    }
+} 
+
+
+/*-------------Portfolio and Blog Section Responsive-------------*/
+@media only screen and (max-width: 767px) {
+    /*----Portfolio PopUp----*/
+    .portfolio-popup {
+        width: 80%;
+        @media only screen and (max-width: 420px) {  
+            width: 95%;
+        }
+    }
+}
+@media only screen and (max-width: 670px) {
+    .single-portfolio-item .single-portfolio-item-inner .port-thumb {
+        height: 250px;
+    }
+} 
+@media only screen and (max-width: 630px) {
+    .single-portfolio-item .single-portfolio-item-inner .port-thumb {
+        height: 220px;
+    }
+} 
+@media only screen and (max-width: 600px) {
+    .space-150 {
+        padding: 50px 0;
+    }
+    .single-portfolio-item {
+        width: 100%;
+        .single-portfolio-item-inner .port-thumb {        
+            height: auto!important;
+        }
+    } 
+    .latest-post-section .row .col-md-4 {
+        width: 100%;
+        .post .post-thumb-content .post-thumb {
+            height: auto !important;
+        }
+    }
+    .portfolio-nav-main .portfolio-categories-nav {
+        &:before {
+            background-color: transparent !important;
+        }
+        > li {
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            margin-bottom: 7px;
+            display: inline-block;
+            &:hover a span {
+                top: -40px;
+            }
+        }
+    }
+} 
+
+/*-------------Customer And Contact Section Responsive-------------*/
+@media only screen and (max-width: 420px) {    
+    #customer-reviews {
+        .single-customer-review .customer-header {
+            margin-bottom: 25px;
+        }
+        .owl-controls {
+            margin-top: 10px;
+        }
+    }
+    .map-area #gmaps {
+        height: 300px;
+    }
+} 
+
+
+/*-------------Dark Version Responsive-------------*/
+@media only screen and (max-width: 991px) {    
+    .dark-version {
+        .angel-style:after {
+            background-color: transparent;
+        }
+        .services-content .col-md-4:nth-child(3) {
+            border-color: $color__border-three !important;
+        }
+    }
+} 
+@media only screen and (max-width: 600px) {    
+    .dark-version {
+        .portfolio-nav-main .portfolio-categories-nav > li > a {
+            border-color: $color__border-three;
+        }
+    }
+} 

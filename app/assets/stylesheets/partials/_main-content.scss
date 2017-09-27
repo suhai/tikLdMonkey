@@ -1,0 +1,454 @@
+@import "typography";
+@import "colors";
+.main-contant {
+    position: relative;
+    z-index: 2;
+    background-color: inherit;
+}
+.skill-section,
+.portfolio-section,
+.latest-post-section {
+    background-color: $color__gray-soft;
+}
+
+/*-------------Style For Services Section-------------*/
+.service-item {
+    padding: 35px 0 5px;
+    .service-icon {
+        float: left;
+        font-size: 22px;
+        width: 40px;
+        text-align: center;
+        margin-top: 10px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        height: 40px;
+        background-color: rgba($color__theme-main, 0.7);
+        line-height: 40px;
+        border-radius: 5px;
+        color: $color__white;
+        margin-left: 8px;
+        > i {
+            -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        }
+    }
+    .service-info {
+        padding-left: 75px;
+        > h4 {
+            color: #010101;
+            display: inline-block;
+            font-family: $font__body;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0 0 15px;
+            text-transform: uppercase;
+            -webkit-transition: color 0.18s ease 0s;
+            transition: color 0.18s ease 0s;
+        }
+        > p {
+            font-size: 14px;
+            line-height: 2em;
+        }
+    }
+}
+.service-item:hover .service-info h4 {
+    color: $color__theme-main;
+}
+
+
+/*-------------Style For Skill Section-------------*/
+.skill-img {
+    margin: 0 auto;
+    width: 73%;
+}
+.single-skill {
+    margin-bottom: 30px;
+    h4 {
+        font-family: $font__body;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .progress {
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0) inset;
+        height: 7px;
+        overflow: visible;
+        .progress-bar {
+            background-color: $color__theme-main;
+            border-radius: inherit;
+            position: relative;
+            z-index: 0;
+            > span {
+                background-color: #070707;
+                border-radius: 4px;
+                color: $color__white;
+                padding: 4px 9px;
+                position: absolute;
+                right: -19px;
+                top: -38px;
+                z-index: 99;
+                &:after {
+                    border-color: #070707 transparent transparent;
+                    border-style: solid;
+                    border-width: 6px 4px;
+                    bottom: -12px;
+                    content: "";
+                    left: 18px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+    
+}
+
+
+/*-------------Style For Counter Section-------------*/
+.counter-section {
+    padding: 30px 0;
+    background-color: $color__heading;
+    .content-wrap {
+        height: 245px;
+        margin-bottom: 0;
+        width: 100%;
+        .single-count {
+            display: table-cell;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            .count-number,
+            .text {
+                color: $color__white;
+                margin: 0;            
+            }
+            .count-number {
+                font-size: 72px;
+                line-height: 1.2em;
+                &:first-letter {
+                    color: $color__theme-main;
+                }
+            }
+            .text {
+                font-size: 18px;
+                font-family: $font__body;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .description {
+        color: $color__white;
+        font-size: 18px;
+        line-height: 1.8em;
+        margin: 0 auto 60px;
+        width: 68%;
+        font-weight: 600;
+        span {
+            color: $color__theme-main;
+        }
+    }
+}
+
+
+/*-------------Style For Portfolio Section-------------*/
+/*-----portfolio nav------*/
+.portfolio-nav-main {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    margin-bottom: 45px;
+    text-align: center;
+    .portfolio-categories-nav {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        display: inline-block;
+        list-style: outside none none;
+        padding: 0;
+        position: relative;
+        > li {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            display: inline;
+            padding: 0 20px 10px;
+            > a {
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                display: inline-block;
+                font-weight: bold;                
+                position: relative;
+                text-transform: uppercase;
+                z-index: 2;
+                color: $color__heading-two;
+                > span {
+                    border: 1px solid $color__theme-main;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    font-weight: lighter;
+                    height: 20px;
+                    left: 50%;
+                    line-height: 18px;
+                    margin-left: -12px;
+                    opacity: 0;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    position: absolute;
+                    top: 10px;
+                    -webkit-transition: all 0.3s ease 0s;
+                    transition: all 0.3s ease 0s;
+                    width: 20px;
+                    z-index: -1;
+                }
+            }
+            &:hover > a > span {
+                opacity: 1;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+                top: -28px;
+            }
+        }
+    }
+}
+/*-----Single Portfolio item style------*/
+.portfolio-item-content {
+    margin-bottom: 40px;
+}
+.single-portfolio-item {
+    margin-bottom: 30px;
+    .single-portfolio-item-inner {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        .port-thumbnil {
+            width: 100%;
+        }
+    }
+}
+.portfolio-overlay {
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    .portfolio-overlay-inner {
+        padding: 0 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        .fa.fa-plus {
+            background-color: $color__white;
+            border-radius: 50%;
+            color: $color__theme-main;
+            display: inline-block;
+            font-size: 16px;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        .tb-cell > h3 {
+            color: $color__white;
+            font-family: $font__body;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 24px;
+            margin-bottom: 0px;
+            margin-top: 60px;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            text-transform: capitalize;
+        }
+    }
+}
+.single-portfolio-item:hover .portfolio-overlay {
+    left: 0;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.single-portfolio-item:hover .portfolio-overlay .tb-cell > h3 {
+    margin-top: 15px;
+}
+/*-----Portfolio Popup style------*/
+.portfolio-popup {
+    background-color: $color__white;
+    margin: 50px auto;
+    padding: 30px 30px 45px;
+    width: 75%; 
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 35px;
+        text-align: left;
+    }
+    img {
+        border-radius: 7px;
+        width: 100%;
+    }
+    .protfolio-popup-info {
+        border-top: 1px solid #eee;
+        margin: 45px 0 55px;
+        text-align: left;
+         > p {
+            margin-bottom: 20px;
+            color: #808080;
+        }
+        > h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 35px 0 20px;
+            text-transform: capitalize;
+        }
+        .btn-live {
+            border-radius: 10px;
+        }
+    }
+}
+.mfp-close {
+    color: $color__white !important;
+    font-size: 36px;
+}
+
+/*-------------Style For Customer Reviews Section-------------*/
+#customer-reviews {
+    padding: 0 15px;
+    .owl-controls {
+        margin-top: 35px;
+        text-align: center;
+        .owl-dots > div {
+            background-color: #ddd;
+            display: inline-block;
+            height: 3px;
+            margin: 0 3px;
+            width: 25px;
+            &.active {
+                background-color: $color__theme-main;
+            }
+        }
+    }
+}
+.single-customer-review {
+    color: $color__white;
+    .customer-header {
+        text-align: center;
+        color: $color__white;
+        margin-top: 35px;
+        .customer-thumb {
+            border: 6px solid rgba($color__white, 0.4);
+            border-radius: 50%;
+            height: 75px;
+            width: 75px !important;
+            margin: 0 auto;
+        }
+        h3.customer-name {
+            font-weight: bold;
+            text-transform: capitalize;
+            line-height: 24px;
+            margin: 15px 0 2px;
+            color: inherit
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+    }
+    .customer-info {       
+        > p {
+            margin-bottom: 15px;
+            line-height: 1.8em;
+        }
+    }
+}
+
+
+/*-------------Style For Latest Blog Section-------------*/
+.post {
+    background-color: $color__white;
+    box-shadow: 0 0 10px -5px #a1a1a1;
+    margin-bottom: 30px;
+    .post-thumb-content {
+        position: relative;
+        margin-bottom: 35px;
+        .post-thumb {
+            height: 220px;
+            overflow: hidden;
+            a {
+                display: block;
+                height: inherit;
+            }
+            img {
+                height: inherit;
+                width: 100%;
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+                -webkit-transition: -webkit-transform 0.5s;
+                transition: -webkit-transform 0.5s;
+                transition: transform 0.5s;
+                transition: transform 0.5s, -webkit-transform 0.5s;
+            }
+            &:hover img {
+                -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+            }
+        }
+        .entry-date {
+            position: absolute;
+            bottom: -17px;
+            font-size: 12px;
+            right: 0;
+            color: $color__white;
+            background-color: $color__black;
+            padding: 8px 20px;
+        }
+    }
+    .post-details {
+        padding: 0 20px 35px;
+        .entry-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0px 0 14px;
+            a {
+                -webkit-transition: color 0.3s;
+                transition: color 0.3s;
+            }
+            &:hover a {
+                color: $color__theme-main;
+            }
+        }
+        .entry-meta {
+             margin-bottom: 10px;
+            > span {
+                display: inline-block;
+                font-size: 13px;
+                margin-right: 20px;
+                > a {
+                    &:hover {
+                        color: $color__theme-main;
+                    }
+                }
+            }        
+        }
+        .entry-content > p {
+            margin-bottom: 25px;
+        }
+        .entry-content > p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*-------------Style For Contact Us Section-------------*/
+.contuct-us {
+    padding-bottom: 80px;
+    .section-title {
+      color: #484848;
+    }
+    #gmaps {
+      background-color: #f8f8f8;
+      height: 400px;
+        width: 100%;
+    }
+    #contact_form {
+        .form-controllar {
+            border-bottom: 1px solid $color__border-two;
+        }
+    }
+}

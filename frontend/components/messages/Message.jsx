@@ -1,10 +1,36 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-// const Message = () => (
-//   <div className="app">
-//     <h1>This is the Message Component</h1>
-//   </div>
-// );
+class Message extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
 
-// export default Message;
+    };
+    this.showMessage = this.showMessage.bind(this);
+  };
+
+  showMessage() {
+		window.location.hash = `/${this.props.currentUser.username}/messages/${this.props.message.id}`;
+	};
+
+  render() {
+		const { 
+			sender, 
+			email, 
+			subject, 
+			msg
+		} = this.props.message;
+
+    return (
+			<tr onClick={this.showMessage}>
+				<td>{sender}</td>
+				<td>{email}</td>
+				<td>{subject}</td>
+				<td>{msg.slice(0,20)}</td>
+			</tr>
+    );
+  }
+}
+
+export default Message;

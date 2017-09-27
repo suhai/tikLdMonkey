@@ -1,0 +1,80 @@
+@import "typography";
+@import "colors";
+.dark-version {
+    background-color: $color__dark-body;
+    color: #cdcdcd;
+    .btn-default {
+        background-color: #6e6e6e;
+    }
+    .site-header {
+        background-color: #747471;
+    }
+    .hero-area {
+        background-color: #4c4f51;
+    }
+    .hero-content,
+    .angel-style::after,
+    .skill-section,
+    .recent-work-section,
+    .contuct-us,
+    .section-header .divider i,
+    .hero-static .process .process-inner > li i.fa,
+    .post {
+        background-color: $color__dark-body;
+    }
+    .services-section,
+    .portfolio-section,
+    .latest-post-section {
+        background-color: $color__dark-soft;
+    }
+    .section-header > p,
+    .counter-section .description {
+        color: inherit;
+    }
+    .hero-static > h2,
+    .mainmanu > li > a,
+    .section-header .section-title span {
+        color: $color__white;
+    }
+    .navigation-area {
+        background-color: #0f0f0f;
+    }
+    #sticky-header .navigation-area {
+        background-color: rgba(15, 15, 15, 0.85);
+        box-shadow: 1px 1px 10px -5px rgba(255, 255, 255, 0.4);
+    }
+    .service-item .service-info > h4,
+    .single-work .product-details .work-product-title,
+    .portfolio-nav-main .portfolio-categories-nav > li > a,
+    .post .post-details .entry-title,
+    .contuct-us .section-title,
+    .single-skill h4,
+    .hero-static {
+        color: $color__gray-soft;
+    }
+    .services-content .col-md-4,
+    .recent-work-section .single-work,
+    .contuct-us #contact_form .form-controllar {
+        border-color: $color__border-three !important;
+    }
+    .portfolio-nav-main .portfolio-categories-nav::before {
+        background-color: #656565;
+    }
+    .preloader {
+        background-color: rgba(255,255,255,0.6);
+    }
+    .navigation-area {
+        #navbar-main {
+            border: #ddd;
+        }
+        .navbar-header .navbar-toggle .icon-bar {
+            background-color: $color__white;
+        }
+        .mainmanu > li > a:hover {
+            color: $color__theme-main;
+        }
+    }
+    .btn-submit {
+        background-color: #5b5b5b;
+    }
+}

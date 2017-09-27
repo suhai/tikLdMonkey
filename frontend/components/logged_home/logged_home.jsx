@@ -6,6 +6,8 @@ import UserPageContainer from '../user/user_page_container';
 import UserEditFormContainer from '../user/user_edit_form_container';
 import SearchContainer from '../search/search_container';
 import CategoryContainer from '../categories/category_container';
+import MessageShowContainer from '../messages/message_show_container';
+import MessagePageContainer from '../messages/message_page_container';
 import GameHome from '../games/game_home';
 import JobAppHome from '../jobs/job_app_container';
 import MonkeyHome from '../monkeys/monkey_home';
@@ -28,6 +30,8 @@ class LoggedHome extends React.Component {
 
         <div className='nav-space' />
         <Switch>
+					<Route path="/:username/messages/:id" render={(props) => <MessageShowContainer {...props} /> } />
+					<Route path="/:username/messages" render={(props) => <MessagePageContainer {...props} /> } />
           <Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
           <Route exact path="/admin/games" render={(props) => <GameHome {...props} /> } />
           <Route exact path="/jobs" render={(props) => <JobAppHome {...props} /> } />

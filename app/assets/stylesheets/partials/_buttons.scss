@@ -1,0 +1,69 @@
+@import "typography";
+@import "colors";
+
+.btn{
+    -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+}
+.btn:active {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
+}
+.btn:focus {
+    color: $color__theme-main;
+}
+.btn-default {
+    border: 4px double;
+    margin-right: 5px;
+    border-radius: 0px;
+    color: $color__black;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 6px 30px;
+    border-color: $color__border-one;
+    text-transform: capitalize;
+    &:focus,
+    &:hover {
+        background-color: $color__theme-main;
+        border-color: $color__white;
+        color: $color__white;
+    }
+}
+.btn-loadmore {
+    background-color: $color__theme-main;
+    box-shadow: 1px 1px 18px -5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    i {
+        margin-right: 7px;
+    }
+    &:hover,
+    &:focus {
+        color: $color__white;
+        box-shadow: 1px 1px 25px -5px rgba(0, 0, 0, 0.7);
+    }
+}
+.btn-submit {
+    background-color: $color__black;
+    color: $color__white;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    &:hover {
+        color: $color__theme-main;
+    }
+}
+.more-link {
+    font-weight: bold;
+    text-transform: capitalize;
+    &:hover {
+        color: $color__theme-main;
+    }
+}

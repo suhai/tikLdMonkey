@@ -4,6 +4,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import HomePageContainer from './homepage/homepage_container';
 import LoggedHomeContainer from './logged_home/logged_home_container';
 import CategoryContainer from './categories/category_container';
+import MessageFormContainer from './messages/message_form_container';
 import Games from './games/Games';
 import Trivia from './trivia/Trivia';
 import Projects from './projects/Projects';
@@ -23,6 +24,7 @@ const Root = () =>(
       <Route path="/projects" component={Projects} />
       <Route path="/tech_news" component={TechNews} />
       <Route path="/monkeys" component={Monkeys} />
+			<Route path="/enquiries" component={MessageFormContainer} />
       <ProtectedRoute exact path="/categories" component={LoggedHomeContainer} />
       <ProtectedRoute exact path="/gamez" component={LoggedHomeContainer} /> 
       <ProtectedRoute exact path="/categoriez" component={CategoryContainer} /> 

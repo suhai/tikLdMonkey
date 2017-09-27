@@ -50,11 +50,11 @@ class Navigation extends React.Component {
           <li className='loggedhome-logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
           <li><NavLink to='/'>Home</NavLink></li>
           <li><NavLink to='/categories'>Categories</NavLink></li>
-          <li><NavLink to='/users'>Users</NavLink></li>
           <li><NavLink to='/jobs'>JobApps</NavLink></li>
           <li><NavLink to='/admin/trivia'>Trivia</NavLink></li>
           <li><NavLink to='/admin/projects'>Projects</NavLink></li>
-          <li><NavLink to='/admin/games'>Games</NavLink></li>  
+          <li><NavLink to='/admin/games'>Games</NavLink></li> 
+					<li><NavLink to='/:username/messages'>Messages</NavLink></li>   
         </ul>
         <ul className='searchbar'>
           <input onKeyPress={this.toSearch} className='home-search'></input>

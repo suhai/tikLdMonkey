@@ -1,0 +1,29 @@
+@import "typography";
+@import "colors";
+
+.mainmanu > li {
+    padding: 15px;
+    &:last-child {
+        padding-right: 0;
+    }
+    > a {
+        padding: 0;
+        line-height: 22px;
+        position: relative;
+        font-size: 14px;
+        color: $color__heading-two;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        span {
+            margin-left: 5px;
+        }
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+    }
+    &.active a:before {
+        width: 100% !important;
+    }
+}
