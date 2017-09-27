@@ -6,6 +6,14 @@ import Signup from './signup';
 import { values } from 'lodash';
 import Navigationa from '../navigationa';
 
+const easthalo = 'https://res.cloudinary.com/swy/image/upload/v1506539090/homepage_s5uxoq.png';
+const cheekchubby = 'https://res.cloudinary.com/swy/image/upload/v1501895999/cheek5_x393hf.png';
+const tikldmonkey = 'https://res.cloudinary.com/swy/image/upload/v1506539659/tikldmonkey_mc2lgi.png';
+const murmuralley = 'https://res.cloudinary.com/swy/image/upload/v1501895992/murmur1_i6zdm2.png';
+const racewars = 'https://res.cloudinary.com/swy/image/upload/v1499749889/images/black-and-white-code-programming-tech-79290.jpg';
+const playground = 'https://res.cloudinary.com/swy/image/upload/v1499750288/images/mavis-6-1580.jpg';
+
+
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
@@ -137,7 +145,7 @@ class HomePage extends React.Component {
 								<div id="port-masonry" className="row portfolio-item-content">
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 react redux ruby rails javascript sql">
 												<a href="#easthalo" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="easthalo homepage" />
+														<img className="port-thumbnil" src={easthalo} alt="easthalo homepage" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
@@ -149,7 +157,7 @@ class HomePage extends React.Component {
 												</a>
 												<div id="easthalo" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">EastHalo University</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="easthalo homepage" />
+														<img src={easthalo} alt="easthalo homepage" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
 																<p>Description of EastHalo</p>
@@ -162,7 +170,7 @@ class HomePage extends React.Component {
 
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 react redux ruby rails javascript sql">
 												<a href="#tikldmonkey" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="tikldmonkey homepage" />
+														<img className="port-thumbnil" src={tikldmonkey} alt="tikldmonkey homepage" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
@@ -174,7 +182,7 @@ class HomePage extends React.Component {
 												</a>
 												<div id="tikldmonkey" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">The tikLdMonkey</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="tikldmonkey homepage" />
+														<img src={tikldmonkey} alt="tikldmonkey homepage" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
 																<p>Description of The tikLdMonkey</p>
@@ -187,7 +195,7 @@ class HomePage extends React.Component {
 
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 html css ruby rails sql">
 												<a href="#cheekchubby" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="cheekchubby homepage" />
+														<img className="port-thumbnil" src={cheekchubby}alt="cheekchubby homepage" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
@@ -199,7 +207,7 @@ class HomePage extends React.Component {
 												</a>
 												<div id="cheekchubby" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">cheekChubby</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="cheekchubby homepage" />
+														<img src={cheekchubby} alt="cheekchubby homepage" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
 																<p>Description of cheekChubby</p>
@@ -212,7 +220,7 @@ class HomePage extends React.Component {
 
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 ruby rails html css">
 												<a href="#murmuralley" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="murmuralley homepage" />
+														<img className="port-thumbnil" src={murmuralley} alt="murmuralley homepage" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
@@ -224,7 +232,7 @@ class HomePage extends React.Component {
 												</a>
 												<div id="murmuralley" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">MurmurAlley</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="murmuralley homepage" />
+														<img src={murmuralley} alt="murmuralley homepage" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
 																<p>Description of MurmurAlley</p>
@@ -237,7 +245,7 @@ class HomePage extends React.Component {
 
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 jquery html css">
 												<a href="#playground" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="img" />
+														<img className="port-thumbnil" src={playground} alt="img" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
@@ -249,7 +257,7 @@ class HomePage extends React.Component {
 												</a>
 												<div id="playground" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">Play Ground</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="img" />
+														<img src={playground} alt="img" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
 																<p>Description of Play Ground</p>
@@ -261,22 +269,22 @@ class HomePage extends React.Component {
 
 										<div className="single-portfolio-item grid col-md-4 col-sm-6 col-xs-6 jquery html css">
 												<a href="#racingwars" className="single-portfolio-item-inner">
-														<img className="port-thumbnil" src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="img" />
+														<img className="port-thumbnil" src={racewars} alt="img" />
 														<div className="portfolio-overlay text-center">
 																<div className="portfolio-overlay-inner tb">
 																		<div className="tb-cell">
 																				<i className="fa fa-plus"></i>
-																				<h3>Racing Wars</h3>
+																				<h3>Race Wars</h3>
 																		</div>
 																</div>
 														</div>
 												</a>
 												<div id="racingwars" className="portfolio-popup mfp-hide text-center">
 														<h2 className="title centered-text">Racing Wars</h2>
-														<img src="https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg" alt="img" />
+														<img src={racewars} alt="img" />
 														<div className="protfolio-popup-info">
 																<h3>description</h3>
-																<p>Description of Racing Wars</p>
+																<p>Description of Race Wars</p>
 																<p>Tools and More Info</p>
 														</div>
 														<a className="btn btn-default btn-live" href="">GitHub</a>
