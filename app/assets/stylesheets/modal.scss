@@ -25,11 +25,12 @@ div.modal-test {
 
   .homepage-modal {
     width: 350px;
-    height: 430px;
-    background: $military-green;
+    height: 20em;
+		background: $military-green;
+		background: #3F3C3C;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin-top: 5em;
+    margin-bottom: 6em;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -90,13 +91,13 @@ div.modal-test {
       }
 
       input {
-        margin-top: 10px;
+        margin-top: 20px;
         width: 280px;
-        height: 20px;
+        height: 30px;
         font-size: 16px;
         border: 1px solid lightgray;
-        padding: 6px;
-        border-radius: 3px;
+        padding: 10px;
+        // border-radius: 3px;
         box-shadow: none;
         transition: border 0.3s;
       }

@@ -31,7 +31,7 @@ class Navigationa extends React.Component {
           <li><NavLink to='/trivia'>Trivia</NavLink></li>
         </ul>
         <ul className='searchbar'>
-          <input onKeyPress={this.toSearch} className='home-search'></input>
+          {/* <input onKeyPress={this.toSearch} className='home-search'></input> */}
         </ul>
       </nav>
     );
