@@ -75,7 +75,7 @@ class MessageForm extends React.Component {
 						<input type="text" className="field-style field-split align-left" value={sender} onChange={this.update('sender')} placeholder="Your Name" />
 						<input type="text" className="field-style field-split align-right" value={email} onChange={this.update('email')} placeholder="Your Email" />
 						<input type="text" className="field-style" value={subject} onChange={this.update('subject')} placeholder="Subject" />
-						<textarea className="field-style" value={msg} onChange={this.update('msg')} placeholder="Message"></textarea>
+						<textarea value={msg} onChange={this.update('msg')} placeholder=" Enter Your Message"></textarea>
 						<div className='wide-seapration'>
 							<div className='lefty'>
 								<input type="submit" onClick={this.addMessage} value='Submit Message'/>
