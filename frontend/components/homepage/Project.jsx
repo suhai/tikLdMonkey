@@ -37,7 +37,6 @@ class Project extends React.Component {
 							<div className="protfolio-popup-info">
 									<h3>description</h3>
 									<p>{desc}</p>
-									<p>Tools and More Info</p>
 							</div>
 							<a className="btn btn-default btn-live" href={live_url} >Live</a>
 							<a className="btn btn-default btn-live" href={git_url} >GitHub</a>
