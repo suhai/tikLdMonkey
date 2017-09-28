@@ -147,25 +147,9 @@ export default Trivium;
 ## Homepage
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895913/tikld1_v47geg.png "homepage")
 
-
-## Homepage Signup
-![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895911/tkld2_onunua.png "homepage signup")
-
-
-## Profile Edit
-![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895907/tkld3_rpgpas.png "profile edit")
-
-
 ## Categories Page
 ![Alt text](https://res.cloudinary.com/swy/image/upload/v1501895907/tkld4_lp22hq.png "category page")
 
-
-
-### Plans For The Future
-
-* I pan to make the user page more fluid to individual user preferences with a user being offered multiple options in choosing the theme of their page, and the ability to enable or disable optional features (yet to be decided on).
-
-* I plan to add a chat service to the homepage where a visitor can see if I am currently available online to chat or answer questions they may have regarding the website or any genral topic of mutual interest. And possibly extend this feature to all users to chat with each other.
 
 
 
