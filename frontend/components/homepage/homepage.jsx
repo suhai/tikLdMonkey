@@ -109,7 +109,7 @@ class HomePage extends React.Component {
         <div className="main-contant">  
 				<section id="portfolio" className="portfolio-section space-150">
 						<div className="container">
-								<div className="row">
+								<div className="row centered-div">
 										<div className="col-md-8 col-full-width" id='portfolio'>
 												<div className="section-header text-center">
 													<h2 className="section-title wow fadeInDown">
@@ -126,7 +126,7 @@ class HomePage extends React.Component {
 												<ul className="portfolio-categories-nav">
 														<li><a href="#" data-hover="All" data-filter="*" className="filter">All<span>6</span></a></li>
 														<li><a href="#" data-hover="HTML" data-filter=".html" className="filter">HTML<span>4</span></a></li>
-														<li><a href="#" data-hover="CSS" data-filter=".css" className="filter">CSS<span>4</span></a></li>
+														<li><a href="#" data-hover="CSS" data-filter=".css" className="filter">CSS<span>5</span></a></li>
 														<li><a href="#" data-hover="Ruby" data-filter=".ruby" className="filter">Ruby<span>4</span></a></li>
 														<li><a href="#" data-hover="JavaScript" data-filter=".javascript" className="filter">JavaScript<span>4</span></a></li>
 														<li><a href="#" data-hover="jQuery" data-filter=".jquery" className="filter">jQuery<span>2</span></a></li>

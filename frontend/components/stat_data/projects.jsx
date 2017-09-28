@@ -1,7 +1,7 @@
 export const myProjects = [
 	{
 		id: "easthalo",
-		tags: 'react redux ruby rails html css javascript',
+		tags: 'react redux ruby rails html css sql javascript',
 		image: 'https://res.cloudinary.com/swy/image/upload/v1506539090/homepage_s5uxoq.png',
 		image_alt: 'easthalo homepage',
 		header: 'EastHalo University',
@@ -25,7 +25,7 @@ export const myProjects = [
 
 	{
 		id: "murmuralley",
-		tags: 'ruby rails html css',
+		tags: 'ruby rails html javascript css',
 		image: 'https://res.cloudinary.com/swy/image/upload/v1501895992/murmur1_i6zdm2.png',
 		image_alt: 'murmuralley homepage',
 		header: 'MurmurAlley',
@@ -37,7 +37,7 @@ export const myProjects = [
 
 	{
 		id: "cheekchubby",
-		tags: 'html css ruby rails sql',
+		tags: 'css ruby rails sql',
 		image: 'https://res.cloudinary.com/swy/image/upload/v1501895999/cheek5_x393hf.png',
 		image_alt: 'cheekchubby homepage',
 		header: 'cheekChubby',

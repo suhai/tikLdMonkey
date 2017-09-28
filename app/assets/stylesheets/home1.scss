@@ -204,7 +204,8 @@ button.login {
   font-size: 14px;
   transition: text-shadow 0.3s;
   margin-top: 30px;
-  margin-right: 10px;
+	margin-right: 10px;
+	margin-left: 77em;
 }
 
 button.signup:hover {
@@ -241,4 +242,9 @@ header {
 p {
   font-size: 14px;
   color: $abl;
+}
+
+
+.centered-div {
+	margin-left: 20% !important;
 }
