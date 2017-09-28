@@ -21,12 +21,12 @@ class Navigation extends React.Component {
     window.location.hash = `/${this.props.currentUser.username}`;
   }
 
-  toSearch(e) {
-    if (e.key === 'Enter' && e.target.value !== '') {
-      window.location.hash = `/search?q=${e.target.value}`;
-      e.target.value = '';
-    }
-  }
+  // toSearch(e) {
+  //   if (e.key === 'Enter' && e.target.value !== '') {
+  //     window.location.hash = `/search?q=${e.target.value}`;
+  //     e.target.value = '';
+  //   }
+  // }
 
   toggleSettings() {
     if (this.state.isActive === '') {
@@ -53,11 +53,11 @@ class Navigation extends React.Component {
           <li><NavLink to='/jobs'>JobApps</NavLink></li>
           <li><NavLink to='/admin/trivia'>Trivia</NavLink></li>
           <li><NavLink to='/admin/projects'>Projects</NavLink></li>
-          <li><NavLink to='/admin/games'>Games</NavLink></li> 
+          {/* <li><NavLink to='/admin/games'>Games</NavLink></li>  */}
 					<li><NavLink to='/:username/messages'>Messages</NavLink></li>   
         </ul>
         <ul className='searchbar'>
-          <input onKeyPress={this.toSearch} className='home-search'></input>
+          <input placeholder='Search for Anything' className='home-search'></input>
         </ul>
         <ul>
           <li className={`nav-user`}>
@@ -71,12 +71,12 @@ class Navigation extends React.Component {
               <li>
                 <Link to={`/profile/favorites`}>Favorites</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to={`/profile/activities`}>Activities</Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to={`/profile/stories`}>Stories</Link>
-              </li>
+              </li> */}
               <li id='signout' onClick={this.logout}>Sign out</li>
             </ul>
           </li>

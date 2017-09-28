@@ -7,7 +7,6 @@ class Api::ProjectsController < ApplicationController
   end
 
   def new
-    # @page_title = 'Add project'
     @project = Project.new
     render json: @project
   end
@@ -15,8 +14,7 @@ class Api::ProjectsController < ApplicationController
   def create 
     @project = Project.new(project_params)
     if @project.save
-      flash[:notice] = "#{@project.title} projects Created"
-      redirect_to api_projects_path
+      render :show
     else    
       render 'new'
     end
@@ -24,7 +22,7 @@ class Api::ProjectsController < ApplicationController
 
   def show 
     @project = Project.find(params[:id])
-    render json: @project
+    render :show
   end
 
   def edit

@@ -113,7 +113,7 @@ class HomePage extends React.Component {
 										<div className="col-md-8 col-full-width" id='portfolio'>
 												<div className="section-header text-center">
 													<h2 className="section-title wow fadeInDown">
-															<span>Stuff</span> I've Built  
+															My Porfolio Projects
 													</h2>
 													<div className="divider wow fadeInDown"><span></span></div>
 													<p className="wow fadeInDown">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='resume-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>

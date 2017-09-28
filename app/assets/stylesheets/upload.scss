@@ -1,250 +1,250 @@
-@import 'variables';
+// @import 'variables';
 
-section.upload-main {
-  width: 1100px;
-  height: 800px;
-  // background-image: asset-url('upload-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
-
-
-  div.upload-info {
-    width: 700px;
-    height: 100px;
-    margin: 0 auto;
-    background: transparent;
-  }
-
-  div.upload-box {
-    width: 750px;
-    height: 350px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background: white;
-    border: 1px solid lavender;
-    transition: height 0.3s;
-
-    ul {
-      display: flex;
-      justify-content: center;
-
-      button {
-        margin: 0 5px;
-        height: 40px;
-        font-size: 14px;
-        font-weight: 400;
-
-        &:hover { text-shadow: none; }
-      }
-
-      button.login {
-        border: 1px solid lightgray;
-        color: $grayish;
-      }
-    }
-
-    ul.dropzone {
-      margin-top: 90px;
-    }
-
-    h1 {
-      padding-top: 30px;
-      font-weight: 400;
-      font-size: 30px;
-    }
-
-    div.upload-buttons {
-      display: flex;
-      width: 50%;
-      justify-content: flex-end;
-      align-self: flex-end;
-      margin: 10px 0;
-
-      button {
-        height: 30px;
-
-        &.signup { border: none }
-      }
-    }
-
-    button.upload-image {
-      position: absolute;
-      background: lightgray;
-      bottom: 10px;
-      left: 44px;
-      height: 25px;
-      opacity: 0.8;
-      font-size: 14px;
-      transition: background 0.2s;
-
-      &:hover { background: white; cursor: pointer }
-    }
-
-    ul.upload-prop {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 30px;
-      opacity: 0;
-      transition: opacity 0.3s;
-      transition-delay: 0.1s;
-
-      &.active {
-        opacity: 1;
-      }
-
-      h1 {
-        padding: 0 0 5px 0;
-        margin-bottom: 25px;
-        border-bottom: 1px solid lightgray;
-        font-size: 25px;
-      }
-
-      ul.upload-prop-description {
-        display: flex;
-        justify-content: space-around;
-        overflow: hidden;
-
-        li.upload-image-box {
-          position: relative;
-          height: 200px;
-          width: 200px;
-          background: $military-green;
-
-          img {
-            height: 100%;
-            overflow-x: hidden;
-            width: 100%;
-          }
-        }
-
-        ul.upload-prop-info {
-          display: flex;
-          flex-direction: column;
-          flex-grow: 1;
-          margin-left: 30px;
-          font-size: 14px;
-
-          > ul {
-            justify-content: space-between;
-          }
-
-          li.upload-errors {
-            font-size: 13px;
-            color: red;
-          }
-
-          input {
-            margin: 5px 0;
-            border: 1px solid lightgray;
-            border-radius: 3px;
-            padding: 3px;
-            transition: border 0.3s;
-
-            &:focus{
-              outline: none;
-              border: 1px solid gray;
-            }
-          }
-
-          ul.upload-prop-detail {
-            display: flex;
-            align-items: center;
-
-            li {
-              display: flex;
-              flex-direction: column;
-              flex-grow: 1;
-
-              &:first-child { margin-right: 10px;}
-            }
-
-            input {
-              flex-grow: 1;
-
-              &.upload-date { padding: 1px 3px; }
-            }
+// section.upload-main {
+//   width: 1100px;
+//   height: 800px;
+//   // background-image: asset-url('upload-bg.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   margin: 0 auto;
 
 
-          }
+//   div.upload-info {
+//     width: 700px;
+//     height: 100px;
+//     margin: 0 auto;
+//     background: transparent;
+//   }
 
-          textarea {
-            resize: none;
-            margin-top: 5px;
-            border-radius: 3px;
-            border: 1px solid lightgray;
-            transition: border 0.3s;
+//   div.upload-box {
+//     width: 750px;
+//     height: 350px;
+//     margin: 0 auto;
+//     border-radius: 5px;
+//     background: white;
+//     border: 1px solid lavender;
+//     transition: height 0.3s;
 
-            &:focus {
-              outline: none;
-              border: 1px solid gray;
-            }
-          }
-        }
-      }
-    }
-  }
+//     ul {
+//       display: flex;
+//       justify-content: center;
 
-  div.active {
-    height: 470px;
-    overflow-y: hidden;
-  }
-}
+//       button {
+//         margin: 0 5px;
+//         height: 40px;
+//         font-size: 14px;
+//         font-weight: 400;
 
-div.header-image {
-  height: 180px;
-  width: 100%;
-  background: $military-green;
-  margin-top: 20px;
-  position: relative;
+//         &:hover { text-shadow: none; }
+//       }
 
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
+//       button.login {
+//         border: 1px solid lightgray;
+//         color: $grayish;
+//       }
+//     }
 
-li.profile-image {
-  height: 160px;
-  width: 160px;
+//     ul.dropzone {
+//       margin-top: 90px;
+//     }
 
-  img {
-    height: 100%;
-    width: 100%;
-  }
+//     h1 {
+//       padding-top: 30px;
+//       font-weight: 400;
+//       font-size: 30px;
+//     }
 
-  background: $military-green;
-  margin: 30px 0px 9px 0px;
-  position: relative;
-}
+//     div.upload-buttons {
+//       display: flex;
+//       width: 50%;
+//       justify-content: flex-end;
+//       align-self: flex-end;
+//       margin: 10px 0;
 
-div.user-edit.active.upload-box {
-  height: 540px;
+//       button {
+//         height: 30px;
 
-  button.upload-header {
-    position: absolute;
-    background: lightgray;
-    bottom: 10px;
-    right: 5px;
-    height: 30px;
-    opacity: 0.8;
-    font-size: 14px;
-    transition: background 0.2s;
+//         &.signup { border: none }
+//       }
+//     }
 
-    &:hover { background: white; cursor: pointer }
-  }
+//     button.upload-image {
+//       position: absolute;
+//       background: lightgray;
+//       bottom: 10px;
+//       left: 44px;
+//       height: 25px;
+//       opacity: 0.8;
+//       font-size: 14px;
+//       transition: background 0.2s;
 
-  button.upload-image {
-    position: absolute;
-    background: lightgray;
-    bottom: 5px;
-    left: 25px;
-    height: 30px;
-    opacity: 0.8;
-    font-size: 14px;
-    transition: background 0.2s;
+//       &:hover { background: white; cursor: pointer }
+//     }
 
-    &:hover { background: white; cursor: pointer }
-  }
-}
+//     ul.upload-prop {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       margin: 0 30px;
+//       opacity: 0;
+//       transition: opacity 0.3s;
+//       transition-delay: 0.1s;
+
+//       &.active {
+//         opacity: 1;
+//       }
+
+//       h1 {
+//         padding: 0 0 5px 0;
+//         margin-bottom: 25px;
+//         border-bottom: 1px solid lightgray;
+//         font-size: 25px;
+//       }
+
+//       ul.upload-prop-description {
+//         display: flex;
+//         justify-content: space-around;
+//         overflow: hidden;
+
+//         li.upload-image-box {
+//           position: relative;
+//           height: 200px;
+//           width: 200px;
+//           background: $military-green;
+
+//           img {
+//             height: 100%;
+//             overflow-x: hidden;
+//             width: 100%;
+//           }
+//         }
+
+//         ul.upload-prop-info {
+//           display: flex;
+//           flex-direction: column;
+//           flex-grow: 1;
+//           margin-left: 30px;
+//           font-size: 14px;
+
+//           > ul {
+//             justify-content: space-between;
+//           }
+
+//           li.upload-errors {
+//             font-size: 13px;
+//             color: red;
+//           }
+
+//           input {
+//             margin: 5px 0;
+//             border: 1px solid lightgray;
+//             border-radius: 3px;
+//             padding: 3px;
+//             transition: border 0.3s;
+
+//             &:focus{
+//               outline: none;
+//               border: 1px solid gray;
+//             }
+//           }
+
+//           ul.upload-prop-detail {
+//             display: flex;
+//             align-items: center;
+
+//             li {
+//               display: flex;
+//               flex-direction: column;
+//               flex-grow: 1;
+
+//               &:first-child { margin-right: 10px;}
+//             }
+
+//             input {
+//               flex-grow: 1;
+
+//               &.upload-date { padding: 1px 3px; }
+//             }
+
+
+//           }
+
+//           textarea {
+//             resize: none;
+//             margin-top: 5px;
+//             border-radius: 3px;
+//             border: 1px solid lightgray;
+//             transition: border 0.3s;
+
+//             &:focus {
+//               outline: none;
+//               border: 1px solid gray;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   div.active {
+//     height: 470px;
+//     overflow-y: hidden;
+//   }
+// }
+
+// div.header-image {
+//   height: 180px;
+//   width: 100%;
+//   background: $military-green;
+//   margin-top: 20px;
+//   position: relative;
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// li.profile-image {
+//   height: 160px;
+//   width: 160px;
+
+//   img {
+//     height: 100%;
+//     width: 100%;
+//   }
+
+//   background: $military-green;
+//   margin: 30px 0px 9px 0px;
+//   position: relative;
+// }
+
+// div.user-edit.active.upload-box {
+//   height: 540px;
+
+//   button.upload-header {
+//     position: absolute;
+//     background: lightgray;
+//     bottom: 10px;
+//     right: 5px;
+//     height: 30px;
+//     opacity: 0.8;
+//     font-size: 14px;
+//     transition: background 0.2s;
+
+//     &:hover { background: white; cursor: pointer }
+//   }
+
+//   button.upload-image {
+//     position: absolute;
+//     background: lightgray;
+//     bottom: 5px;
+//     left: 25px;
+//     height: 30px;
+//     opacity: 0.8;
+//     font-size: 14px;
+//     transition: background 0.2s;
+
+//     &:hover { background: white; cursor: pointer }
+//   }
+// }

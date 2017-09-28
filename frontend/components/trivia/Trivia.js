@@ -3,7 +3,7 @@ import { Route, NavLink, Redirect } from 'react-router-dom';
 import Navigationa from '../navigationa';
 import TriviaContainer from './TriviaContainer';
 import { Art, Culture, Geography, History } from '../stat_data/trivia';
-import PlaceHolder from '../placeholder/place_holder';
+// import PlaceHolder from '../placeholder/place_holder';
 
 const Trivia = ({match}) => (
   <div className="main-content trivia default-margin">
@@ -34,14 +34,14 @@ const Trivia = ({match}) => (
     <Route path={`${match.path}/history`} render={ () => <TriviaContainer data={History } /> } />     
     <Route path={`${match.path}/geography`} render={ () => <TriviaContainer data={Geography} /> } />
     <Route path={`${match.path}/art`}  render={ () => <TriviaContainer data={Art} /> } />
-    <Route path={`${match.path}/biology`}  render={ () => <PlaceHolder /> } />
+    {/* <Route path={`${match.path}/biology`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/chemistry`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/physics`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/space`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/oceans`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/medicine`}  render={ () => <PlaceHolder /> } />
     <Route path={`${match.path}/travel`}  render={ () => <PlaceHolder /> } />
-    <Route path={`${match.path}/politics`}  render={ () => <PlaceHolder /> } /> 
+    <Route path={`${match.path}/politics`}  render={ () => <PlaceHolder /> } />  */}
   </div>
 );
 
