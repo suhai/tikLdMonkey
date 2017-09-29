@@ -18,12 +18,10 @@ class PublicNavigation extends React.Component {
   render() {
     return (
       <nav className='navigation'>
-        <ul>
-          <li className='loggedhome-logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
+        <ul className='public-nav'>
+          <li className='logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
           <li><NavLink exact to='/'>Home</NavLink></li>
           <li><NavLink to='/trivia'>Trivia</NavLink></li>
-        </ul>
-        <ul className='searchbar'>
         </ul>
       </nav>
     );

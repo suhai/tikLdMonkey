@@ -40,14 +40,14 @@ class Navigation extends React.Component {
     return (
       <nav className='navigation'>
         <ul>
-          <li className='loggedhome-logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
+          <li className='logo'><img src='https://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg'/></li>
           <li><NavLink to='/'>Home</NavLink></li>
           <li><NavLink to='/categories'>Categories</NavLink></li>
           <li><NavLink to='/jobs'>JobApps</NavLink></li>
 					<li><NavLink to='/:username/messages'>Messages</NavLink></li>   
         </ul>
         <ul className='searchbar'>
-          <input placeholder='Search for Anything' className='home-search'></input>
+          <input placeholder='Search for Anything' className='search-input'></input>
         </ul>
         <ul>
           <li className={`nav-user`}>
@@ -57,9 +57,6 @@ class Navigation extends React.Component {
             <ul id='user-settings' className={this.state.isActive}>
               <li>
                 <Link to={`/${this.props.currentUser.username}`}>Profile</Link>
-              </li>
-              <li>
-                <Link to={`/${this.props.currentUser.username}`}>Activity</Link>
               </li>
               <li id='signout' onClick={this.logout}>Sign out</li>
             </ul>
