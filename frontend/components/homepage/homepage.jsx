@@ -2,9 +2,8 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Modal from 'react-modal';
 import Login from './login';
-import Signup from './signup';
 import { values } from 'lodash';
-import Navigationa from '../navigationa';
+import PublicNavigation from '../PublicNavigation';
 import Project from './Project';
 import { myProjects } from '../stat_data/projects';
 
@@ -13,11 +12,9 @@ class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false, authRoute: '' };
-    this.openSignUp = this.openSignUp.bind(this);
     this.openSignIn = this.openSignIn.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.swy_info = this.swy_info.bind(this);
-		this.monkey_page = this.monkey_page.bind(this);
 		this.renderMessageForm = this.renderMessageForm.bind(this);
   }
 
@@ -30,11 +27,6 @@ class HomePage extends React.Component {
     this.setState({ isOpen: true, authRoute: 'signin' });
   }
 
-  openSignUp(e) {
-    e.preventDefault();
-    this.setState({ isOpen: true, authRoute: 'signup' });
-  }
-
   swy_info(e) {
     e.preventDefault();
     window.location.hash = '/swy_info'
@@ -45,11 +37,6 @@ class HomePage extends React.Component {
     this.props.clearErrors();
     this.setState({ isOpen: false, authRoute: '' });
   }
-
-  monkey_page(e) {
-    e.preventDefault();
-    window.location.hash = '/monkeys'
-	}
 	
 	renderMessageForm(e) {
     e.preventDefault();
@@ -60,20 +47,16 @@ class HomePage extends React.Component {
     let authRoute;
     if (this.state.authRoute === 'signin') {
       authRoute = <Login errors={this.props.errors} login={this.props.login}/>;
-    } else {
-      authRoute = <Signup errors={this.props.errors}
-        signup={this.props.signup}
-        login = {this.props.login}/>;
-		};
+    };
 		
 		const projects = myProjects.map((project, idx) => (
 			<Project key={idx} project={project} />
 		));
 
     return (
-      <div className='homepage default-margin'>
+      <div className='homepage'>
         <header className='loggedhome-header'>
-          <Navigationa />
+          <PublicNavigation />
         </header>
         <Modal overlayClassName="homepage-modal-overlay"
           className='homepage-modal'
@@ -86,15 +69,15 @@ class HomePage extends React.Component {
           <div className='homepage-overlay'>
           </div>
           <header>
-            <div className='homepage-logo'></div>
-            <ul>
-              <li>
-                <button onClick={this.swy_info} className='swyinfo'>About Me</button>
-              </li>
-              <li>
-                <button onClick={this.openSignIn} className='login'>Private Acess</button>
-              </li> 
-            </ul>
+            {/* <div className='homepage-logo'></div> */}
+							<div className='twin-buttons'>
+								<div className='lefty'>
+									<button onClick={this.swy_info} className='swyinfo'>About Me</button>
+								</div>
+								<div className='righty'>
+									<button onClick={this.openSignIn} className='login'>Private Acess</button>
+								</div>
+							</div>
           </header>
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
@@ -151,11 +134,11 @@ class HomePage extends React.Component {
 									</div>
 								</div>
 						</div>
-				</section>
+					</section>
+				</div>
 			</div>
-		</div>
-	);
-}
+		);
+	}
 }
 
 export default HomePage;

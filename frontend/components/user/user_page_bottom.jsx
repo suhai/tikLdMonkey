@@ -5,8 +5,6 @@ import { NavLink, Route, Switch } from 'react-router-dom';
 class UserPageBottom extends React.Component {
   constructor(props) {
     super(props);
-    this.editUser = this.editUser.bind(this);
-    this.deleteUser = this.deleteUser.bind(this);
   }
 
   componentDidMount() {
@@ -20,15 +18,6 @@ class UserPageBottom extends React.Component {
       let username = nextProps.match.params.username;
       this.props.fetchUser(username);
     }
-  }
-
-  editUser() {
-    let user = this.props.currentUser;
-    this.props.history.push(`/${user.username}/edit`);
-  }
-
-  deleteUser() {
-    
   }
 
   render() {

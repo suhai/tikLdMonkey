@@ -1,17 +1,10 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
-class Navigationa extends React.Component {
+class PublicNavigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = { isActive: '' };
-  }
-
-  toSearch(e) {
-    if (e.key === 'Enter' && e.target.value !== '') {
-      window.location.hash = `/search?q=${e.target.value}`;
-      e.target.value = '';
-    }
   }
 
   toggleSettings() {
@@ -31,11 +24,10 @@ class Navigationa extends React.Component {
           <li><NavLink to='/trivia'>Trivia</NavLink></li>
         </ul>
         <ul className='searchbar'>
-          {/* <input onKeyPress={this.toSearch} className='home-search'></input> */}
         </ul>
       </nav>
     );
   }
 }
 
-export default Navigationa;
+export default PublicNavigation;

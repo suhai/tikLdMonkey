@@ -13,24 +13,6 @@ class UserPage extends React.Component {
       profileImage: '',
       headerImage: ''
     };
-    this.uploadProfile = this.uploadProfile.bind(this);
-    this.uploadHeader = this.uploadHeader.bind(this);
-  }
-
-  uploadProfile(files) {
-    let profile = files[0];
-
-    let image = new FormData();
-    image.append('user[profile_image_url]', profile);
-
-    this.props.editUser(image, this.props.user.id);
-  }
-
-  uploadHeader(files) {
-    let header = files[0];
-    let image = new FormData();
-    image.append('user[header_image_url]', header);
-    this.props.editUser(image, this.props.user.id);
   }
 
   componentWillReceiveProps(nextProps) {

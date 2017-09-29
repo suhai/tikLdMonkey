@@ -1,1 +1,0 @@
-json.partial! 'api/trivia/trivium', trivium: @trivium

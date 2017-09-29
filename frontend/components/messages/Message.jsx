@@ -16,6 +16,7 @@ class Message extends React.Component {
 
   render() {
 		const { 
+			id,
 			sender, 
 			email, 
 			subject, 
@@ -24,6 +25,7 @@ class Message extends React.Component {
 
     return (
 			<tr onClick={this.showMessage}>
+				<td>{id}</td>
 				<td>{sender}</td>
 				<td>{email}</td>
 				<td>{subject}</td>

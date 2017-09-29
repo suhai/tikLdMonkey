@@ -119,7 +119,6 @@ section.user-page-bottom {
   display: flex;
   flex-direction: column;
   background: white;
-  // min-height: 700px;
 
   ul.user-page-nav {
     display: flex;
@@ -186,9 +185,5 @@ section.user-page-bottom {
   ul.user-page-bottom-content {
     display: flex;
     min-height: 500px;
-
-    // ul.user-page-songs {
-    //   flex: 2.5;
-    // }
   }
 }

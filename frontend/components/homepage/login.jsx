@@ -28,14 +28,6 @@ class Login extends React.Component {
     let errors = this.props.errors.join('');
     return (
       <ul className='homepage-auth'>
-        {/* <li>
-          <h3>Welcome Back</h3>
-        </li>
-        <ul>
-          <div></div>
-          <p>tM</p>
-          <div></div>
-        </ul> */}
 				<li>
           <p className=''>ADMIN LOGIN</p>
         </li>

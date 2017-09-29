@@ -5,8 +5,6 @@ export const CATEGORY_ERROR = 'CATEGORY_ERROR';
 import * as API from '../util/category_api_util';
 
 
-
-
 export const receiveCategory = category => ({
   type: RECEIVE_CATEGORY,
   category
@@ -17,9 +15,6 @@ export const createCategory = data => dispatch => (
   .then(category => dispatch(receiveCategory(category)))
 )
 //-----------------------------------------------------------------
-
-
-
 
 export const receiveCategories = categories => ({
   type: RECEIVE_CATEGORIES,
@@ -34,11 +29,6 @@ export const fetchCategories = () => dispatch => (
 )
 //-----------------------------------------------------------------
 
-
-
-
-
-
 export const removeCategory = category => ({
   type: REMOVE_CATEGORY,
   category
@@ -50,8 +40,6 @@ export const deleteCategory = id => dispatch => (
 );
 //-----------------------------------------------------------------
 
-
-
 export const fetchCategory = id => dispatch => (
   API.fetchCategory(id)
     .then(category => dispatch(receiveCategory(category)))
@@ -62,4 +50,3 @@ export const editCategory = category => dispatch => (
   API.updateCategory(category)
     .then(editedCategory => dispatch(receiveCategory(editedCategory)))
 );
-//-----------------------------------------------------------------

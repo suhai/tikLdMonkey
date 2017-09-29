@@ -31,9 +31,9 @@ body {
 }
 
 
-.default-margin {
-	margin-bottom: 5em;
-}
+// .default-margin {
+// 	margin-bottom: 5em;
+// }
 
 .centered-text {
 	text-align: center !important;
@@ -278,4 +278,9 @@ button.cancel {
   color: black;
   text-align: center;
   margin-top: 90px;
+}
+
+.here {
+  color: $abi;
+  flex: 2;
 }

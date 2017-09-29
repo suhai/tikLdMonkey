@@ -34,7 +34,7 @@ class Messages extends React.Component {
 				<table cellPadding={0} cellSpacing={0}>
 					<thead>
 						<tr>
-							{/* <th scope="col">Post ID</th> */}
+							<th scope="col">Message ID</th>
 							<th scope="col">Sender</th>
 							<th scope="col">Email</th>
 							<th scope="col">Subject</th>

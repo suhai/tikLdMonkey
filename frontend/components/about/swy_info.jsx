@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navigationa from '../navigationa';
+import PublicNavigation from '../PublicNavigation';
 
 const SwyInfo = () => (
   <div className="default-margin">
     <header className='loggedhome-header'>
-      <Navigationa />
+      <PublicNavigation />
     </header>
       <img className="swy-img" src='http://res.cloudinary.com/swy/image/upload/a_hflip/v1500934478/swy_rsd2cc.jpg'/>
     <h3 className='temporal'>About Me</h3>

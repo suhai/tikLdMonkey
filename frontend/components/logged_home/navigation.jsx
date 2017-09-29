@@ -21,13 +21,6 @@ class Navigation extends React.Component {
     window.location.hash = `/${this.props.currentUser.username}`;
   }
 
-  // toSearch(e) {
-  //   if (e.key === 'Enter' && e.target.value !== '') {
-  //     window.location.hash = `/search?q=${e.target.value}`;
-  //     e.target.value = '';
-  //   }
-  // }
-
   toggleSettings() {
     if (this.state.isActive === '') {
       this.setState({ isActive: 'active' });
@@ -51,9 +44,6 @@ class Navigation extends React.Component {
           <li><NavLink to='/'>Home</NavLink></li>
           <li><NavLink to='/categories'>Categories</NavLink></li>
           <li><NavLink to='/jobs'>JobApps</NavLink></li>
-          <li><NavLink to='/admin/trivia'>Trivia</NavLink></li>
-          <li><NavLink to='/admin/projects'>Projects</NavLink></li>
-          {/* <li><NavLink to='/admin/games'>Games</NavLink></li>  */}
 					<li><NavLink to='/:username/messages'>Messages</NavLink></li>   
         </ul>
         <ul className='searchbar'>
@@ -69,14 +59,8 @@ class Navigation extends React.Component {
                 <Link to={`/${this.props.currentUser.username}`}>Profile</Link>
               </li>
               <li>
-                <Link to={`/profile/favorites`}>Favorites</Link>
+                <Link to={`/${this.props.currentUser.username}`}>Activity</Link>
               </li>
-              {/* <li>
-                <Link to={`/profile/activities`}>Activities</Link>
-              </li> */}
-              {/* <li>
-                <Link to={`/profile/stories`}>Stories</Link>
-              </li> */}
               <li id='signout' onClick={this.logout}>Sign out</li>
             </ul>
           </li>
