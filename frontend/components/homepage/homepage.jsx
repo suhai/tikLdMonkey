@@ -93,7 +93,7 @@ class HomePage extends React.Component {
 															My Portfolio Projects
 													</h2>
 													<div className="divider wow fadeInDown"><span></span></div>
-													<p className="wow fadeInDown portfolio-para">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='highlighted-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>
+													<p className="wow fadeInDown portfolio-para">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='highlighted-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on Github, and a live link to those that are deployed.</p>
 												</div>
 										</div>
 								</div>
