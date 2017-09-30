@@ -102,8 +102,9 @@ main.homepage-info {
   text-decoration: none;
 }
 
-.main-content {
-  padding: 2em;
+div.main-content {
+	padding: 2em;
+	max-height: 200em;
 }
 
 p.portfolio-para {
