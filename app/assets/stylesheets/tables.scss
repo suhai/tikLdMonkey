@@ -1,6 +1,6 @@
 @import 'variables';
 
-.table-h1 {
+.message-table {
   font-size: 30px;
   color: #000;
   text-transform: uppercase;
@@ -9,24 +9,23 @@
   margin-bottom: 15px;
 }
 
-table{
+table {
   width: 90%;
 	table-layout: fixed;
-	// margin: auto;
 }
-.tbl-header{
+.tbl-header {
 	background-color: $aeh;
 	margin-left: 1em;
 	margin-right: 1em;
  }
 
- .tbl-header2{
+ .tbl-header2 {
 	background-color: $adb;
 	margin-left: 1em;
 	margin-right: 1em;
  }
 
-.tbl-content{
+.tbl-content {
   height:300px;
   overflow-x:auto;
   margin-top: 0px;
@@ -35,7 +34,7 @@ table{
 	margin-right: 1em;
 }
 
-th{
+th {
   padding: 10px 5px;
   text-align: left;
   font-weight: 500;
@@ -44,7 +43,7 @@ th{
   text-transform: uppercase;
 }
 
-td{
+td {
   padding: 5px;
   text-align: left;
   vertical-align:middle;
@@ -54,8 +53,7 @@ td{
   border-bottom: solid 2px rgba(255,255,255,0.1);
 }
 
-tbody tr:hover td
-{
+tbody tr:hover td {
 	background: #d0dafd;
 	color: #339;
 }

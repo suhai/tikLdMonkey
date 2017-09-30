@@ -1,0 +1,37 @@
+@import 'variables';
+
+.swy-page-body {
+	margin-bottom: 10em;
+}
+
+.about-block {
+	margin: 2em 20em;
+
+	hr {
+		color: black;
+		width: 90%;
+		margin: 1em auto;
+		display: block;
+		border-width: 2px;
+	}
+
+	code {
+		color: black;
+		line-height: 3em;
+		background-color: $white;
+	}
+}
+
+.swy-img {
+  width: 12em;
+  display: block;
+  margin: 5em auto 1em;
+}
+
+.temporal {
+  text-align: center;
+  font-family: Courier New, Courier, monospace;
+  color: black;
+  margin: 20px 0 10px 0;
+}
+

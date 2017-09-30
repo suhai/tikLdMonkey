@@ -55,7 +55,7 @@ class HomePage extends React.Component {
 
     return (
       <div className='homepage'>
-        <header className='loggedhome-header'>
+        <header className='home-header'>
           <PublicNavigation />
         </header>
         <Modal overlayClassName="homepage-modal-overlay"
@@ -86,14 +86,14 @@ class HomePage extends React.Component {
         <div className="main-content">  
 				<section id="portfolio" className="portfolio-section space-150">
 						<div className="container">
-								<div className="row centered-div">
-										<div className="col-md-8 col-full-width" id='portfolio'>
+								<div className="row">
+										<div className="col-md-12 col-full-width" id='portfolio'>
 												<div className="section-header text-center">
 													<h2 className="section-title wow fadeInDown">
-															My Porfolio Projects
+															My Portfolio Projects
 													</h2>
 													<div className="divider wow fadeInDown"><span></span></div>
-													<p className="wow fadeInDown">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='highlighted-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>
+													<p className="wow fadeInDown portfolio-para">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='highlighted-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>
 												</div>
 										</div>
 								</div>

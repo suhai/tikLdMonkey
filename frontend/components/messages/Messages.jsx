@@ -27,19 +27,18 @@ class Messages extends React.Component {
 		));
 
 		return (
-			<div className='pages'>
-
-			<h1 className='table-h1'>Messages Table</h1>
-			<div className="tbl-header">
-				<table cellPadding={0} cellSpacing={0}>
-					<thead>
-						<tr>
-							<th scope="col">Message ID</th>
-							<th scope="col">Sender</th>
-							<th scope="col">Email</th>
-							<th scope="col">Subject</th>
-							<th scope="col">Excerpt</th>
-						</tr>
+			<div>
+				<h1 className='message-table'>Messages Table</h1>
+				<div className="tbl-header">
+					<table cellPadding={0} cellSpacing={0}>
+						<thead>
+							<tr>
+								<th scope="col">Message ID</th>
+								<th scope="col">Sender</th>
+								<th scope="col">Email</th>
+								<th scope="col">Subject</th>
+								<th scope="col">Excerpt</th>
+							</tr>
 						</thead>
 					</table>
 				</div>
@@ -47,7 +46,7 @@ class Messages extends React.Component {
 				<div className="tbl-content">
 					<table cellPadding={0} cellSpacing={0}>
 						<tbody>
-						{messages}
+							{messages}
 						</tbody>
 					</table>
 				</div>

@@ -9,62 +9,15 @@
   padding: 2px 0 2px 0;
 }
 
-.cat-save {
-  display: block;
-  background: $adk;
-  color: lightblue;
-  border-radius: 2px;
-  font-weight: 300;
-  // padding: 5px;
-  font-size: 14px;
-  transition: text-shadow 0.3s;
-  margin-top: 1em;
-  // margin-left: 0.2em;
-  position: relative;
-  right: 2px;
-}
-
-
-.addcat {
-  background: gray;
-  color: white;
-  border-radius: 5px;
-  font-weight: 300;
-  padding: 5px 15px 5px 15px;
-  font-size: 14px;
-}
-
-.deletecat {
-  background: red;
-  color: white;
-  border-radius: 5px;
-  font-weight: 300;
-  padding: 5px 15px 5px 15px;
-  font-size: 14px;
-}
-
-
-.category_edit_form {
-  margin: auto;
-  width: 20em;
-  border: .5em solid green;
-  padding: 1em;
-  text-align: center;
-}
-
-.cat-details {
-  margin-bottom: 1em;
-}
-
 .cat-demo {
   text-align: center;
 }
 
 input[type=text] {
-    padding:5px; 
-    border:2px solid pink; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+	padding:5px; 
+	border:2px solid pink; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .catshow {
@@ -96,7 +49,6 @@ input[type=text] {
 }
 
 .catedit-save {
-  // margin: auto;
   margin-left: 4.5em;
   width: 4.5em;
   padding: 5px;

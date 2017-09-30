@@ -63,3 +63,76 @@ button:focus {
 		}
 	}
 }
+
+
+.cat-save {
+  display: block;
+  background: $adk;
+  color: lightblue;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 14px;
+  transition: text-shadow 0.3s;
+  margin-top: 1em;
+  position: relative;
+  right: 2px;
+}
+
+
+.addcat {
+  background: gray;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+}
+
+.deletecat {
+  background: red;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+}
+
+
+.category_edit_form {
+  margin: auto;
+  width: 20em;
+  border: .5em solid green;
+  padding: 1em;
+  text-align: center;
+}
+
+.cat-details {
+  margin-bottom: 1em;
+}
+
+button.addnew {
+  background: #4BAD08;
+  margin-left: 440px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  transition: text-shadow 0.3s;
+  margin-top: 30px;
+}
+
+
+
+button.cancel {
+  background: $adk;
+  color: white;
+  border-radius: 5px;
+  font-weight: 300;
+  padding: 5px 15px 5px 15px;
+  font-size: 14px;
+  transition: text-shadow 0.3s;
+  margin-top: 30px;
+  margin-right: 10px;
+}

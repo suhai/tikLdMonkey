@@ -1,58 +1,78 @@
 @import 'variables';
 
-
-
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .trivium {
   margin-bottom: 2em;
 }
+
 .triv-p {
   color:$aet;
   font-size: 1.2em;
 }
 
-
-/* IMAGES -------- */
 .trivium-img {
   width: 70px;
 }
 
-.game-img {
-  width: 30%;
-  height: 30%;
-  border-radius: .3em;
+.trivia-nav {
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
+.trivia-nav a {
+  font-size: .85em;
+  color: #7d7d7d;
+  padding: .2em .8em;
+  border-radius: .25em;
+  background: #eaebeb;
+	transition: .2s;
+}
 
-/* trivium NAV -------- */
+.trivia-nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    zoom:1;
+    *display: inline;
+}
+.trivia-nav li {
+  float: left;
+  margin-left: 1.5em;
+}
 
-// .trivium-nav li {
-//   display: inline-block;
-//   margin-bottom: 30px;
-// }
+.trivia-nav a:hover,
+.trivia-nav a.active {
+  color: #fff;
+	background: #800000;
+	text-decoration: none;
+}
 
-// .trivium-nav li + li {
-//   margin-left: .8em;
-// }
+ul, li {
+	list-style: none;
+}
 
-// .trivium-nav a {
-//   font-size: .85em;
-//   color: #7d7d7d;
-//   padding: .2em .8em;
-//   border-radius: .25em;
-//   background: #eaebeb;
-//   transition: .2s;
-// }
+a {
+	 text-decoration: none;
+ color: black;
+}
 
-// .trivium-nav a:hover,
-// .trivium-nav a.active {
-//   color: #fff;
-//   background: #800000;
-// }
+a.active {
+	border-bottom: 1px solid $salmon;
+	 color: $salmon;
+ }
+ 
+a:hover {
+	position: relative;
+	 z-index: 999;
+	border-bottom: 1px solid black;
+	 cursor: pointer;
+}
 
+.outside-stuff {
+	text-align: center;
+	color: #005522;
+}
 
+.stuff-out {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}

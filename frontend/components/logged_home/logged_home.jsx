@@ -20,14 +20,15 @@ class LoggedHome extends React.Component {
           <Navigation logout={this.props.logout} currentUser={this.props.currentUser}/>
         </header>
 
-        <div className='nav-space' />
-        <Switch>
-					<Route path="/:username/messages/:id" render={(props) => <MessageShowContainer {...props} /> } />
-					<Route path="/:username/messages" render={(props) => <MessagePageContainer {...props} /> } />
-          <Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
-          <Route exact path="/jobs" render={(props) => <JobAppHome {...props} /> } />
-          <Route path="/:username" render={(props) => <UserPageContainer {...props} /> } />
-        </Switch>
+        <div className='pages'>
+					<Switch>
+						<Route path="/:username/messages/:id" render={(props) => <MessageShowContainer {...props} /> } />
+						<Route path="/:username/messages" render={(props) => <MessagePageContainer {...props} /> } />
+						<Route exact path="/categories" render={(props) => <CategoryContainer {...props} /> } />
+						<Route exact path="/jobs" render={(props) => <JobAppHome {...props} /> } />
+						<Route path="/:username" render={(props) => <UserPageContainer {...props} /> } />
+					</Switch>
+				</div>
       </div>
     );
   }

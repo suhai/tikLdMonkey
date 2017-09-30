@@ -6,14 +6,14 @@ import { Art, Culture, Geography, History } from '../stat_data/trivia';
 
 const Trivia = ({match}) => (
   <div className="main-content trivia default-margin">
-    <header className='loggedhome-header'>
+    <header className='home-header'>
       <PublicNavigation />
     </header>
-    <div className="trivium-header group">
+    <div className="group">
       <div className="stuff-out">
         <h2 className="outside-stuff">Trivia</h2> 
       </div>
-      <div className='project'>
+      <div className='trivia-nav'>
         <ul>
           <li><NavLink to={`${match.url}/history`}>History</NavLink></li>
           <li><NavLink to={`${match.url}/culture`}>Culture</NavLink></li>

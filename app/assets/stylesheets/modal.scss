@@ -97,7 +97,6 @@ div.modal-test {
         font-size: 16px;
         border: 1px solid lightgray;
         padding: 10px;
-        // border-radius: 3px;
         box-shadow: none;
         transition: border 0.3s;
       }
@@ -113,7 +112,6 @@ div.modal-test {
       }
     }
   }
-
 }
 
 div.ReactModal_Content--after-open {
@@ -123,9 +121,9 @@ div.ReactModal_Content--after-open {
   }
 }
 
-.homepage-modal:focus { outline: 0 }
-
-
+.homepage-modal:focus { 
+	outline: 0 
+}
 
 
 .job-input {
@@ -186,21 +184,18 @@ div.modal-job {
 }
 
 
-  .job-modal {
-    max-width: 350px;
-    max-height: 230px;
-    background: lightsteelblue;
-    margin: 10em auto;
-    // margin-top: 10em;
-    // margin-bottom: 10em;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-
-    transition: transform 1s;
-  }
+.job-modal {
+	max-width: 350px;
+	max-height: 230px;
+	background: lightsteelblue;
+	margin: 10em auto;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	transition: transform 1s;
+}
 
 
 .jobapp-header {
@@ -223,19 +218,6 @@ div.modal-job {
   float: right;
   margin: auto 5px;
 }
-
-// .job-link {
-//   text-decoration: none;
-//   max-width: 100%;
-
-//   &:hover {
-//     font-size: 14px;
-//     border-radius: 3px;
-//     padding: 5px;
-//     border: 3px solid maroon;
-//     background-color: seashell;
-//   }
-// }
 
 .job-link {
   color: $ada;
