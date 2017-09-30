@@ -78,7 +78,7 @@ class HomePage extends React.Component {
             <h2 className="billabong">tikLdMonkey</h2>
             <div className='main-desc'>
               <h3>A CONTENT MANAGEMENT SYSTEM APPLICATION</h3>
-              <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects the projects that I work on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='highlighter'> HERE </strong></a>. I try to respond within 24 hours.</p>
+              <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects that I am working on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='highlighter'> HERE </strong></a>. I try to respond within 24 hours.</p>
             </div> 
           </div>
         </main>
