@@ -66,30 +66,24 @@ class HomePage extends React.Component {
             {authRoute}
         </Modal>
         <main className='homepage-info'>
-          <div className='homepage-overlay'>
-          </div>
-          <header>
-            {/* <div className='homepage-logo'></div> */}
-							<div className='twin-buttons'>
-								<div className='lefty'>
-									<button onClick={this.swy_info} className='swyinfo'>About Me</button>
-								</div>
-								<div className='righty'>
-									<button onClick={this.openSignIn} className='login'>Private Acess</button>
-								</div>
-							</div>
-          </header>
+					<div className='twin-buttons'>
+						<div className='lefty'>
+							<button onClick={this.swy_info} >About Me</button>
+						</div>
+						<div className='righty'>
+							<button onClick={this.openSignIn} >Private Acess</button>
+						</div>
+					</div>
           <div className='homepage-description'>
             <h2 className="billabong">tikLdMonkey</h2>
-            <div className='here'>
+            <div className='main-desc'>
               <h3>A CONTENT MANAGEMENT SYSTEM APPLICATION</h3>
-              <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects the projects that I work on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='resume-link'> HERE </strong></a>. I try to respond within 24 hours.</p>
-            </div>
-            
+              <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects the projects that I work on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='highlighter'> HERE </strong></a>. I try to respond within 24 hours.</p>
+            </div> 
           </div>
         </main>
         
-        <div className="main-contant">  
+        <div className="main-content">  
 				<section id="portfolio" className="portfolio-section space-150">
 						<div className="container">
 								<div className="row centered-div">
@@ -99,7 +93,7 @@ class HomePage extends React.Component {
 															My Porfolio Projects
 													</h2>
 													<div className="divider wow fadeInDown"><span></span></div>
-													<p className="wow fadeInDown">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='resume-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>
+													<p className="wow fadeInDown">Over the past several months I have worked on projects from simple ruby implementation of minesweeper to fullstack projects such as <a href='https://easthalo.herokuapp.com/'><strong className='highlighted-link'> EastHalo </strong></a>. Below you will find some of those projects with very brief descriptions. There is a link to the source code of each on GitHub, and a live link to some of them.</p>
 												</div>
 										</div>
 								</div>

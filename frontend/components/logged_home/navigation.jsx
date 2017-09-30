@@ -58,7 +58,7 @@ class Navigation extends React.Component {
               <li>
                 <Link to={`/${this.props.currentUser.username}`}>Profile</Link>
               </li>
-              <li id='signout' onClick={this.logout}>Sign out</li>
+              <li onClick={this.logout}>Sign out</li>
             </ul>
           </li>
         </ul>

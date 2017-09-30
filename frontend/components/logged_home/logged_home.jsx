@@ -15,7 +15,7 @@ class LoggedHome extends React.Component {
 
   render() {
     return (
-      <div className='loggedhome default-margin'>
+      <div className='loggedhome'>
         <header className='loggedhome-header'>
           <Navigation logout={this.props.logout} currentUser={this.props.currentUser}/>
         </header>

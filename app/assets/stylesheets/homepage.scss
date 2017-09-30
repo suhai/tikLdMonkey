@@ -6,322 +6,95 @@ div.homepage {
 	flex-direction: column;
 	margin-bottom: 5em;
 
-  section.homepage-bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    background: $aby;
-    height: 100%;
-    padding-bottom: 50px;
-  }
-}
-
-img {
-  width: 80%;
-  height: auto;
-}
-
-
-.lorem {
-  text-align: center;
-  margin: 0.5em 0 2em 0;
-  color: black;
-  font-family: Courier New, Courier, monospace;
-  font-size: 0.9em;
-}
-
-.lorem2 {
-  color: black;
-}
-
-.homepage-description {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  padding-bottom: 30px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background:hsla(0,0%,0%, 0.3);
-
-  h1 {
-    font-weight: 300;
-    font-size: 34px;
-    margin: 10px;
-    color: white;
-  }
-
-  p {
-    font-size: 17px;
-    font-family: Courier New, Courier, monospace;
-    // text-align: center;
-    text-align: left;
-    color: solid black;
-    // text-decoration-style: wavy;
-    margin-top: 1em;
-    margin-left: 11em;
-    margin-right: 10em;
-    margin-bottom: 1em;
-  }
-}
-
-
-.p1 {
-  font-family: monospace;
-  color: $abi;
-}
-
-.iceandsky {
-  color: $abi;
-  text-decoration: none;
-}
-
-.resume-link {
-  color: black;
-  text-decoration: none;
-}
-
-main.homepage-info {
-  // background-color: #e5e5e1;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: .1em;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-image: url('https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg');
-}
-
-.homepage-mid {
-  // background-color: #e5e5e1;
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-image: url('https://res.cloudinary.com/swy/image/upload/v1499750423/images/pexels-photo-213851.jpg');
-  margin-bottom: .1em;
-}
-
-
-button {
-  -webkit-appearance: none;
-  background: transparent;
-  border: none;
-  border-spacing: 0;
-  font-family: Open Sans;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-.monkey-h1 {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-// .tikld1 {
-//   font-size: 3.5em;
-//   text-align: center;
-//   margin-top: 1.5em;
-//   margin-bottom: 1em;
-// }
-
-.tikld {
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 0.3em;
-  // color: $afk;
-}
-
-.swyinfo {
-  // display: flex;
-  // flex-direction: column;
-  position: absolute;
-  max-width: 100px;
-  left: 5%;
-  margin-top: 30px;
-  color: white;
-  border-radius: 5px;
-  font-weight: 300;
-  font-size: 14px;
-  transition: box-shadow 0.3s, text-shadow 0.3s;
-  padding: 5px 15px 5px 15px;
-  border: .2em solid aquamarine;
-}
-
-.swyinfo:hover {
-  box-shadow: 0 0 5px white, 0 0 5px white inset;
-  border-radius: 5px;
-  text-shadow: 0 0 2px white;
-}
-
-
-
-
-
-//signup buton
-button.signup {
-  color: white;
-  border: .2em solid antiquewhite;
-  border-radius: 5px;
-  font-weight: 300;
-  padding: 5px 15px 5px 15px;
-  font-size: 14px;
-  margin-top: 30px;
-  transition: box-shadow 0.3s, text-shadow 0.3s;
-}
-
-
-//admin login butoton
-button.login {
-  background: $ads;
-  color: white;
-  border-radius: 5px;
-  font-weight: 300;
-  padding: .6em;
-  font-size: 14px;
-  transition: text-shadow 0.3s;
-  margin-top: 30px;
-	margin-right: 10px;
-	margin-left: 77em;
-}
-
-button.signup:hover {
-  box-shadow: 0 0 5px white, 0 0 5px white inset;
-  border-radius: 5px;
-  text-shadow: 0 0 2px white;
-}
-
-button.login:hover {
-  text-shadow: 0 0 2px white;
-}
-
-button:focus { outline:0 }
-
-
-header {
-  display: flex;
-  justify-content: space-between;
-
-  p {
-    padding: 5px;
-  }
-
-  ul {
-    display: flex;
-
-    li {
-      padding: 5px;
-      margin: 5px;
-    }
-  }
-}
-
-p {
-  font-size: 14px;
-  color: $abl;
-}
-
-
-.centered-div {
-	margin-left: 20% !important;
-}
-
-
-div.loggedhome {
-	position: relative;
+	header {
+		display: flex;
+		justify-content: space-between;
+	
+		p {
+		  padding: .5em;
+		}
+	
+		ul {
+			display: flex;
+	
+			li {
+			  padding: .5em;
+			  margin: .5em;
+			}
+		}
+	}
 }
 
 p.auth-errors {
   color: red;
 }
 
-
-
-
-
-div.nav-space {
-  height: 44px;
+main.homepage-info {
+  background-size: cover;
+	background-position: center;
+	margin-top: 4em;
+  margin-bottom: .1em;
+	height: 50em;
   width: 100%;
-  background: transparent;
-}
-
-
-
-main.loggedhome-body {
-  width: 1165px;
-  margin: 0 auto;
-  padding-bottom: 50px;
   display: flex;
-  position: relative;
-  background: white;
-
-  div.main-index {
-    flex: 5;
-
-    p {
-      color: gray;
-      font-size: 16px;
-      margin: 35px;
-    }
-  }
-
-  aside.loggedhome-sidebar {
-    flex: 2
-  }
-
-  nav.content-nav {
-    margin: 15px;
-    margin-top: 30px;
-
-    ul {
-      display: flex;
-      margin: 20px 15px;
-      border-bottom: 1px solid lavender;
-    }
-
-
-    li {
-      float: left;
-      padding: 0 0 5px 0;
-      margin: 0 15px -1px 0px;
-      margin-right: 15px;
-      margin-bottom: -1px;
-      font-size: 20px;
-      border-bottom: 1px solid lavender;
-    }
-
-    a {
-      padding-bottom: 5px
-    }
-
-    a.active:hover {
-      border-bottom: 1px solid $salmon;
-    }
-  }
+  flex-direction: column;
+  background-image: url('https://res.cloudinary.com/swy/image/upload/v1503358376/tikldhomepage_ixjjm0.jpg');
 }
 
 
-
-.billabong {
-  margin: 50px auto 10px;
-	font-family: billabong, 'billabongregular';
-  font-weight: 100;
-  font-size: 4.5em;
+.homepage-description {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding-bottom: 2em;;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
-  letter-spacing: 0.2em;
-  flex: 1;
+  background:hsla(0,0%,0%, 0.3);
+
+	.billabong {
+		margin: 50px auto 10px;
+		font-family: billabong, 'billabongregular';
+		font-weight: 100;
+		font-size: 4.5em;
+		text-align: center;
+		color: white;
+		letter-spacing: 0.2em;
+		flex: 1;
+	}
+
+  p {
+    font-size: 17px;
+    font-family: Courier New, Courier, monospace;
+		text-align: left;
+		color: $abl;
+    margin: 1em 10em;
+  }
+}
+
+.main-desc {
+  color: $abi;
+  flex: 2;
+}
+
+
+.highlighter {
+  color: $abi;
+  text-decoration: none;
+}
+
+.highlighted-link {
+	color: $aba;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 2em;
+}
+
+.centered-div {
+	margin-left: 20% !important;
 }
 
 
@@ -332,38 +105,3 @@ main.loggedhome-body {
 }
 
 
-header.loggedhome-header {
-  height:3.5em;
-  width: 100%;
-  background: $aad;
-  color: white;
-  font-size: 14px;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
-
-aside.loggedhome-sidebar {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  border-left: 1px solid lavender;
-  margin: 20px 2px 20px 20px;
-  padding: 0 20px;
-
-  span {
-    color: gray;
-    margin-top: 30px;
-    padding: 0px 10px 5px 10px;
-    border-bottom: 1px solid lavender;
-    font-size: 15px;
-  }
-
-  div.user-description {
-    width: 300px;
-    min-height: 100px;
-  }
-}

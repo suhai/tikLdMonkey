@@ -1,16 +1,65 @@
+@import 'variables';
+
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  border-spacing: 0;
+  font-family: Open Sans;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus { 
+	outline: 0;
+}
 
 .twin-buttons {
 	display: inline;
 	overflow: auto;
 	white-space: nowrap;
-	margin: 0px auto;
-	width: 60%;
+	margin: 3em auto;
+	width: 80%;
 
 	.lefty {
 		float: left;
+		position: absolute;
+		left: 5%;
+		color: white;
+		border-radius: 5px;
+		font-weight: 300;
+		font-size: 14px;
+		transition: box-shadow 0.3s, text-shadow 0.3s;
+		padding: 5px 15px;
+		border: .2em solid $abi;
+
+		:hover {
+			box-shadow: 0 0 5px $aai, 0 0 5px $aai inset;
+			border-radius: 5px;
+			text-shadow: 0 0 2px $mustard;
+		}
 	}
 
 	.righty {
 		float: right;
+		position: absolute;
+		right: 5%;
+		color: white;
+		border-radius: 5px;
+		font-weight: 300;
+		font-size: 14px;
+		transition: box-shadow 0.3s, text-shadow 0.3s;
+		padding: 5px 15px;
+		border: .2em solid $mustard;
+
+		:hover {
+			box-shadow: 0 0 5px $abi, 0 0 5px $abi inset;
+			border-radius: 5px;
+			text-shadow: 0 0 2px $abn;
+		}
 	}
 }
