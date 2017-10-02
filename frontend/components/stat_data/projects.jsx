@@ -48,14 +48,14 @@ export const myProjects = [
 	},
 
 	{
-		id: "racewars",
+		id: "xcape_from_zombieland",
 		tags: 'jquery html css',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1499749889/images/black-and-white-code-programming-tech-79290.jpg',
-		image_alt: 'raceWars homepage',
-		header: 'Race Wars',
-		desc: "This is a jQuery + HTML + CSS prohject that I used to practice for basic game logic. A user drives / navigates a virtual car through multi-lane highways at speeds that start slowly and gradually increases until the car crashes into an obstacle. The user is scored based on a simple algorithm that determines how many points to award based on a combination of the speed of car and frequency of obsatcles the car is clearing. A user has the option to select a fixed speed or manually adjust their speed with the up and down arrow keys. A user navigates lefts or right with the left and right arrow keys.",
+		image: 'https://res.cloudinary.com/swy/image/upload/v1506888103/zombie9_hlucxi.jpg',
+		image_alt: 'exacpe_from_zombieland homepage',
+		header: 'Xcape From Zombieland',
+		desc: "This is a jQuery + HTML + CSS single player game that simulates a zombie apocalypse. The player is a human trapped in an abandoned city overtaken by zombies. The player has to navigate their way through a sea of slow moving zombies who gradually gain speed with time. There are two sets of zombies; those that kill the human on contact (collison in this game) and those that only shove him/her aside (point subtraction in this game). In addition to having to avoid the zombies, there are snipers shooting at the zombies and the player has to avoid getting hit by stray bullets. In this game zombies move only from north to south while bullets are fired from east-west and from west-east. Being hit by a blue bullet deducts 1 point from the player's score, being shoved by a zombie deducts 5 points, being hit by a red bulet deducts 10 points, while being captured by a zombie or having a score below zero means game over. The player uses the arrow keys to move the human left, right, up, and down. The speed of the bullets and zombies gradully increases until game over.",
 		live_url: '#',
-		git_url: 'https://github.com/suhai/race_wars',
+		git_url: 'https://github.com/suhai/xcape_from_zombieland',
 		video: '#'
 	},
 

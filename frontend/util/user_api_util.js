@@ -5,20 +5,20 @@ export const fetchUser = user => (
   })
 );
 
-export const fetchUsers = query => {
-  if (query === undefined) query = {};
-  return $.ajax({
-    method: 'GET',
-    url: `api/users`
-  });
-};
-
-// export const fetchUsers = data => (
-//   $.ajax({
+// export const fetchUsers = query => {
+//   if (query === undefined) query = {};
+//   return $.ajax({
 //     method: 'GET',
-//     url: 'api/users'
-//   })
-// );
+//     url: `api/users`
+//   });
+// };
+
+export const fetchUsers = data => (
+  $.ajax({
+    method: 'GET',
+    url: 'api/users'
+  })
+);
 
 export const updateUser = (user, id) => (
   $.ajax({

@@ -29,8 +29,8 @@ export const fetchRandomUsers = query => dispatch => (
     .then(users => dispatch(receiveUsers(users)))
 );
 
-export const fetchUser = id => dispatch => (
-  APIUtil.fetchUser(id)
+export const fetchUser = user => dispatch => (
+  APIUtil.fetchUser(user)
     .then(user => dispatch(receiveUser(user)))
 );
 
