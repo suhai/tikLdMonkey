@@ -5,7 +5,6 @@ div.homepage {
   display: flex;
 	flex-direction: column;
 	margin-bottom: 5em;
-	height: 100%;
 
 	header {
 		display: flex;
@@ -103,9 +102,9 @@ main.homepage-info {
   text-decoration: none;
 }
 
-// .main-content {
-//   padding: 2em;
-// }
+.main-content {
+  padding: 2em;
+}
 
 p.portfolio-para {
 	margin: 1em 10em;

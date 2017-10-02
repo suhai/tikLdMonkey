@@ -53,7 +53,7 @@ export const myProjects = [
 		image: 'https://res.cloudinary.com/swy/image/upload/v1506888103/zombie9_hlucxi.jpg',
 		image_alt: 'exacpe_from_zombieland homepage',
 		header: 'Xcape From Zombieland',
-		desc: "This is a jQuery + HTML + CSS single player game that simulates a zombie apocalypse. The player is a human trapped in an abandoned city overtaken by zombies. The player has to navigate their way through a sea of slow moving zombies who gradually gain speed with time. There are two sets of zombies; those that kill the human on contact (collison in this game) and those that only shove him/her aside (point subtraction in this game). In addition to having to avoid the zombies, there are snipers shooting at the zombies and the player has to avoid getting hit by stray bullets. In this game zombies move only from north to south while bullets are fired from east-west and from west-east. Being hit by a blue bullet deducts 1 point from the player's score, being shoved by a zombie deducts 5 points, being hit by a red bulet deducts 10 points, while being captured by a zombie or having a score below zero means game over. The player uses the arrow keys to move the human left, right, up, and down. The speed of the bullets and zombies gradully increases until game over.",
+		desc: "This is a jQuery + HTML + CSS single player game that simulates a zombie apocalypse. The player is a human trapped in an abandoned city overtaken by zombies. The player has to navigate their way through a sea of slow moving zombies who gradually gain speed with time. There are two sets of zombies; those that kill the human on contact (collison in this game) and those that only shove him/her aside (point subtraction in this game). In addition to having to avoid the zombies, there are snipers shooting at the zombies and the player has to avoid getting hit by stray bullets. In this game zombies move only from north to south while bullets are fired from east-west and from west-east. Being hit by a blue bullet deducts 1 point from the player's score, being shoved by a zombie deducts 5 points, being hit by a red bulet deducts 10 points, while being captured by a zombie or having a score below zero means game over. The player uses the arrow keys to move the human left, right, up, and down. The speed of the bullets and zombies gradully increases until game over. You can play this game right here on the homepage button 'Zombie Game'",
 		live_url: '#',
 		git_url: 'https://github.com/suhai/xcape_from_zombieland',
 		video: '#'
@@ -66,7 +66,7 @@ export const myProjects = [
 		image_alt: 'playground homepage',
 		header: 'Play Ground',
 		desc: "This is a dummy project that I use as a launching pad for new projects. It is constantly changing based on what my plans are at any given time.",
-		live_url: 'https://www.tikldmonkey.com/#/escapez',
+		live_url: '#',
 		git_url: 'https://github.com/suhai/playGround',
 		video: '#'
 	}

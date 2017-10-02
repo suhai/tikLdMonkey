@@ -136,3 +136,11 @@ button.cancel {
   margin-top: 30px;
   margin-right: 10px;
 }
+
+.zombie-button {
+	padding: .5em;
+	float: right !important;
+	margin-right: 3em;
+	border: .11em solid $salmon !important;
+	border-radius: 2px;
+}
