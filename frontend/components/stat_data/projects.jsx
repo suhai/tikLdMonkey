@@ -66,7 +66,7 @@ export const myProjects = [
 		image_alt: 'playground homepage',
 		header: 'Play Ground',
 		desc: "This is a dummy project that I use as a launching pad for new projects. It is constantly changing based on what my plans are at any given time.",
-		live_url: '#',
+		live_url: 'https://www.tikldmonkey.com/#/escapez',
 		git_url: 'https://github.com/suhai/playGround',
 		video: '#'
 	}

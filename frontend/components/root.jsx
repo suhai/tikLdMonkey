@@ -7,12 +7,14 @@ import CategoryContainer from './categories/category_container';
 import MessageFormContainer from './messages/message_form_container';
 import Trivia from './trivia/Trivia';
 import SwyInfo from './about/swy_info';
+import EscapeZ from './about/escapez';
 import Footer from './footer/Footer';
 
 const Root = () =>(
   <div>
     <Switch>
       <Route path="/swy_info" component={SwyInfo} />
+			<Route path="/escapez" component={EscapeZ} />
       <Route path="/trivia" component={Trivia} />
 			<Route path="/enquiries" component={MessageFormContainer} />
       <ProtectedRoute exact path="/categories" component={LoggedHomeContainer} />

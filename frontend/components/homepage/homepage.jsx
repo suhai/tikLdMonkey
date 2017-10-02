@@ -14,7 +14,8 @@ class HomePage extends React.Component {
     this.state = { isOpen: false, authRoute: '' };
     this.openSignIn = this.openSignIn.bind(this);
     this.closeModal = this.closeModal.bind(this);
-    this.swy_info = this.swy_info.bind(this);
+		this.swy_info = this.swy_info.bind(this);
+		this.escapez = this.escapez.bind(this);
 		this.renderMessageForm = this.renderMessageForm.bind(this);
   }
 
@@ -30,6 +31,11 @@ class HomePage extends React.Component {
   swy_info(e) {
     e.preventDefault();
     window.location.hash = '/swy_info'
+	}
+	
+	escapez(e) {
+    e.preventDefault();
+    window.location.hash = '/escapez'
   }
 
   closeModal(e) {
@@ -83,7 +89,7 @@ class HomePage extends React.Component {
           </div>
         </main>
         
-        <div className="main-content">  
+        {/* <div className="main-content">   */}
 				<section id="portfolio" className="portfolio-section space-150">
 						<div className="container">
 								<div className="row">
@@ -129,7 +135,7 @@ class HomePage extends React.Component {
 								</div>
 						</div>
 					</section>
-				</div>
+				{/* </div> */}
 			</div>
 		);
 	}
