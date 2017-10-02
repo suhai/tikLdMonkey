@@ -1,7 +1,7 @@
 
 $(function() {
   
-  var anim_id;
+  var playGame;
 
   //saving dom objects to variables
   var container = $('#container');
@@ -41,7 +41,7 @@ $(function() {
   //some other declarations
   var game_over = false;
   var score_counter = 1;
-  var speed = 1;
+  var zombie_speed = 1;
   var bullet_speed = 3;
   var move_right = false;
   var move_left = false;
@@ -50,6 +50,11 @@ $(function() {
 
 
 	// GAME LOGIC
+	// restarting the game
+	restart_btn.click(function() {
+    location.reload();
+	});
+
 	// defining direction methods
 	function left() {
     if (game_over === false && parseInt(human.css('left')) > 0) {
@@ -123,7 +128,7 @@ $(function() {
       var zombie_left = parseInt(Math.random() * (container_width - human_width));
       zombie.css('left', zombie_left);
     }
-    zombie.css('top', zombie_current_top + speed);
+    zombie.css('top', zombie_current_top + zombie_speed);
   }
 
   function bullet_left(bullet) {
@@ -141,10 +146,6 @@ $(function() {
     }
     bullet.css('left', bullet_current_left + bullet_speed);
   }
-
-  restart_btn.click(function() {
-    location.reload();
-	});
 	
 	// testing for collison
   function collision(object1, object2) {
@@ -191,7 +192,7 @@ $(function() {
 		}
 		
 		if (score_counter % 500 == 0) {
-			speed += 0.5;
+			zombie_speed += 0.5;
 			bullet_speed++;
 		}
 
@@ -217,12 +218,12 @@ $(function() {
 		bullet_right(bullet_9);
 		bullet_right(bullet_10);
 
-		anim_id = requestAnimationFrame(repeat);
+		playGame = requestAnimationFrame(repeat);
 	};
 
   function stop_the_game() {
     game_over = true;
-    cancelAnimationFrame(anim_id);
+    cancelAnimationFrame(playGame);
     cancelAnimationFrame(move_right);
     cancelAnimationFrame(move_left);
     cancelAnimationFrame(move_up);
@@ -233,9 +234,9 @@ $(function() {
 	
 	// function to be called until a fatal collision occurs or score < 0
   function repeat() {
-		score_counter < 0 ? stop_the_game() : myFunc()		
+		score_counter < -100 ? stop_the_game() : myFunc()		
 	}
 	
 	// recursively call the requestAnimationFrame with repeat until game over
-	anim_id = requestAnimationFrame(repeat);
+	playGame = requestAnimationFrame(repeat);
 });
