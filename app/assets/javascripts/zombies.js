@@ -1,9 +1,9 @@
 
 $(function() {
   
-  var playGame;
+  var anim_id;
 
-  //saving dom objects to variables
+  // saving dom objects to variables
   var container = $('#container');
   var human = $('#human');
   var zombie_1 = $('#zombie_1');
@@ -28,7 +28,11 @@ $(function() {
 	var bullet_10 = $('#bullet_10');
   var restart_div = $('#restart_div');
   var restart_btn = $('#restart');
-  var score = $('#score');
+	var score = $('#score');
+	
+	var zombies = [zombie_1, zombie_2, zombie_3, zombie_4, zombie_5, zombie_6,zombie_7, zombie_8, zombie_9, zombie_10];
+	var redBullets = [bullet_1, bullet_2, bullet_3, bullet_4, bullet_5];
+	var blueBullets = [bullet_6,bullet_7, bullet_8, bullet_9, bullet_10];
 
   //saving some initial setup
 	var container_left = parseInt(container.css('left'));
@@ -40,9 +44,9 @@ $(function() {
 
   //some other declarations
   var game_over = false;
-  var score_counter = 1;
-  var zombie_speed = 1;
-  var bullet_speed = 3;
+  var score_counter = 0;
+  var speed = 1;
+  var bullet_speed = 1;
   var move_right = false;
   var move_left = false;
   var move_up = false;
@@ -50,11 +54,6 @@ $(function() {
 
 
 	// GAME LOGIC
-	// restarting the game
-	restart_btn.click(function() {
-    location.reload();
-	});
-
 	// defining direction methods
 	function left() {
     if (game_over === false && parseInt(human.css('left')) > 0) {
@@ -128,7 +127,7 @@ $(function() {
       var zombie_left = parseInt(Math.random() * (container_width - human_width));
       zombie.css('left', zombie_left);
     }
-    zombie.css('top', zombie_current_top + zombie_speed);
+    zombie.css('top', zombie_current_top + speed);
   }
 
   function bullet_left(bullet) {
@@ -146,53 +145,59 @@ $(function() {
     }
     bullet.css('left', bullet_current_left + bullet_speed);
   }
+
+  restart_btn.click(function() {
+    location.reload();
+	});
 	
 	// testing for collison
-  function collision(object1, object2) {
-    var object1LeftOffset = object1.offset().left;
-    var object1TopOffset = object1.offset().top;
-    var object1FullHeight = object1.outerHeight(true);
-    var object1FullWidth = object1.outerWidth(true);
-    var object1CombinedVertical = object1TopOffset + object1FullHeight;
-    var object1CombinedHorizontal = object1LeftOffset + object1FullWidth;
-    var object2LeftOffset = object2.offset().left;
-    var object2TopOffset = object2.offset().top;
-    var object2FullHeight = object2.outerHeight(true);
-    var object2FullWidth = object2.outerWidth(true);
-    var object2CombinedVertical = object2TopOffset + object2FullHeight;
-    var object2CombinedHorizontal = object2LeftOffset + object2FullWidth;
+  function collision(human, zombie) {
+    var humanLeftOffset = human.offset().left;
+    var humanTopOffset = human.offset().top;
+    var humanFullHeight = human.outerHeight(true);
+    var humanFullWidth = human.outerWidth(true);
+    var humanCombinedVertical = humanTopOffset + humanFullHeight;
+    var humanCombinedHorizontal = humanLeftOffset + humanFullWidth;
+    var zombieLeftOffset = zombie.offset().left;
+    var zombieTopOffset = zombie.offset().top;
+    var zombieFullHeight = zombie.outerHeight(true);
+    var zombieFullWidth = zombie.outerWidth(true);
+    var zombieCombinedVertical = zombieTopOffset + zombieFullHeight;
+    var zombieCombinedHorizontal = zombieLeftOffset + zombieFullWidth;
 
-    if (object1CombinedVertical < object2TopOffset || object1TopOffset > object2CombinedVertical || object1CombinedHorizontal < object2LeftOffset || object1LeftOffset > object2CombinedHorizontal) return false;
+    if (humanCombinedVertical < zombieTopOffset || humanTopOffset > zombieCombinedVertical || humanCombinedHorizontal < zombieLeftOffset || humanLeftOffset > zombieCombinedHorizontal) return false;
     return true;
   }
 
-	// Function to check if collision with a deadly zombie has occured
+// 	// Function to check if collision with a deadly zombie has occured
 	var myFunc = function() {
-		if (collision(human, zombie_1) || collision(human, zombie_2) || collision(human, zombie_3) || collision(human, zombie_4) || collision(human, zombie_5)) {
-			stop_the_game();
-			return;
-		}
-		
-		if (collision(human, bullet_6) || collision(human, bullet_7) || collision(human, bullet_8) || collision(human, bullet_9) || collision(human, bullet_10)) {
-			score_counter -= 1;
-		} 
-
-		if (collision(human, zombie_6) || collision(human, zombie_7) || collision(human, zombie_8) || collision(human, zombie_9) || collision(human, zombie_10)) {
-			score_counter -= 5;
-		} 
-
-		if (collision(human, bullet_1) || collision(human, bullet_2) || collision(human, bullet_3) || collision(human, bullet_4) || collision(human, bullet_5)) {
-			score_counter -= 10;
-		}
+		score.text(parseInt(score.text())) < -1 ? stop_the_game() :
+			zombies.forEach(function(zombie) {
+				if (collision(human, zombie)) {
+					return stop_the_game();
+				}
+			});
 
 		score_counter++;
+
+		redBullets.forEach(function(bullet) {
+			if (collision(human, bullet)) {
+				score.text(parseInt(score.text()) - 10/20);
+			}
+		});
+
+		blueBullets.forEach(function(bullet) {
+			if (collision(human, bullet)) {
+				score.text(parseInt(score.text()) - 5/20);
+			}
+		});
 
 		if (score_counter % 20 == 0) {
 			score.text(parseInt(score.text()) + 1);
 		}
 		
 		if (score_counter % 500 == 0) {
-			zombie_speed += 0.5;
+			speed += 0.5;
 			bullet_speed++;
 		}
 
@@ -218,12 +223,12 @@ $(function() {
 		bullet_right(bullet_9);
 		bullet_right(bullet_10);
 
-		playGame = requestAnimationFrame(repeat);
+		anim_id = requestAnimationFrame(repeat);
 	};
 
   function stop_the_game() {
     game_over = true;
-    cancelAnimationFrame(playGame);
+    cancelAnimationFrame(anim_id);
     cancelAnimationFrame(move_right);
     cancelAnimationFrame(move_left);
     cancelAnimationFrame(move_up);
@@ -232,11 +237,12 @@ $(function() {
     restart_btn.focus();
 	}
 	
+	
 	// function to be called until a fatal collision occurs or score < 0
   function repeat() {
-		score_counter < -100 ? stop_the_game() : myFunc()		
+		myFunc()
 	}
 	
 	// recursively call the requestAnimationFrame with repeat until game over
-	playGame = requestAnimationFrame(repeat);
+	anim_id = requestAnimationFrame(repeat);
 });
