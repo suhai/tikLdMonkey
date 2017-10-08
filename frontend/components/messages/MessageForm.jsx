@@ -1,5 +1,6 @@
 import React from 'react';
 import { values, merge } from 'lodash';
+import Footer from '../footer/Footer';
 
 class MessageForm extends React.Component {
 	constructor(props) {
@@ -86,6 +87,7 @@ class MessageForm extends React.Component {
 						</div>
 					</form>
 				</div>
+				<Footer />
 			</div>
 		)
 	};

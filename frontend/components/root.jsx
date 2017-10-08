@@ -22,7 +22,6 @@ const Root = () =>(
       <ProtectedRoute path="/:username" component={LoggedHomeContainer} />
 			<AuthRoute exact path="/" component={HomePageContainer} />
     </Switch>
-    <Footer />
   </div>
 );
 

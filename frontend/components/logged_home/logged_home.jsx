@@ -7,6 +7,7 @@ import CategoryContainer from '../categories/category_container';
 import MessageShowContainer from '../messages/message_show_container';
 import MessagePageContainer from '../messages/message_page_container';
 import JobAppHome from '../jobs/job_app_container';
+import Footer from '../footer/Footer';
 
 class LoggedHome extends React.Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class LoggedHome extends React.Component {
 						<Route path="/:username" render={(props) => <UserPageContainer {...props} /> } />
 					</Switch>
 				</div>
+				<Footer />
       </div>
     );
   }

@@ -6,6 +6,7 @@ import { values } from 'lodash';
 import PublicNavigation from '../PublicNavigation';
 import Project from './Project';
 import { myProjects } from '../stat_data/projects';
+import Footer from '../footer/Footer';
 
 
 class HomePage extends React.Component {
@@ -137,6 +138,7 @@ class HomePage extends React.Component {
 						</div>
 					</section>
 				</div>
+				<Footer />
 			</div>
 		);
 	}

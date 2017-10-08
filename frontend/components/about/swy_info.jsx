@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PublicNavigation from '../PublicNavigation';
+import Footer from '../footer/Footer';
 
 const SwyInfo = () => (
   <div className="swy-page-body">
@@ -23,7 +24,7 @@ const SwyInfo = () => (
       </code>
       <hr className='about-hr'/>
     </div>
-    
+		<Footer />
   </div>
 );
 

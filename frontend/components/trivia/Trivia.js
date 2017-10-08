@@ -3,6 +3,7 @@ import { Route, NavLink, Redirect } from 'react-router-dom';
 import PublicNavigation from '../PublicNavigation';
 import TriviaContainer from './TriviaContainer';
 import { Art, Culture, Geography, History } from '../stat_data/trivia';
+import Footer from '../footer/Footer';
 
 const Trivia = ({match}) => (
   <div className="main-content trivia default-margin">
@@ -28,6 +29,7 @@ const Trivia = ({match}) => (
     <Route path={`${match.path}/history`} render={ () => <TriviaContainer data={History } /> } />     
     <Route path={`${match.path}/geography`} render={ () => <TriviaContainer data={Geography} /> } />
     <Route path={`${match.path}/art`}  render={ () => <TriviaContainer data={Art} /> } />
+		<Footer />
   </div>
 );
 
