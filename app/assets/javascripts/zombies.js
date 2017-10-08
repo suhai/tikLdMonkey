@@ -171,27 +171,18 @@ $(function() {
 
 // 	// Function to check if collision with a deadly zombie has occured
 	var myFunc = function() {
-		score.text(parseInt(score.text())) < -1 ? stop_the_game() :
-			zombies.some(function(zombie) {
-				if (collision(human, zombie)) {
-					stop_the_game();
-					return
-				}
-			});
+		if (zombies.some(zombie => (collision(human, zombie))) || score.text(parseInt(score.text())) < -1) {
+			return stop_the_game();
+		}
 
 		score_counter++;
+		if (redBullets.some(bullet => (collision(human, bullet)))) {
+			score.text(parseInt(score.text()) - 10/20);
+		}
 
-		redBullets.some(function(bullet) {
-			if (collision(human, bullet)) {
-				score.text(parseInt(score.text()) - 10/20);
-			}
-		});
-
-		blueBullets.some(function(bullet) {
-			if (collision(human, bullet)) {
-				score.text(parseInt(score.text()) - 5/20);
-			}
-		});
+		if (blueBullets.some(bullet => (collision(human, bullet)))) {
+			score.text(parseInt(score.text()) - 5/20);
+		}
 
 		if (score_counter % 20 == 0) {
 			score.text(parseInt(score.text()) + 1);
