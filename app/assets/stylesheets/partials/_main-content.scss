@@ -270,9 +270,9 @@
 /*-----Portfolio Popup style------*/
 .portfolio-popup {
     background-color: $color__white;
-    margin: 50px auto;
-    padding: 30px 30px 45px;
-    width: 75%; 
+    margin: 2em auto;
+    padding: 1em 1em 1.5em;
+    width: 60%; 
     .title {
         font-size: 22px;
         font-weight: bold;
@@ -280,20 +280,20 @@
         text-align: left;
     }
     img {
-        border-radius: 7px;
+        border-radius: 5px;
         width: 100%;
     }
     .protfolio-popup-info {
         border-top: 1px solid #eee;
-        margin: 45px 0 55px;
+        margin: 3em .5em;
         text-align: left;
          > p {
-            margin-bottom: 20px;
+            margin-bottom: 2em;
             color: #808080;
         }
         > h3 {
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 500;
             margin: 35px 0 20px;
             text-transform: capitalize;
         }
