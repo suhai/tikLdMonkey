@@ -167,30 +167,31 @@ $(function() {
 
     if (humanCombinedVertical < zombieTopOffset || humanTopOffset > zombieCombinedVertical || humanCombinedHorizontal < zombieLeftOffset || humanLeftOffset > zombieCombinedHorizontal) return false;
     return true;
-  }
+	}
+	
 
-// 	// Function to check if collision with a deadly zombie has occured
-	var myFunc = function() {
-		zombies.some(function(zombie) {
-			if (collision(human, zombie) || score.text(parseInt(score.text())) < -1) {
-				stop_the_game();
-				return
-			}
-		});
+	// Function to check if collision with a deadly zombie has occured
+	function myFunc() {
+		if (
+			collision(human, zombie_1) || collision(human, zombie_2) || collision(human, zombie_3) || collision(human, zombie_4) || collision(human, zombie_5) || collision(human, zombie_6) || collision(human, zombie_7) || collision(human, zombie_8) || collision(human, zombie_9) || collision(human, zombie_10)
+		) {
+			stop_the_game();
+			return
+		}
 
 		score_counter++;
 
-		redBullets.some(function(bullet) {
-			if (collision(human, bullet)) {
-				score.text(parseInt(score.text()) - 10/20);
-			}
-		});
+		if (
+			collision(human, bullet_1) || collision(human, bullet_2) || collision(human, bullet_3) || collision(human, bullet_4) || collision(human, bullet_5)
+		) {
+			score.text(parseInt(score.text()) - 10/20);
+		}
 
-		blueBullets.some(function(bullet) {
-			if (collision(human, bullet)) {
-				score.text(parseInt(score.text()) - 5/20);
-			}
-		});
+		if (
+			collision(human, bullet_6) || collision(human, bullet_7) || collision(human, bullet_8) || collision(human, bullet_9) || collision(human, bullet_10)
+		) {
+			score.text(parseInt(score.text()) - 5/20);
+		}
 
 		if (score_counter % 20 == 0) {
 			score.text(parseInt(score.text()) + 1);
