@@ -16,9 +16,10 @@ img {
 
 /* human styles*/
 .human {
-  position: absolute;
-  height: 5em;
-  width: 5em;
+	position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 5px;
 }
 
 #human {
@@ -28,9 +29,8 @@ img {
 
 .bullet {
   position: absolute;
-  height: 1em;
-  width: 1em;
-  margin: auto 5%;
+  height: 10px;
+  width: 10px;
 }
 
 /* bullet styles*/
@@ -98,8 +98,8 @@ img {
 /* zombie styles*/
 .zombie {
   position: absolute;
-  height: 5em;
-  width: 5em;
+  height: 3em;
+  width: 3em;
 }
 
 
@@ -189,4 +189,3 @@ img {
 		color: $brown;
 	}
 }
-

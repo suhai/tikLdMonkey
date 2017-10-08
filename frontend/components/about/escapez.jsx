@@ -22,38 +22,40 @@ const EscapeZ = () => (
 			<div id="bullet_8" className="bullet"></div>
 			<div id="bullet_9" className="bullet"></div>
 			<div id="bullet_10" className="bullet"></div>
+
 			<div id="human" className="human">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1499749805/images/firefighter.svg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1499749805/images/firefighter.svg" alt=""/>
 			</div>
+
 			<div id="zombie_1" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie1_qciih5.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie1_qciih5.jpg" alt=""/>
 			</div>
 			<div id="zombie_2" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie2_j3r0uu.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie2_j3r0uu.jpg" alt=""/>
 			</div>
 			<div id="zombie_3" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie3_sx7du7.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie3_sx7du7.jpg" alt=""/>
 			</div>
 			<div id="zombie_4" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie4_mjlv2n.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie4_mjlv2n.jpg" alt=""/>
 			</div>
 			<div id="zombie_5" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie5_ks5skz.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie5_ks5skz.jpg" alt=""/>
 			</div>
 			<div id="zombie_6" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie6_tqebit.jpg"  />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888102/zombie6_tqebit.jpg" alt=""/>
 			</div>
 			<div id="zombie_7" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie7_tfv78a.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie7_tfv78a.jpg" alt=""/>
 			</div>
 			<div id="zombie_8" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie8_stpdlf.webp" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie8_stpdlf.webp" alt=""/>
 			</div>
 			<div id="zombie_9" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie9_hlucxi.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie9_hlucxi.jpg" alt=""/>
 			</div>
 			<div id="zombie_10" className="zombie">
-				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie10_yk9xq3.jpg" />
+				<img src="https://res.cloudinary.com/swy/image/upload/v1506888103/zombie10_yk9xq3.jpg" alt=""/>
 			</div>
 
 			<div id="restart_div">
