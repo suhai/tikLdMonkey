@@ -82,9 +82,9 @@ class HomePage extends React.Component {
 						</div>
 					</div>
           <div className='homepage-description'>
-            <h2 className="billabong">tikLdMonkey</h2>
+            <h2 className="billabong">suhai Yehuza</h2>
             <div className='main-desc'>
-              <h3>A CONTENT MANAGEMENT SYSTEM APPLICATION</h3>
+              <h3>WELCOME TO MY PORTFOLIO SITE</h3>
               <p>This is a perosnal site that I use to manage my work. It serves primarily as an experimental area for projects that I am working on. You should find below brief descriptions and links to my most recent projects. If you have any questions or comments please feel free to send me a mesage <a onClick={this.renderMessageForm}><strong className='highlighter'> HERE </strong></a>. I try to respond within 24 hours.</p>
 								<button className='zombie-button' onClick={this.escapez} >Play My Zombie Game Here</button>
             </div> 
