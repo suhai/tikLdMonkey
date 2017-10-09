@@ -49,19 +49,15 @@ class Navigation extends React.Component {
         <ul className='searchbar'>
           <input placeholder='Search for Anything' className='search-input'></input>
         </ul>
-        <ul>
-          <li className={`nav-user`}>
-            <p tabIndex='0' onBlur={this.closeSettings}
-              onClick={this.toggleSettings}
-              className={`user ${this.state.isActive}`}>{this.props.currentUser.username} ❯</p>
-            <ul id='user-settings' className={this.state.isActive}>
-              <li>
-                <Link to={`/${this.props.currentUser.username}`}>Profile</Link>
-              </li>
-              <li onClick={this.logout}>Sign out</li>
-            </ul>
-          </li>
-        </ul>
+				<ul className='nav-ul-username'>
+					<div className="dropdown">
+						<button className="dropbtn">{this.props.currentUser.username} ❯❯</button>
+						<div className="dropdown-content profile-menu">
+						<Link to={`/${this.props.currentUser.username}/profile`}>Profile</Link>
+						<NavLink to='/' onClick={this.logout}>Log Out</NavLink>
+						</div>
+					</div>
+				</ul>
       </nav>
     );
   }

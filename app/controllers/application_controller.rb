@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
-	protect_from_forgery with: :null_session
-	# protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/json' }
-
+	# protect_from_forgery with: :exception
+	# protect_from_forgery with: :null_session
   helper_method :current_user, :logged_in?, :is_verified_admin
 
   def current_user

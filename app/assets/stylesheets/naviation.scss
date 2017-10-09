@@ -159,3 +159,51 @@ ul#user-settings {
     cursor: pointer;
   }
 }
+
+
+// Dropdown menu
+.nav-ul-username {
+	margin: 1.8em !important;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropbtn {
+	background-color: $black;
+	color: white;
+	font-size: 1em;
+	border: none;
+	cursor: pointer;
+}
+
+.profile-menu {
+	min-width: 7em !important;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: $black;
+	text-align: left;
+	width: 100%;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	padding: .5em;
+	text-decoration: none;
+	display: block;
+	
+	&:hover {
+		text-shadow: 0 0 .1em;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
