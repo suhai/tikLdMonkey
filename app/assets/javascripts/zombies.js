@@ -168,10 +168,20 @@ $(function() {
     if (humanCombinedVertical < zombieTopOffset || humanTopOffset > zombieCombinedVertical || humanCombinedHorizontal < zombieLeftOffset || humanLeftOffset > zombieCombinedHorizontal) return false;
     return true;
 	}
-	
 
-	// Function to check if collision with a deadly zombie has occured
-	function myFunc() {
+  function stop_the_game() {
+    game_over = true;
+    cancelAnimationFrame(anim_id);
+    cancelAnimationFrame(move_right);
+    cancelAnimationFrame(move_left);
+    cancelAnimationFrame(move_up);
+    cancelAnimationFrame(move_down);
+    restart_div.slideDown();
+    restart_btn.focus();
+	}
+
+		// Function to check if collision with a deadly zombie has occured
+	function repeat() {
 		if (
 			collision(human, zombie_1) || collision(human, zombie_2) || collision(human, zombie_3) || collision(human, zombie_4) || collision(human, zombie_5) || collision(human, zombie_6) || collision(human, zombie_7) || collision(human, zombie_8) || collision(human, zombie_9) || collision(human, zombie_10)
 		) {
@@ -226,23 +236,6 @@ $(function() {
 
 		anim_id = requestAnimationFrame(repeat);
 	};
-
-  function stop_the_game() {
-    game_over = true;
-    cancelAnimationFrame(anim_id);
-    cancelAnimationFrame(move_right);
-    cancelAnimationFrame(move_left);
-    cancelAnimationFrame(move_up);
-    cancelAnimationFrame(move_down);
-    restart_div.slideDown();
-    restart_btn.focus();
-	}
-	
-	
-	// function to be called until a fatal collision occurs or score < 0
-  function repeat() {
-		myFunc()
-	}
 	
 	// recursively call the requestAnimationFrame with repeat until game over
 	anim_id = requestAnimationFrame(repeat);

@@ -20,17 +20,9 @@
 #
 
 class User < ApplicationRecord
-  validates :username, :password_digest, :session_token, presence: true
+  # validates :username, :password_digest, :session_token, presence: true
   validates :username, :session_token, uniqueness: true
   validates :password, length: { minimum: 6, message: 'must be at least 6 characters'}, allow_nil: true
-
-  # has_attached_file :profile_image_url,
-  #   default_url: "http://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg",
-  #   s3_protocol: :https
-  # has_attached_file :header_image_url,
-  #   default_url: "http://res.cloudinary.com/swy/image/upload/v1499673174/images/monkey.svg",
-  #   s3_protocol: :https
-
 
   attr_reader :password
 

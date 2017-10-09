@@ -7,7 +7,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 const middlewares = [thunk];
 
 if (process.env.NODE_ENV !== 'production') {
-  middlewares.unshift(createLogger());
+  middlewares.push(createLogger());
 }
 
 const configureStore = (preloadedState = {}) => (
