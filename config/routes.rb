@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :job_apps, except: [:new, :edit, :show]
     resources :users, except: [:new, :edit]
 		resource :session, only: [:create, :destroy]
-		resources :messages, except: [:new, :create, :update, :destroy]
+		resources :messages, except: [:new, :update]
 	end
 	
 	root to: "static_pages#root"
