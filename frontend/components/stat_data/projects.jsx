@@ -14,7 +14,7 @@ export const myProjects = [
 	{
 		id: 'tikldmonkey',
 		tags: 'react redux ruby rails javascript sql',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1506539659/tikldmonkey_mc2lgi.png',
+		image: 'https://res.cloudinary.com/swy/image/upload/v1507852964/tikldmonkey_mc2lgi_ztoqk0.png',
 		image_alt: 'tikldmonkey homepage',
 		header: 'tikLdMonkey',
 		desc: "This is the app you are currrenly accessing. It is a single page Content Management System web application designed to host and manage my personal portfolio. It was initially built to allow multiple user access but I have since limited usage to just myself and a few other people because I now store other personal data/files in the database. It is made up of Trivia section, Job Appications sections, and Personal Data sections, and it is my plan to continously improve its data integrity as I continue learning.",
@@ -26,7 +26,7 @@ export const myProjects = [
 	{
 		id: "murmuralley",
 		tags: 'ruby rails html javascript css',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1501895992/murmur1_i6zdm2.png',
+		image: 'https://res.cloudinary.com/swy/image/upload/v1507852964/murmur1_i6zdm2_dyqxrk.png',
 		image_alt: 'murmuralley homepage',
 		header: 'MurmurAlley',
 		desc:"This is a simple clone of the frontpage of the NYT. The application was made as a practice for page organization and formatting and styling. It is basically a Ruby / Rails project with a bunch of partial pages that are reused within bigger pages as necessary. By splitting the pages into partials I was able to write fewer code, making use of rendering the partials inside bigger pages. There is currently no activity between the frontend and the database but I may turn it into a fullstack application in the future.",
@@ -38,7 +38,7 @@ export const myProjects = [
 	{
 		id: "cheekchubby",
 		tags: 'css ruby rails sql',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1501895999/cheek5_x393hf.png',
+		image: 'https://res.cloudinary.com/swy/image/upload/v1507852963/cheek5_x393hf_ijggwm.png',
 		image_alt: 'cheekchubby homepage',
 		header: 'cheekChubby',
 		desc: "This is a Ruby on Rails application that was designed for users to access posts by categories. In addition there is a section for Photos where users can scroll through photos by category. Users can search for keywords to narrow down the list of displayed posts or photos in alphabetical order. Users have the option to just read the articles, browse through images, or create their own posts and or upload images for other users to access. There is currently no permanent storage for images uploaded on the site so any images uploaded will be erased anytime my heroku dyno is restarted.",
@@ -62,7 +62,7 @@ export const myProjects = [
 	{
 		id: "playground",
 		tags: 'jquery html css javascript',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1499750288/images/mavis-6-1580.jpg',
+		image: 'https://res.cloudinary.com/swy/image/upload/v1507852963/mavis-6-1580_suw4ek.jpg',
 		image_alt: 'playground homepage',
 		header: 'Play Ground',
 		desc: "This is a dummy project that I use as a launching pad for new projects. It is constantly changing based on what my plans are at any given time.",
