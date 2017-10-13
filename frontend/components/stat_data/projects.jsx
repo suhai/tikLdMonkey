@@ -2,7 +2,7 @@ export const myProjects = [
 	{
 		id: "easthalo",
 		tags: 'react redux ruby rails html css sql javascript',
-		image: 'https://res.cloudinary.com/swy/image/upload/v1506539090/homepage_s5uxoq.png',
+		image: 'https://res.cloudinary.com/swy/image/upload/v1507853927/homepage_s5uxoq_qkx7rz.png',
 		image_alt: 'easthalo homepage',
 		header: 'EastHalo University',
 		desc: "This is a single page web application modeled after a university website. It is made up of two main layers; the Landing Page and the LoggedHome Page. Users (mostly students) can sign up for or drop a course. They can add other users as their friends, can buy books or meals, and can access their class schedule, grades / transcripts if professors have awarded them grades. Users can also create posts and comment on any available post in the system. Professors can create courses to teach and create grades for students in their courses.",
